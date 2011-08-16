@@ -72,6 +72,7 @@ namespace VimanaPoi
                 empIdIndLbl.Text = "Current Employee :";
                 empIdLbl.Visible = true;
                 empIdLbl.Text = curEmpIdTxt.Text;
+                if (isSetup.Checked) { empIdLbl.Text += " (Setup)"; }
                 settingBtn.Enabled = false;
                 //logBtn.Enabled = false;
                 loadDefaults();
