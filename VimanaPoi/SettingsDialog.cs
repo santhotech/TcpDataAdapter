@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace VimanaPoi
 {
-    public partial class settingsDialog : Form
+    public partial class SettingsDialog : Form
     {
-        public settingsDialog()
+        public SettingsDialog()
         {
             InitializeComponent();
             textBox1.Text = Properties.Settings.Default.port.ToString();
@@ -28,6 +28,16 @@ namespace VimanaPoi
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void settingsDialog_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
             Properties.Settings.Default.port = Int32.Parse(textBox1.Text);
             Properties.Settings.Default.singprog = checkBox1.Checked;
             Properties.Settings.Default.multprog = checkBox2.Checked;
@@ -38,11 +48,6 @@ namespace VimanaPoi
             Properties.Settings.Default.twopath = checkBox7.Checked;
             Properties.Settings.Default.Save();
             this.Close();
-        }
-
-        private void settingsDialog_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

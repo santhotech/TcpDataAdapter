@@ -1,6 +1,6 @@
 ﻿namespace VimanaPoi
 {
-    partial class settingsDialog
+    partial class SettingsDialog
     {
         /// <summary>
         /// Required designer variable.
@@ -186,6 +186,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Save Settings";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // SettingsDialog
             // 
@@ -198,7 +199,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SettingsDialog";
             this.Text = "SettingsDialog";
-            this.Load += new System.EventHandler(this.SettingsDialog_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

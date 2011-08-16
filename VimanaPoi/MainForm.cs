@@ -86,7 +86,7 @@ namespace VimanaPoi
         //loading default status settings
         private void loadDefaults()
         {
-            /*
+            
             singProgBtn.Enabled = Properties.Settings.Default.singprog;
             multProgBtn.Enabled = Properties.Settings.Default.multprog;
             singFixtBtn.Enabled = Properties.Settings.Default.singfixt;
@@ -94,7 +94,7 @@ namespace VimanaPoi
             multPartBtn.Enabled = Properties.Settings.Default.multpart;
             twoPartBtn.Enabled = Properties.Settings.Default.twopart;
             twoPathBtn.Enabled = Properties.Settings.Default.twopath;
-             **/
+             
         }
         //switch start and stop
         private void switchBtn(int flg, Button[] btn)
@@ -160,5 +160,81 @@ namespace VimanaPoi
         {
             doLogin();
         }
+
+        private void settingBtn_Click(object sender, EventArgs e)
+        {
+            SettingsDialog objCustomDialogBox = new SettingsDialog();
+            objCustomDialogBox.ShowDialog();
+            objCustomDialogBox = null;
+        }
+
+        //left menu buttons and their app initializations
+        private void singProgBtn_Click(object sender, EventArgs e)
+        {
+            initAction();
+            showTabl(1);
+            stackPanel1.SelectedIndex = 0;
+            //    HandleAfterSend(td.t1stp, td.t1snd, 2, td.t1btn);
+        }
+
+        private void multProgBtn_Click(object sender, EventArgs e)
+        {
+            initAction();
+            showTabl(2);
+            stackPanel1.SelectedIndex = 1;
+            
+        }
+
+        private void singFixtBtn_Click(object sender, EventArgs e)
+        {
+            initAction();
+            showTabl(3);
+            stackPanel1.SelectedIndex = 2;
+            
+        }
+
+        private void FixtPallBtn_Click(object sender, EventArgs e)
+        {
+            initAction();
+            showTabl(4);
+            stackPanel1.SelectedIndex = 3;
+
+        }
+
+        private void multPartBtn_Click(object sender, EventArgs e)
+        {
+            initAction();
+            showTabl(5);
+            stackPanel1.SelectedIndex = 4;
+            
+        }
+
+        private void twoPartBtn_Click(object sender, EventArgs e)
+        {
+            initAction();
+            showTabl(6);
+            stackPanel1.SelectedIndex = 5;
+            
+        }
+
+        private void twoPathBtn_Click(object sender, EventArgs e)
+        {
+            initAction();
+            showTabl(7);
+            stackPanel1.SelectedIndex = 6;
+           
+        }
+
+        private void initAction()
+        {
+            hideAllTbl();
+            t1strt.Visible = true;
+            t1stop.Visible = true;
+            cntPnlLblPnl.Visible = true;
+            label45.Visible = false;
+            stackPanel1.Visible = true;
+        }
+       
+
     }
 }
