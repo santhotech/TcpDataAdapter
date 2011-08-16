@@ -234,6 +234,11 @@ namespace VimanaPoi
             label45.Visible = false;
             stackPanel1.Visible = true;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
        
 
     }
