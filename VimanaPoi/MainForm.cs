@@ -39,6 +39,9 @@ namespace VimanaPoi
         }
         private void Init_Login()
         {
+            nrmlPicBox.Visible = true;
+            opPicBox.Visible = false;
+            setPixBox.Visible = false;
             settingBtn.Enabled = true;
             //logBtn.Enabled = true;
             hideAllTbl();
@@ -72,7 +75,8 @@ namespace VimanaPoi
                 empIdIndLbl.Text = "Current Employee :";
                 empIdLbl.Visible = true;
                 empIdLbl.Text = curEmpIdTxt.Text;
-                if (isSetup.Checked) { empIdLbl.Text += " (Setup)"; }
+                nrmlPicBox.Visible = false;
+                if (isSetup.Checked) { empIdLbl.Text += " (Setup)"; setPixBox.Visible = true; } else { opPicBox.Visible = true; }
                 settingBtn.Enabled = false;
                 //logBtn.Enabled = false;
                 loadDefaults();

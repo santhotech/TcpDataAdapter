@@ -33,6 +33,7 @@
             this.cntPnlLblPnl = new System.Windows.Forms.Panel();
             this.cntPnlLbl = new System.Windows.Forms.Label();
             this.logInPnl = new System.Windows.Forms.Panel();
+            this.isSetup = new System.Windows.Forms.CheckBox();
             this.loginBtn = new System.Windows.Forms.Button();
             this.label30 = new System.Windows.Forms.Label();
             this.curEmpIdTxt = new System.Windows.Forms.TextBox();
@@ -46,7 +47,6 @@
             this.singFixtBtn = new System.Windows.Forms.Button();
             this.multProgBtn = new System.Windows.Forms.Button();
             this.singProgBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sockStatLbl = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -57,8 +57,9 @@
             this.logoutBtn = new System.Windows.Forms.Button();
             this.settingBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.headerLbl = new System.Windows.Forms.Label();
-            this.isSetup = new System.Windows.Forms.CheckBox();
+            this.nrmlPicBox = new System.Windows.Forms.PictureBox();
+            this.opPicBox = new System.Windows.Forms.PictureBox();
+            this.setPixBox = new System.Windows.Forms.PictureBox();
             this.stackPanel1 = new StackPanel();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.singProgTbl = new System.Windows.Forms.TableLayoutPanel();
@@ -199,11 +200,13 @@
             this.cntPnlLblPnl.SuspendLayout();
             this.logInPnl.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nrmlPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.setPixBox)).BeginInit();
             this.stackPanel1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.singProgTbl.SuspendLayout();
@@ -269,6 +272,16 @@
             this.logInPnl.Size = new System.Drawing.Size(308, 96);
             this.logInPnl.TabIndex = 26;
             this.logInPnl.Visible = false;
+            // 
+            // isSetup
+            // 
+            this.isSetup.AutoSize = true;
+            this.isSetup.Location = new System.Drawing.Point(168, 67);
+            this.isSetup.Name = "isSetup";
+            this.isSetup.Size = new System.Drawing.Size(54, 17);
+            this.isSetup.TabIndex = 17;
+            this.isSetup.Text = "Setup";
+            this.isSetup.UseVisualStyleBackColor = true;
             // 
             // loginBtn
             // 
@@ -421,15 +434,6 @@
             this.singProgBtn.UseVisualStyleBackColor = true;
             this.singProgBtn.Click += new System.EventHandler(this.singProgBtn_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 55);
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
-            // 
             // sockStatLbl
             // 
             this.sockStatLbl.AutoSize = true;
@@ -536,33 +540,42 @@
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.headerLbl);
-            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.setPixBox);
+            this.panel3.Controls.Add(this.opPicBox);
+            this.panel3.Controls.Add(this.nrmlPicBox);
             this.panel3.Location = new System.Drawing.Point(7, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(688, 65);
             this.panel3.TabIndex = 33;
             // 
-            // headerLbl
+            // nrmlPicBox
             // 
-            this.headerLbl.AutoSize = true;
-            this.headerLbl.Font = new System.Drawing.Font("Bodoni MT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.headerLbl.ForeColor = System.Drawing.Color.Black;
-            this.headerLbl.Location = new System.Drawing.Point(422, 30);
-            this.headerLbl.Name = "headerLbl";
-            this.headerLbl.Size = new System.Drawing.Size(264, 28);
-            this.headerLbl.TabIndex = 15;
-            this.headerLbl.Text = "Part and Operation Input";
+            this.nrmlPicBox.Image = ((System.Drawing.Image)(resources.GetObject("nrmlPicBox.Image")));
+            this.nrmlPicBox.Location = new System.Drawing.Point(-1, -1);
+            this.nrmlPicBox.Name = "nrmlPicBox";
+            this.nrmlPicBox.Size = new System.Drawing.Size(685, 62);
+            this.nrmlPicBox.TabIndex = 0;
+            this.nrmlPicBox.TabStop = false;
             // 
-            // isSetup
+            // opPicBox
             // 
-            this.isSetup.AutoSize = true;
-            this.isSetup.Location = new System.Drawing.Point(168, 67);
-            this.isSetup.Name = "isSetup";
-            this.isSetup.Size = new System.Drawing.Size(54, 17);
-            this.isSetup.TabIndex = 17;
-            this.isSetup.Text = "Setup";
-            this.isSetup.UseVisualStyleBackColor = true;
+            this.opPicBox.Image = ((System.Drawing.Image)(resources.GetObject("opPicBox.Image")));
+            this.opPicBox.Location = new System.Drawing.Point(0, -1);
+            this.opPicBox.Name = "opPicBox";
+            this.opPicBox.Size = new System.Drawing.Size(685, 62);
+            this.opPicBox.TabIndex = 1;
+            this.opPicBox.TabStop = false;
+            this.opPicBox.Visible = false;
+            // 
+            // setPixBox
+            // 
+            this.setPixBox.Image = ((System.Drawing.Image)(resources.GetObject("setPixBox.Image")));
+            this.setPixBox.Location = new System.Drawing.Point(0, -1);
+            this.setPixBox.Name = "setPixBox";
+            this.setPixBox.Size = new System.Drawing.Size(685, 62);
+            this.setPixBox.TabIndex = 2;
+            this.setPixBox.TabStop = false;
+            this.setPixBox.Visible = false;
             // 
             // stackPanel1
             // 
@@ -601,7 +614,7 @@
             this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
             this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
-            this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.singProgTbl.Controls.Add(this.label32, 3, 0);
             this.singProgTbl.Controls.Add(this.t1stop, 3, 2);
             this.singProgTbl.Controls.Add(this.label31, 1, 0);
@@ -619,7 +632,7 @@
             this.singProgTbl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.44828F));
             this.singProgTbl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.singProgTbl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.singProgTbl.Size = new System.Drawing.Size(424, 85);
+            this.singProgTbl.Size = new System.Drawing.Size(434, 85);
             this.singProgTbl.TabIndex = 16;
             // 
             // label32
@@ -701,7 +714,7 @@
             this.t1bpTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.t1bpTxt.Location = new System.Drawing.Point(296, 30);
             this.t1bpTxt.Name = "t1bpTxt";
-            this.t1bpTxt.Size = new System.Drawing.Size(123, 20);
+            this.t1bpTxt.Size = new System.Drawing.Size(133, 20);
             this.t1bpTxt.TabIndex = 4;
             // 
             // t1prtNameTxt
@@ -751,7 +764,7 @@
             this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 378F));
+            this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 388F));
             this.multProgTbl.Controls.Add(this.label25, 0, 4);
             this.multProgTbl.Controls.Add(this.label17, 3, 0);
             this.multProgTbl.Controls.Add(this.label2, 2, 0);
@@ -1154,7 +1167,7 @@
             this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
             this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243F));
+            this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253F));
             this.singFixtTbl.Controls.Add(this.label3, 2, 0);
             this.singFixtTbl.Controls.Add(this.label7, 0, 0);
             this.singFixtTbl.Controls.Add(this.label8, 1, 0);
@@ -1322,7 +1335,7 @@
             this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
             this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 282F));
+            this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 292F));
             this.fixtPallTbl.Controls.Add(this.label26, 3, 0);
             this.fixtPallTbl.Controls.Add(this.label10, 2, 0);
             this.fixtPallTbl.Controls.Add(this.label9, 1, 0);
@@ -1601,9 +1614,9 @@
             this.multPartTbl.ColumnCount = 5;
             this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.35971F));
             this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.64029F));
-            this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
+            this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 106F));
             this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
+            this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
             this.multPartTbl.Controls.Add(this.label24, 2, 0);
             this.multPartTbl.Controls.Add(this.label11, 0, 0);
             this.multPartTbl.Controls.Add(this.label12, 1, 0);
@@ -1632,7 +1645,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label24.Location = new System.Drawing.Point(132, 2);
+            this.label24.Location = new System.Drawing.Point(151, 2);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(93, 16);
             this.label24.TabIndex = 6;
@@ -1645,7 +1658,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label11.Location = new System.Drawing.Point(5, 2);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(37, 27);
+            this.label11.Size = new System.Drawing.Size(61, 16);
             this.label11.TabIndex = 1;
             this.label11.Text = "Part Name";
             // 
@@ -1654,9 +1667,9 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label12.Location = new System.Drawing.Point(69, 2);
+            this.label12.Location = new System.Drawing.Point(79, 2);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(53, 27);
+            this.label12.Size = new System.Drawing.Size(60, 16);
             this.label12.TabIndex = 3;
             this.label12.Text = "Operation";
             // 
@@ -1665,7 +1678,7 @@
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label39.Location = new System.Drawing.Point(233, 2);
+            this.label39.Location = new System.Drawing.Point(259, 2);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(67, 16);
             this.label39.TabIndex = 3;
@@ -1676,7 +1689,7 @@
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label40.Location = new System.Drawing.Point(309, 2);
+            this.label40.Location = new System.Drawing.Point(335, 2);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(59, 16);
             this.label40.TabIndex = 3;
@@ -1685,7 +1698,7 @@
             // t5gpTxt
             // 
             this.t5gpTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t5gpTxt.Location = new System.Drawing.Point(233, 34);
+            this.t5gpTxt.Location = new System.Drawing.Point(259, 34);
             this.t5gpTxt.Name = "t5gpTxt";
             this.t5gpTxt.Size = new System.Drawing.Size(68, 20);
             this.t5gpTxt.TabIndex = 4;
@@ -1693,23 +1706,23 @@
             // t5bpTxt
             // 
             this.t5bpTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t5bpTxt.Location = new System.Drawing.Point(309, 34);
+            this.t5bpTxt.Location = new System.Drawing.Point(335, 34);
             this.t5bpTxt.Name = "t5bpTxt";
-            this.t5bpTxt.Size = new System.Drawing.Size(63, 20);
+            this.t5bpTxt.Size = new System.Drawing.Size(61, 20);
             this.t5bpTxt.TabIndex = 5;
             // 
             // t5noPrtTxt
             // 
             this.t5noPrtTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.t5noPrtTxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.t5noPrtTxt.Location = new System.Drawing.Point(132, 34);
+            this.t5noPrtTxt.Location = new System.Drawing.Point(151, 34);
             this.t5noPrtTxt.Name = "t5noPrtTxt";
             this.t5noPrtTxt.Size = new System.Drawing.Size(93, 20);
             this.t5noPrtTxt.TabIndex = 2;
             // 
             // t5strt
             // 
-            this.t5strt.Location = new System.Drawing.Point(132, 64);
+            this.t5strt.Location = new System.Drawing.Point(151, 64);
             this.t5strt.Name = "t5strt";
             this.t5strt.Size = new System.Drawing.Size(93, 23);
             this.t5strt.TabIndex = 3;
@@ -1719,7 +1732,7 @@
             // t5stop
             // 
             this.t5stop.Enabled = false;
-            this.t5stop.Location = new System.Drawing.Point(309, 64);
+            this.t5stop.Location = new System.Drawing.Point(335, 64);
             this.t5stop.Name = "t5stop";
             this.t5stop.Size = new System.Drawing.Size(59, 23);
             this.t5stop.TabIndex = 6;
@@ -1734,9 +1747,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox9.Location = new System.Drawing.Point(69, 34);
+            this.comboBox9.Location = new System.Drawing.Point(79, 34);
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(55, 21);
+            this.comboBox9.Size = new System.Drawing.Size(64, 21);
             this.comboBox9.TabIndex = 9;
             // 
             // comboBox10
@@ -1749,7 +1762,7 @@
             "Part3"});
             this.comboBox10.Location = new System.Drawing.Point(5, 34);
             this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(56, 21);
+            this.comboBox10.Size = new System.Drawing.Size(66, 21);
             this.comboBox10.TabIndex = 10;
             // 
             // tabPage6
@@ -1769,9 +1782,9 @@
             this.twoPartTbl.ColumnCount = 5;
             this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.09589F));
             this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.90411F));
-            this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
-            this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
+            this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
             this.twoPartTbl.Controls.Add(this.label14, 0, 1);
             this.twoPartTbl.Controls.Add(this.label21, 1, 0);
             this.twoPartTbl.Controls.Add(this.label22, 2, 0);
@@ -1807,7 +1820,7 @@
             this.label14.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label14.Location = new System.Drawing.Point(5, 24);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(32, 28);
+            this.label14.Size = new System.Drawing.Size(38, 16);
             this.label14.TabIndex = 7;
             this.label14.Text = "Part 1";
             // 
@@ -1816,9 +1829,9 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label21.Location = new System.Drawing.Point(47, 2);
+            this.label21.Location = new System.Drawing.Point(55, 2);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(37, 20);
+            this.label21.Size = new System.Drawing.Size(61, 16);
             this.label21.TabIndex = 5;
             this.label21.Text = "Part Name";
             // 
@@ -1827,7 +1840,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label22.Location = new System.Drawing.Point(107, 2);
+            this.label22.Location = new System.Drawing.Point(126, 2);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(60, 16);
             this.label22.TabIndex = 3;
@@ -1849,7 +1862,7 @@
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label41.Location = new System.Drawing.Point(193, 2);
+            this.label41.Location = new System.Drawing.Point(215, 2);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(67, 16);
             this.label41.TabIndex = 3;
@@ -1862,7 +1875,7 @@
             this.label13.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label13.Location = new System.Drawing.Point(5, 54);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(32, 29);
+            this.label13.Size = new System.Drawing.Size(38, 16);
             this.label13.TabIndex = 8;
             this.label13.Text = "Part 2";
             // 
@@ -1871,7 +1884,7 @@
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label42.Location = new System.Drawing.Point(271, 2);
+            this.label42.Location = new System.Drawing.Point(292, 2);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(59, 16);
             this.label42.TabIndex = 3;
@@ -1880,7 +1893,7 @@
             // t6gp1Txt
             // 
             this.t6gp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6gp1Txt.Location = new System.Drawing.Point(193, 27);
+            this.t6gp1Txt.Location = new System.Drawing.Point(215, 27);
             this.t6gp1Txt.Name = "t6gp1Txt";
             this.t6gp1Txt.Size = new System.Drawing.Size(68, 20);
             this.t6gp1Txt.TabIndex = 5;
@@ -1888,15 +1901,15 @@
             // t6bp1Txt
             // 
             this.t6bp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6bp1Txt.Location = new System.Drawing.Point(271, 27);
+            this.t6bp1Txt.Location = new System.Drawing.Point(292, 27);
             this.t6bp1Txt.Name = "t6bp1Txt";
-            this.t6bp1Txt.Size = new System.Drawing.Size(61, 20);
+            this.t6bp1Txt.Size = new System.Drawing.Size(68, 20);
             this.t6bp1Txt.TabIndex = 6;
             // 
             // t6gp2Txt
             // 
             this.t6gp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6gp2Txt.Location = new System.Drawing.Point(193, 57);
+            this.t6gp2Txt.Location = new System.Drawing.Point(215, 57);
             this.t6gp2Txt.Name = "t6gp2Txt";
             this.t6gp2Txt.Size = new System.Drawing.Size(68, 20);
             this.t6gp2Txt.TabIndex = 7;
@@ -1904,14 +1917,14 @@
             // t6bp2Txt
             // 
             this.t6bp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6bp2Txt.Location = new System.Drawing.Point(271, 57);
+            this.t6bp2Txt.Location = new System.Drawing.Point(292, 57);
             this.t6bp2Txt.Name = "t6bp2Txt";
-            this.t6bp2Txt.Size = new System.Drawing.Size(61, 20);
+            this.t6bp2Txt.Size = new System.Drawing.Size(68, 20);
             this.t6bp2Txt.TabIndex = 8;
             // 
             // t6strt
             // 
-            this.t6strt.Location = new System.Drawing.Point(107, 88);
+            this.t6strt.Location = new System.Drawing.Point(126, 88);
             this.t6strt.Name = "t6strt";
             this.t6strt.Size = new System.Drawing.Size(67, 23);
             this.t6strt.TabIndex = 4;
@@ -1921,7 +1934,7 @@
             // t6stop
             // 
             this.t6stop.Enabled = false;
-            this.t6stop.Location = new System.Drawing.Point(271, 88);
+            this.t6stop.Location = new System.Drawing.Point(292, 88);
             this.t6stop.Name = "t6stop";
             this.t6stop.Size = new System.Drawing.Size(61, 23);
             this.t6stop.TabIndex = 9;
@@ -1936,9 +1949,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox5.Location = new System.Drawing.Point(47, 27);
+            this.comboBox5.Location = new System.Drawing.Point(55, 27);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(52, 21);
+            this.comboBox5.Size = new System.Drawing.Size(63, 21);
             this.comboBox5.TabIndex = 10;
             // 
             // comboBox6
@@ -1949,9 +1962,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox6.Location = new System.Drawing.Point(47, 57);
+            this.comboBox6.Location = new System.Drawing.Point(55, 57);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(52, 21);
+            this.comboBox6.Size = new System.Drawing.Size(63, 21);
             this.comboBox6.TabIndex = 11;
             // 
             // comboBox7
@@ -1962,7 +1975,7 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox7.Location = new System.Drawing.Point(107, 27);
+            this.comboBox7.Location = new System.Drawing.Point(126, 27);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(78, 21);
             this.comboBox7.TabIndex = 12;
@@ -1975,7 +1988,7 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox8.Location = new System.Drawing.Point(107, 57);
+            this.comboBox8.Location = new System.Drawing.Point(126, 57);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(78, 21);
             this.comboBox8.TabIndex = 13;
@@ -1997,9 +2010,9 @@
             this.twoPathTbl.ColumnCount = 5;
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.02898F));
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.97102F));
-            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
+            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96F));
+            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.twoPathTbl.Controls.Add(this.comboBox4, 2, 2);
             this.twoPathTbl.Controls.Add(this.comboBox3, 1, 2);
             this.twoPathTbl.Controls.Add(this.comboBox2, 2, 1);
@@ -2025,7 +2038,7 @@
             this.twoPathTbl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.twoPathTbl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.twoPathTbl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.twoPathTbl.Size = new System.Drawing.Size(347, 115);
+            this.twoPathTbl.Size = new System.Drawing.Size(407, 115);
             this.twoPathTbl.TabIndex = 22;
             // 
             // comboBox4
@@ -2036,9 +2049,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox4.Location = new System.Drawing.Point(100, 55);
+            this.comboBox4.Location = new System.Drawing.Point(145, 55);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(68, 21);
+            this.comboBox4.Size = new System.Drawing.Size(99, 21);
             this.comboBox4.TabIndex = 15;
             // 
             // comboBox3
@@ -2049,9 +2062,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox3.Location = new System.Drawing.Point(45, 55);
+            this.comboBox3.Location = new System.Drawing.Point(64, 55);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(47, 21);
+            this.comboBox3.Size = new System.Drawing.Size(73, 21);
             this.comboBox3.TabIndex = 14;
             // 
             // comboBox2
@@ -2062,9 +2075,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox2.Location = new System.Drawing.Point(100, 29);
+            this.comboBox2.Location = new System.Drawing.Point(145, 29);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(68, 21);
+            this.comboBox2.Size = new System.Drawing.Size(99, 21);
             this.comboBox2.TabIndex = 13;
             // 
             // comboBox1
@@ -2075,9 +2088,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox1.Location = new System.Drawing.Point(45, 29);
+            this.comboBox1.Location = new System.Drawing.Point(64, 29);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(47, 21);
+            this.comboBox1.Size = new System.Drawing.Size(73, 21);
             this.comboBox1.TabIndex = 12;
             // 
             // label19
@@ -2087,7 +2100,7 @@
             this.label19.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label19.Location = new System.Drawing.Point(5, 26);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(32, 24);
+            this.label19.Size = new System.Drawing.Size(41, 16);
             this.label19.TabIndex = 7;
             this.label19.Text = "Path 1";
             // 
@@ -2096,9 +2109,9 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label15.Location = new System.Drawing.Point(45, 2);
+            this.label15.Location = new System.Drawing.Point(64, 2);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(37, 22);
+            this.label15.Size = new System.Drawing.Size(61, 16);
             this.label15.TabIndex = 11;
             this.label15.Text = "Part Name";
             // 
@@ -2107,7 +2120,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label16.Location = new System.Drawing.Point(100, 2);
+            this.label16.Location = new System.Drawing.Point(145, 2);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(60, 16);
             this.label16.TabIndex = 3;
@@ -2129,7 +2142,7 @@
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label43.Location = new System.Drawing.Point(176, 2);
+            this.label43.Location = new System.Drawing.Point(252, 2);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(67, 16);
             this.label43.TabIndex = 3;
@@ -2142,7 +2155,7 @@
             this.label20.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label20.Location = new System.Drawing.Point(5, 52);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(32, 28);
+            this.label20.Size = new System.Drawing.Size(41, 16);
             this.label20.TabIndex = 8;
             this.label20.Text = "Path 2";
             // 
@@ -2151,7 +2164,7 @@
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label44.Location = new System.Drawing.Point(251, 2);
+            this.label44.Location = new System.Drawing.Point(327, 2);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(59, 16);
             this.label44.TabIndex = 3;
@@ -2160,7 +2173,7 @@
             // t7gp2Txt
             // 
             this.t7gp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7gp2Txt.Location = new System.Drawing.Point(176, 55);
+            this.t7gp2Txt.Location = new System.Drawing.Point(252, 55);
             this.t7gp2Txt.Name = "t7gp2Txt";
             this.t7gp2Txt.Size = new System.Drawing.Size(67, 20);
             this.t7gp2Txt.TabIndex = 7;
@@ -2168,7 +2181,7 @@
             // t7gp1Txt
             // 
             this.t7gp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7gp1Txt.Location = new System.Drawing.Point(176, 29);
+            this.t7gp1Txt.Location = new System.Drawing.Point(252, 29);
             this.t7gp1Txt.Name = "t7gp1Txt";
             this.t7gp1Txt.Size = new System.Drawing.Size(67, 20);
             this.t7gp1Txt.TabIndex = 5;
@@ -2176,22 +2189,22 @@
             // t7bp1Txt
             // 
             this.t7bp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7bp1Txt.Location = new System.Drawing.Point(251, 29);
+            this.t7bp1Txt.Location = new System.Drawing.Point(327, 29);
             this.t7bp1Txt.Name = "t7bp1Txt";
-            this.t7bp1Txt.Size = new System.Drawing.Size(59, 20);
+            this.t7bp1Txt.Size = new System.Drawing.Size(69, 20);
             this.t7bp1Txt.TabIndex = 6;
             // 
             // t7bp2Txt
             // 
             this.t7bp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7bp2Txt.Location = new System.Drawing.Point(251, 55);
+            this.t7bp2Txt.Location = new System.Drawing.Point(327, 55);
             this.t7bp2Txt.Name = "t7bp2Txt";
-            this.t7bp2Txt.Size = new System.Drawing.Size(59, 20);
+            this.t7bp2Txt.Size = new System.Drawing.Size(69, 20);
             this.t7bp2Txt.TabIndex = 8;
             // 
             // t7strt
             // 
-            this.t7strt.Location = new System.Drawing.Point(100, 85);
+            this.t7strt.Location = new System.Drawing.Point(145, 85);
             this.t7strt.Name = "t7strt";
             this.t7strt.Size = new System.Drawing.Size(62, 25);
             this.t7strt.TabIndex = 4;
@@ -2201,7 +2214,7 @@
             // t7stop
             // 
             this.t7stop.Enabled = false;
-            this.t7stop.Location = new System.Drawing.Point(251, 85);
+            this.t7stop.Location = new System.Drawing.Point(327, 85);
             this.t7stop.Name = "t7stop";
             this.t7stop.Size = new System.Drawing.Size(59, 25);
             this.t7stop.TabIndex = 9;
@@ -2228,14 +2241,15 @@
             this.logInPnl.ResumeLayout(false);
             this.logInPnl.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nrmlPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.setPixBox)).EndInit();
             this.stackPanel1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -2390,7 +2404,6 @@
         private System.Windows.Forms.Button singFixtBtn;
         private System.Windows.Forms.Button multProgBtn;
         private System.Windows.Forms.Button singProgBtn;
-        private System.Windows.Forms.PictureBox pictureBox1;
         internal System.Windows.Forms.Label sockStatLbl;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
@@ -2401,7 +2414,6 @@
         private System.Windows.Forms.Button logoutBtn;
         private System.Windows.Forms.Button settingBtn;
         private System.Windows.Forms.Panel panel3;
-        internal System.Windows.Forms.Label headerLbl;
         private System.Windows.Forms.ComboBox comboBox17;
         private System.Windows.Forms.ComboBox comboBox18;
         private System.Windows.Forms.ComboBox comboBox19;
@@ -2431,6 +2443,9 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.CheckBox isSetup;
+        private System.Windows.Forms.PictureBox setPixBox;
+        private System.Windows.Forms.PictureBox opPicBox;
+        private System.Windows.Forms.PictureBox nrmlPicBox;
     }
 }
 
