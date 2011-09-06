@@ -222,7 +222,7 @@
   <data name="setPixBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAq0AAAA+CAIAAACOU7U4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAA8OSURBVHhe7Z0/y1zHFYf1EdK5TuNCZXBjV4GUbuJvkBQy
+        YQUAAAAJcEhZcwAADr4AAA6+AepCscAAAA8OSURBVHhe7Z0/y1zHFYf1EdK5TuNCZXBjV4GUbuJvkBQy
         uDHkA4RUblI4atPFnRpDQCACBgUSEnAKB2IICgIHjCEkxpESm1iWZCk/vfPeu3Nnzjkz9+6f9+7uY7aQ
         97135pzn7u75zZkzM9eeP/2AFwQgAAEIQAAC50ng2nm6jdcQgAAEIAABCIgAOoB0CAQgAAEIQOB8CRxa
         B3z7zz/Ur+ePHyLKIAABCEAAAhA4PIFD64BHt16qX1IGh/ecHiEAAQhAAAIQQAecby6ITz8EIAABCEAA
@@ -293,7 +293,7 @@
   <data name="opPicBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAq0AAAA+CAIAAACOU7U4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAA4oSURBVHhe7Z1BqyVHFcffR3Dn2lnkAwwhqywEv4AuAlk6
+        YQUAAAAJcEhZcwAADr4AAA6+AepCscAAAA4oSURBVHhe7Z1BqyVHFcffR3Dn2lnkAwwhqywEv4AuAlk6
         60DA/YjZxo07wcWAy2wyCIHgJhEUhbiIjAFBlAghIBp01AlmMjMZ/b9X7/atrjrnVN2+r+/te/s33MW8
         97qqTv26+55/nTpVdfHnRz/mAwEIQAACEIDAOglcrLPb9BoCEIAABCAAARFABxAOgQAEIAABCKyXwKF1
         wFd/+3X9+d+TfyHKIAABCEAAAhA4PIFD64DHb329/kgZHL7ntAgBCEAAAhCAADpgvbEgnn4IQAACEIAA
@@ -360,7 +360,7 @@
   <data name="nrmlPicBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAq0AAAA+CAIAAACOU7U4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAA8RSURBVHhe7Z3BqhzHFYb1CNl5nY0fIHh1V4G8QPwGyUZL
+        YQUAAAAJcEhZcwAADr4AAA6+AepCscAAAA8RSURBVHhe7Z3BqhzHFYb1CNl5nY0fIHh1V4G8QPwGyUZL
         Qx4gZJ9NtM0uS20MAcMlKxkSYnAWDsQQCAIHjCEkJpESm1i+V9b1L9edmuo6/zlV09PT09P9Cy2kme6q
         c77unvPXqdNVD+70RwREQAREQAREYKsEHmzVcfktAiIgAiIgAiJwJx2gm0AEREAEREAEtktgbh3wzT//
         aP/e3Tzf7hWQ5yIgAiIgAiJwPgJz64AXj9+wf6EMzkdAPYuACIiACIjAdglIB2z32stzERABERABEZAO

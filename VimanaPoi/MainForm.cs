@@ -20,6 +20,7 @@ namespace VimanaPoi
         {
             InitializeComponent();
             sockStatLbl.Text = "Socket Open on port " + port;
+            this.curEmpIdTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.curEmpIdTxt_GotFocus);
             this.StartPosition = FormStartPosition.CenterScreen;
             MaximizeBox = false;
             tblList.Add(1, singProgTbl);
@@ -244,7 +245,7 @@ namespace VimanaPoi
         {
             Environment.Exit(0);
         }
-       
 
+       
     }
 }
