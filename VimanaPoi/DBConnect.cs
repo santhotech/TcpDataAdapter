@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using MySql.Data.MySqlClient;
-
+using System.Collections;
 
 namespace VimanaPoi
 {
@@ -70,5 +70,42 @@ namespace VimanaPoi
                 return false;
             }
         }
+
+        public ArrayList GetMachineNames()
+        {
+            string query = "SELECT DISTINCT PREF_MACH_SER_NO FROM parts";
+
+            //Create a list to store the result
+            ArrayList machines = new ArrayList();
+
+            //Open connection
+            if (this.OpenConnection() == true)
+            {
+                //Create Command
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                //Create a data reader and Execute the command
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                //Read the data and store them in the list
+                while (dataReader.Read())
+                {
+                    machines.Add(dataReader["PREF_MACH_SER_NO"]);                    
+                }
+
+                //close Data Reader
+                dataReader.Close();
+
+                //close Connection
+                this.CloseConnection();
+
+                //return list to be displayed
+                return machines;
+            }
+            else
+            {
+                return machines;
+            }
+        }
+
     }
 }
