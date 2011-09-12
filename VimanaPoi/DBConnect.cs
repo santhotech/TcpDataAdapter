@@ -107,5 +107,23 @@ namespace VimanaPoi
             }
         }
 
+        public ArrayList GetPartNames(string deviceName)
+        {
+            string query = "SELECT DISTINCT PART_NO FROM parts WHERE PREF_MACH_SER_NO = '" + deviceName + "' ORDER BY PRIORITY ASC LIMIT 0,5";            
+            ArrayList part_numbers = new ArrayList();            
+            if (this.OpenConnection() == true)
+            {                
+                MySqlCommand cmd = new MySqlCommand(query, connection);                
+                MySqlDataReader dataReader = cmd.ExecuteReader();                
+                while (dataReader.Read())
+                {
+                    part_numbers.Add(dataReader["PREF_MACH_SER_NO"]);
+                }
+                dataReader.Close();
+                this.CloseConnection();
+            }
+            return part_numbers;
+        }
+
     }
 }
