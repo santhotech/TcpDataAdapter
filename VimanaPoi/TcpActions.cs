@@ -69,5 +69,44 @@ namespace VimanaPoi
             }
         }
 
+        public void CheckClientActive(object ob)
+        {
+            TcpClient tcpClient = (TcpClient)ob;
+            NetworkStream clientStream = tcpClient.GetStream();
+            while (true)
+            {
+                try
+                {
+                    byte[] message = new byte[4096];
+                    int bytesRead;
+                    bytesRead = 0;
+                    try
+                    {
+                        //blocks until a client sends a message   
+                        bytesRead = clientStream.Read(message, 0, 4096);
+                    }
+                    catch
+                    {
+                        //a socket error has occured
+                        //break;
+
+                    }
+                    if (bytesRead == 0)
+                    {
+                        //the client has disconnected from the server                        
+                        --count;                        
+                        clients.Remove(ob);
+                        break;
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                }
+                Thread.Sleep(2000);
+            }
+        }
+
     }
 }
