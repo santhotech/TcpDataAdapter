@@ -6,11 +6,12 @@ using System.Drawing;
 
 using System.Text;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace VimanaPoi
 {
     public partial class SettingsDialog : Form
-    {
+    {        
         public SettingsDialog()
         {
             InitializeComponent();
@@ -22,18 +23,20 @@ namespace VimanaPoi
             checkBox5.Checked = Properties.Settings.Default.multpart;
             checkBox6.Checked = Properties.Settings.Default.twopart;
             checkBox7.Checked = Properties.Settings.Default.twopath;
+            dbuname.Text = Properties.Settings.Default.username;
+            dbpwd.Text = Properties.Settings.Default.password;
+            dbname.Text = Properties.Settings.Default.dbname;
+            dbserver.Text = Properties.Settings.Default.server;
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.ShowInTaskbar = false;
+            this.ShowInTaskbar = false;            
+            loadMachineNames();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void loadMachineNames()
         {
-           
-        }
-
-        private void settingsDialog_Load(object sender, EventArgs e)
-        {
-
+            DBConnect dbc = new DBConnect();   
+            ArrayList al = dbc.GetMachineNames();
+            machineNames.Items.AddRange(al.ToArray());
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -47,7 +50,31 @@ namespace VimanaPoi
             Properties.Settings.Default.twopart = checkBox6.Checked;
             Properties.Settings.Default.twopath = checkBox7.Checked;
             Properties.Settings.Default.Save();
-            this.Close();
+            MessageBox.Show("Settings Saved!");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.username = dbuname.Text;
+            Properties.Settings.Default.password = dbpwd.Text;
+            Properties.Settings.Default.dbname = dbname.Text;
+            Properties.Settings.Default.server = dbserver.Text;
+            Properties.Settings.Default.Save();
+            DBConnect dbc1 = new DBConnect();
+            if (dbc1.OpenConnection())
+            {
+                MessageBox.Show("DB Connection Successful! Settings Saved");
+                dbc1.CloseConnection();
+            }
+            else
+            {
+                MessageBox.Show("DB Connection Failed!");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }        
     }
 }

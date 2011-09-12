@@ -33,7 +33,7 @@ namespace VimanaPoi
             connection = new MySqlConnection(connectionString);
         }
 
-        private bool OpenConnection()
+        public bool OpenConnection()
         {
             try
             {
@@ -57,7 +57,7 @@ namespace VimanaPoi
         }
 
         //Close connection
-        private bool CloseConnection()
+        public bool CloseConnection()
         {
             try
             {
