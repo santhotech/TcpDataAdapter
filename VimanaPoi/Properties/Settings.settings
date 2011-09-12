@@ -38,5 +38,8 @@
     <Setting Name="dbname" Type="System.String" Scope="User">
       <Value Profile="(Default)">partops</Value>
     </Setting>
+    <Setting Name="machinename" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

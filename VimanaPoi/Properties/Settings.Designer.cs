@@ -166,5 +166,17 @@ namespace VimanaPoi.Properties {
                 this["dbname"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string machinename {
+            get {
+                return ((string)(this["machinename"]));
+            }
+            set {
+                this["machinename"] = value;
+            }
+        }
     }
 }

@@ -73,7 +73,7 @@ namespace VimanaPoi
 
         public ArrayList GetMachineNames()
         {
-            string query = "SELECT DISTINCT PREF_MACH_SER_NO FROM parts";
+            string query = "SELECT DISTINCT PREF_MACH_SER_NO FROM parts ORDER BY PREF_MACH_SER_NO ASC";
 
             //Create a list to store the result
             ArrayList machines = new ArrayList();

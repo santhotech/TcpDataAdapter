@@ -37,6 +37,7 @@ namespace VimanaPoi
             DBConnect dbc = new DBConnect();   
             ArrayList al = dbc.GetMachineNames();
             machineNames.Items.AddRange(al.ToArray());
+            machineNames.Text = Properties.Settings.Default.machinename;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -49,6 +50,7 @@ namespace VimanaPoi
             Properties.Settings.Default.multpart = checkBox5.Checked;
             Properties.Settings.Default.twopart = checkBox6.Checked;
             Properties.Settings.Default.twopath = checkBox7.Checked;
+            Properties.Settings.Default.machinename = machineNames.Text;
             Properties.Settings.Default.Save();
             MessageBox.Show("Settings Saved!");
         }
