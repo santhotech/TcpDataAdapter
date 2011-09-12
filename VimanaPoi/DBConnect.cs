@@ -33,6 +33,42 @@ namespace VimanaPoi
             connection = new MySqlConnection(connectionString);
         }
 
+        private bool OpenConnection()
+        {
+            try
+            {
+                connection.Open();
+                return true;
+            }
+            catch (MySqlException ex)
+            {                
+                switch (ex.Number)
+                {
+                    case 0:
+                        Console.Write("Cannot connect to server.  Contact administrator");
+                        break;
 
+                    case 1045:
+                        Console.Write("Invalid username/password, please try again");
+                        break;
+                }
+                return false;
+            }
+        }
+
+        //Close connection
+        private bool CloseConnection()
+        {
+            try
+            {
+                connection.Close();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                Console.Write(ex.Message);
+                return false;
+            }
+        }
     }
 }
