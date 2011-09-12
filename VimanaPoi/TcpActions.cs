@@ -33,8 +33,7 @@ namespace VimanaPoi
                 //blocks until a client has connected to the server
                 TcpClient client = this.tcpListener.AcceptTcpClient();                
                 clients.Add(client);
-                count++;                
-                sndExistData(client);
+                count++;                                
                 Thread a = new Thread(new ParameterizedThreadStart(CheckClientActive));
                 a.Start(client);
             }
