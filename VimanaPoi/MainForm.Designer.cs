@@ -76,10 +76,6 @@
             this.t2part4 = new System.Windows.Forms.ComboBox();
             this.t2opr4 = new System.Windows.Forms.ComboBox();
             this.t2opr3 = new System.Windows.Forms.ComboBox();
-            this.t2prog1 = new System.Windows.Forms.ComboBox();
-            this.t2prog2 = new System.Windows.Forms.ComboBox();
-            this.t2prog3 = new System.Windows.Forms.ComboBox();
-            this.t2prog4 = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label47 = new System.Windows.Forms.Label();
@@ -208,6 +204,10 @@
             this.opPicBox = new System.Windows.Forms.PictureBox();
             this.setPixBox = new System.Windows.Forms.PictureBox();
             this.nrmlPicBox = new System.Windows.Forms.PictureBox();
+            this.t2prog1 = new System.Windows.Forms.TextBox();
+            this.t2prog2 = new System.Windows.Forms.TextBox();
+            this.t2prog4 = new System.Windows.Forms.TextBox();
+            this.t2prog3 = new System.Windows.Forms.TextBox();
             this.controlPnl.SuspendLayout();
             this.stackPanel1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -824,62 +824,6 @@
             this.t2opr3.Name = "t2opr3";
             this.t2opr3.Size = new System.Drawing.Size(92, 21);
             this.t2opr3.TabIndex = 1003;
-            // 
-            // t2prog1
-            // 
-            this.t2prog1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t2prog1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.t2prog1.FormattingEnabled = true;
-            this.t2prog1.Items.AddRange(new object[] {
-            "Part1",
-            "Part2",
-            "Part3"});
-            this.t2prog1.Location = new System.Drawing.Point(27, 31);
-            this.t2prog1.Name = "t2prog1";
-            this.t2prog1.Size = new System.Drawing.Size(88, 21);
-            this.t2prog1.TabIndex = 1004;
-            // 
-            // t2prog2
-            // 
-            this.t2prog2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t2prog2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.t2prog2.FormattingEnabled = true;
-            this.t2prog2.Items.AddRange(new object[] {
-            "Part1",
-            "Part2",
-            "Part3"});
-            this.t2prog2.Location = new System.Drawing.Point(27, 57);
-            this.t2prog2.Name = "t2prog2";
-            this.t2prog2.Size = new System.Drawing.Size(88, 21);
-            this.t2prog2.TabIndex = 1004;
-            // 
-            // t2prog3
-            // 
-            this.t2prog3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t2prog3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.t2prog3.FormattingEnabled = true;
-            this.t2prog3.Items.AddRange(new object[] {
-            "Part1",
-            "Part2",
-            "Part3"});
-            this.t2prog3.Location = new System.Drawing.Point(27, 83);
-            this.t2prog3.Name = "t2prog3";
-            this.t2prog3.Size = new System.Drawing.Size(88, 21);
-            this.t2prog3.TabIndex = 1004;
-            // 
-            // t2prog4
-            // 
-            this.t2prog4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t2prog4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.t2prog4.FormattingEnabled = true;
-            this.t2prog4.Items.AddRange(new object[] {
-            "Part1",
-            "Part2",
-            "Part3"});
-            this.t2prog4.Location = new System.Drawing.Point(27, 109);
-            this.t2prog4.Name = "t2prog4";
-            this.t2prog4.Size = new System.Drawing.Size(88, 21);
-            this.t2prog4.TabIndex = 1004;
             // 
             // tabPage3
             // 
@@ -2405,6 +2349,38 @@
             this.nrmlPicBox.TabIndex = 0;
             this.nrmlPicBox.TabStop = false;
             // 
+            // t2prog1
+            // 
+            this.t2prog1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2prog1.Location = new System.Drawing.Point(27, 31);
+            this.t2prog1.Name = "t2prog1";
+            this.t2prog1.Size = new System.Drawing.Size(88, 20);
+            this.t2prog1.TabIndex = 1008;
+            // 
+            // t2prog2
+            // 
+            this.t2prog2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2prog2.Location = new System.Drawing.Point(27, 57);
+            this.t2prog2.Name = "t2prog2";
+            this.t2prog2.Size = new System.Drawing.Size(88, 20);
+            this.t2prog2.TabIndex = 1009;
+            // 
+            // t2prog4
+            // 
+            this.t2prog4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2prog4.Location = new System.Drawing.Point(27, 109);
+            this.t2prog4.Name = "t2prog4";
+            this.t2prog4.Size = new System.Drawing.Size(88, 20);
+            this.t2prog4.TabIndex = 1007;
+            // 
+            // t2prog3
+            // 
+            this.t2prog3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2prog3.Location = new System.Drawing.Point(27, 83);
+            this.t2prog3.Name = "t2prog3";
+            this.t2prog3.Size = new System.Drawing.Size(88, 20);
+            this.t2prog3.TabIndex = 1010;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2614,10 +2590,6 @@
         private System.Windows.Forms.ComboBox t2part4;
         private System.Windows.Forms.ComboBox t2opr4;
         private System.Windows.Forms.ComboBox t2opr3;
-        private System.Windows.Forms.ComboBox t2prog1;
-        private System.Windows.Forms.ComboBox t2prog2;
-        private System.Windows.Forms.ComboBox t2prog3;
-        private System.Windows.Forms.ComboBox t2prog4;
         private System.Windows.Forms.ComboBox t3opr1;
         private System.Windows.Forms.ComboBox t3part1;
         private System.Windows.Forms.ComboBox t4part1;
@@ -2653,6 +2625,10 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label51;
         internal System.Windows.Forms.TextBox t1bpTxt;
+        internal System.Windows.Forms.TextBox t2prog1;
+        internal System.Windows.Forms.TextBox t2prog2;
+        internal System.Windows.Forms.TextBox t2prog3;
+        internal System.Windows.Forms.TextBox t2prog4;
     }
 }
 

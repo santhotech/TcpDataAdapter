@@ -35,9 +35,12 @@ namespace VimanaPoi
         private void MainfestionComboBoxes()
         {
             ComboBox[] parts = new ComboBox[] {
-                t1part1,t1opr1,
+                t1part1,t2part1,t2part2,t2part3,t2part4,t3part1,t4part1,t4part2,t5part1,t6part1,t6part2,t7part1,t7part2
             };
-
+            ComboBox[] opr = new ComboBox[] {
+                t1opr1,t2opr1,t2opr2,t2opr3,t2opr4,t3opr1,t4opr1,t4opr2,t5opr1,t6opr1,t6opr2,t7opr1,t7opr2
+            };
+            ControlManifest cm = new ControlManifest(parts, opr);
         }
 
         private void disableAllMenu()
