@@ -68,7 +68,8 @@ namespace VimanaPoi
                 //logBtn.Enabled = false;
                 loadDefaults();
                 greetLbl.Visible = true;
-                string cmd = getCurrTime() + "|EMP|" + curEmpIdTxt.Text + "\n";                
+                string cmd = getCurrTime() + "|EMP|" + curEmpIdTxt.Text + "\n";
+                MainfestionComboBoxes();
             }
             else
             {

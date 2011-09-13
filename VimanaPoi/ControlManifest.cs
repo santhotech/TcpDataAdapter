@@ -20,10 +20,17 @@ namespace VimanaPoi
         {
             string macName = Properties.Settings.Default.machinename;
             DBConnect dbc = new DBConnect();
-            ArrayList parts = dbc.GetPartNames(macName);
+            ArrayList partNames = dbc.GetPartNames(macName);
+            ArrayList OperNames = dbc.GetOperationNames(macName);
             foreach (ComboBox cb in parts)
             {
-                cb.Items.AddRange(parts.ToArray());
+                cb.Items.Clear();
+                cb.Items.AddRange(partNames.ToArray());
+            }
+            foreach (ComboBox cb in opr)
+            {
+                cb.Items.Clear();
+                cb.Items.AddRange(OperNames.ToArray());
             }
         }
     }

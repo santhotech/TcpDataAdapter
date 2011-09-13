@@ -117,12 +117,29 @@ namespace VimanaPoi
                 MySqlDataReader dataReader = cmd.ExecuteReader();                
                 while (dataReader.Read())
                 {
-                    part_numbers.Add(dataReader["PREF_MACH_SER_NO"]);
+                    part_numbers.Add(dataReader["PART_NO"]);
                 }
                 dataReader.Close();
                 this.CloseConnection();
             }
             return part_numbers;
+        }
+        public ArrayList GetOperationNames(string deviceName)
+        {
+            string query = "SELECT DISTINCT PART_OPER_NO FROM parts WHERE PREF_MACH_SER_NO = '" + deviceName + "' ORDER BY PART_OPER_NO";
+            ArrayList oper_numbers = new ArrayList();
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    oper_numbers.Add(dataReader["PART_OPER_NO"]);
+                }
+                dataReader.Close();
+                this.CloseConnection();
+            }
+            return oper_numbers;
         }
     }
 }
