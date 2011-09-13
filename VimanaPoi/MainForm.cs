@@ -31,6 +31,15 @@ namespace VimanaPoi
             empIdIndLbl.Text = "No Employee Logged In";
             greetLbl.Visible = false;
         }
+
+        private void MainfestionComboBoxes()
+        {
+            ComboBox[] parts = new ComboBox[] {
+                t1part1,t1opr1,
+            };
+
+        }
+
         private void disableAllMenu()
         {
             singProgBtn0.Enabled = false;

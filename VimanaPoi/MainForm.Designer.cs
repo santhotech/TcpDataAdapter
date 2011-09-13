@@ -40,8 +40,8 @@
             this.oprNameLbl = new System.Windows.Forms.Label();
             this.t1gpTxt = new System.Windows.Forms.TextBox();
             this.t1strt = new System.Windows.Forms.Button();
-            this.t1prtNameTxt = new System.Windows.Forms.ComboBox();
-            this.t1oprNameTxt = new System.Windows.Forms.ComboBox();
+            this.t1part1 = new System.Windows.Forms.ComboBox();
+            this.t1opr1 = new System.Windows.Forms.ComboBox();
             this.t1bpTxt = new System.Windows.Forms.TextBox();
             this.someLbl = new System.Windows.Forms.Panel();
             this.cntPnlLbl = new System.Windows.Forms.Label();
@@ -68,18 +68,18 @@
             this.t2bp4 = new System.Windows.Forms.TextBox();
             this.t2strt = new System.Windows.Forms.Button();
             this.t2stop = new System.Windows.Forms.Button();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
-            this.comboBox24 = new System.Windows.Forms.ComboBox();
-            this.comboBox25 = new System.Windows.Forms.ComboBox();
-            this.comboBox26 = new System.Windows.Forms.ComboBox();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.t2part2 = new System.Windows.Forms.ComboBox();
+            this.t2part1 = new System.Windows.Forms.ComboBox();
+            this.t2opr1 = new System.Windows.Forms.ComboBox();
+            this.t2opr2 = new System.Windows.Forms.ComboBox();
+            this.t2part3 = new System.Windows.Forms.ComboBox();
+            this.t2part4 = new System.Windows.Forms.ComboBox();
+            this.t2opr4 = new System.Windows.Forms.ComboBox();
+            this.t2opr3 = new System.Windows.Forms.ComboBox();
+            this.t2prog1 = new System.Windows.Forms.ComboBox();
+            this.t2prog2 = new System.Windows.Forms.ComboBox();
+            this.t2prog3 = new System.Windows.Forms.ComboBox();
+            this.t2prog4 = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label47 = new System.Windows.Forms.Label();
@@ -94,8 +94,8 @@
             this.t3strt = new System.Windows.Forms.Button();
             this.t3stop = new System.Windows.Forms.Button();
             this.t3fixPosnTxt = new System.Windows.Forms.TextBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.t3opr1 = new System.Windows.Forms.ComboBox();
+            this.t3part1 = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label48 = new System.Windows.Forms.Label();
@@ -118,10 +118,10 @@
             this.t4stop1 = new System.Windows.Forms.Button();
             this.t4strt2 = new System.Windows.Forms.Button();
             this.t4stop2 = new System.Windows.Forms.Button();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.t4part1 = new System.Windows.Forms.ComboBox();
+            this.t4part2 = new System.Windows.Forms.ComboBox();
+            this.t4opr1 = new System.Windows.Forms.ComboBox();
+            this.t4opr2 = new System.Windows.Forms.ComboBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label49 = new System.Windows.Forms.Label();
@@ -136,8 +136,8 @@
             this.t5noPrtTxt = new System.Windows.Forms.TextBox();
             this.t5strt = new System.Windows.Forms.Button();
             this.t5stop = new System.Windows.Forms.Button();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.t5opr1 = new System.Windows.Forms.ComboBox();
+            this.t5part1 = new System.Windows.Forms.ComboBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label50 = new System.Windows.Forms.Label();
@@ -155,18 +155,18 @@
             this.t6bp2Txt = new System.Windows.Forms.TextBox();
             this.t6strt = new System.Windows.Forms.Button();
             this.t6stop = new System.Windows.Forms.Button();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.t6part1 = new System.Windows.Forms.ComboBox();
+            this.t6part2 = new System.Windows.Forms.ComboBox();
+            this.t6opr1 = new System.Windows.Forms.ComboBox();
+            this.t6opr2 = new System.Windows.Forms.ComboBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label51 = new System.Windows.Forms.Label();
             this.twoPathTbl = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.t7opr2 = new System.Windows.Forms.ComboBox();
+            this.t7part2 = new System.Windows.Forms.ComboBox();
+            this.t7opr1 = new System.Windows.Forms.ComboBox();
+            this.t7part1 = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -299,8 +299,8 @@
             this.singProgTbl.Controls.Add(this.oprNameLbl, 2, 0);
             this.singProgTbl.Controls.Add(this.t1gpTxt, 2, 1);
             this.singProgTbl.Controls.Add(this.t1strt, 1, 2);
-            this.singProgTbl.Controls.Add(this.t1prtNameTxt, 0, 1);
-            this.singProgTbl.Controls.Add(this.t1oprNameTxt, 1, 1);
+            this.singProgTbl.Controls.Add(this.t1part1, 0, 1);
+            this.singProgTbl.Controls.Add(this.t1opr1, 1, 1);
             this.singProgTbl.Controls.Add(this.t1bpTxt, 3, 1);
             this.singProgTbl.Location = new System.Drawing.Point(3, 30);
             this.singProgTbl.Name = "singProgTbl";
@@ -383,33 +383,33 @@
             this.t1strt.Text = "Start";
             this.t1strt.UseVisualStyleBackColor = true;
             // 
-            // t1prtNameTxt
+            // t1part1
             // 
-            this.t1prtNameTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t1prtNameTxt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.t1prtNameTxt.FormattingEnabled = true;
-            this.t1prtNameTxt.Items.AddRange(new object[] {
+            this.t1part1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t1part1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t1part1.FormattingEnabled = true;
+            this.t1part1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.t1prtNameTxt.Location = new System.Drawing.Point(5, 30);
-            this.t1prtNameTxt.Name = "t1prtNameTxt";
-            this.t1prtNameTxt.Size = new System.Drawing.Size(107, 21);
-            this.t1prtNameTxt.TabIndex = 8;
+            this.t1part1.Location = new System.Drawing.Point(5, 30);
+            this.t1part1.Name = "t1part1";
+            this.t1part1.Size = new System.Drawing.Size(107, 21);
+            this.t1part1.TabIndex = 8;
             // 
-            // t1oprNameTxt
+            // t1opr1
             // 
-            this.t1oprNameTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t1oprNameTxt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.t1oprNameTxt.FormattingEnabled = true;
-            this.t1oprNameTxt.Items.AddRange(new object[] {
+            this.t1opr1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t1opr1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t1opr1.FormattingEnabled = true;
+            this.t1opr1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.t1oprNameTxt.Location = new System.Drawing.Point(120, 30);
-            this.t1oprNameTxt.Name = "t1oprNameTxt";
-            this.t1oprNameTxt.Size = new System.Drawing.Size(114, 21);
-            this.t1oprNameTxt.TabIndex = 8;
+            this.t1opr1.Location = new System.Drawing.Point(120, 30);
+            this.t1opr1.Name = "t1opr1";
+            this.t1opr1.Size = new System.Drawing.Size(114, 21);
+            this.t1opr1.TabIndex = 8;
             // 
             // t1bpTxt
             // 
@@ -505,18 +505,18 @@
             this.multProgTbl.Controls.Add(this.t2bp4, 5, 4);
             this.multProgTbl.Controls.Add(this.t2strt, 3, 5);
             this.multProgTbl.Controls.Add(this.t2stop, 5, 5);
-            this.multProgTbl.Controls.Add(this.comboBox17, 2, 2);
-            this.multProgTbl.Controls.Add(this.comboBox18, 2, 1);
-            this.multProgTbl.Controls.Add(this.comboBox19, 3, 1);
-            this.multProgTbl.Controls.Add(this.comboBox20, 3, 2);
-            this.multProgTbl.Controls.Add(this.comboBox21, 2, 3);
-            this.multProgTbl.Controls.Add(this.comboBox22, 2, 4);
-            this.multProgTbl.Controls.Add(this.comboBox23, 3, 4);
-            this.multProgTbl.Controls.Add(this.comboBox24, 3, 3);
-            this.multProgTbl.Controls.Add(this.comboBox25, 1, 1);
-            this.multProgTbl.Controls.Add(this.comboBox26, 1, 2);
-            this.multProgTbl.Controls.Add(this.comboBox27, 1, 3);
-            this.multProgTbl.Controls.Add(this.comboBox28, 1, 4);
+            this.multProgTbl.Controls.Add(this.t2part2, 2, 2);
+            this.multProgTbl.Controls.Add(this.t2part1, 2, 1);
+            this.multProgTbl.Controls.Add(this.t2opr1, 3, 1);
+            this.multProgTbl.Controls.Add(this.t2opr2, 3, 2);
+            this.multProgTbl.Controls.Add(this.t2part3, 2, 3);
+            this.multProgTbl.Controls.Add(this.t2part4, 2, 4);
+            this.multProgTbl.Controls.Add(this.t2opr4, 3, 4);
+            this.multProgTbl.Controls.Add(this.t2opr3, 3, 3);
+            this.multProgTbl.Controls.Add(this.t2prog1, 1, 1);
+            this.multProgTbl.Controls.Add(this.t2prog2, 1, 2);
+            this.multProgTbl.Controls.Add(this.t2prog3, 1, 3);
+            this.multProgTbl.Controls.Add(this.t2prog4, 1, 4);
             this.multProgTbl.Location = new System.Drawing.Point(3, 30);
             this.multProgTbl.Name = "multProgTbl";
             this.multProgTbl.RowCount = 6;
@@ -713,173 +713,173 @@
             this.t2stop.Text = "Stop";
             this.t2stop.UseVisualStyleBackColor = true;
             // 
-            // comboBox17
+            // t2part2
             // 
-            this.comboBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Items.AddRange(new object[] {
+            this.t2part2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2part2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2part2.FormattingEnabled = true;
+            this.t2part2.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox17.Location = new System.Drawing.Point(123, 57);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(86, 21);
-            this.comboBox17.TabIndex = 1003;
+            this.t2part2.Location = new System.Drawing.Point(123, 57);
+            this.t2part2.Name = "t2part2";
+            this.t2part2.Size = new System.Drawing.Size(86, 21);
+            this.t2part2.TabIndex = 1003;
             // 
-            // comboBox18
+            // t2part1
             // 
-            this.comboBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Items.AddRange(new object[] {
+            this.t2part1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2part1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2part1.FormattingEnabled = true;
+            this.t2part1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox18.Location = new System.Drawing.Point(123, 31);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(86, 21);
-            this.comboBox18.TabIndex = 1004;
+            this.t2part1.Location = new System.Drawing.Point(123, 31);
+            this.t2part1.Name = "t2part1";
+            this.t2part1.Size = new System.Drawing.Size(86, 21);
+            this.t2part1.TabIndex = 1004;
             // 
-            // comboBox19
+            // t2opr1
             // 
-            this.comboBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Items.AddRange(new object[] {
+            this.t2opr1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2opr1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2opr1.FormattingEnabled = true;
+            this.t2opr1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox19.Location = new System.Drawing.Point(217, 31);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(92, 21);
-            this.comboBox19.TabIndex = 1005;
+            this.t2opr1.Location = new System.Drawing.Point(217, 31);
+            this.t2opr1.Name = "t2opr1";
+            this.t2opr1.Size = new System.Drawing.Size(92, 21);
+            this.t2opr1.TabIndex = 1005;
             // 
-            // comboBox20
+            // t2opr2
             // 
-            this.comboBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Items.AddRange(new object[] {
+            this.t2opr2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2opr2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2opr2.FormattingEnabled = true;
+            this.t2opr2.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox20.Location = new System.Drawing.Point(217, 57);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(92, 21);
-            this.comboBox20.TabIndex = 1006;
+            this.t2opr2.Location = new System.Drawing.Point(217, 57);
+            this.t2opr2.Name = "t2opr2";
+            this.t2opr2.Size = new System.Drawing.Size(92, 21);
+            this.t2opr2.TabIndex = 1006;
             // 
-            // comboBox21
+            // t2part3
             // 
-            this.comboBox21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Items.AddRange(new object[] {
+            this.t2part3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2part3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2part3.FormattingEnabled = true;
+            this.t2part3.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox21.Location = new System.Drawing.Point(123, 83);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(86, 21);
-            this.comboBox21.TabIndex = 1003;
+            this.t2part3.Location = new System.Drawing.Point(123, 83);
+            this.t2part3.Name = "t2part3";
+            this.t2part3.Size = new System.Drawing.Size(86, 21);
+            this.t2part3.TabIndex = 1003;
             // 
-            // comboBox22
+            // t2part4
             // 
-            this.comboBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Items.AddRange(new object[] {
+            this.t2part4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2part4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2part4.FormattingEnabled = true;
+            this.t2part4.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox22.Location = new System.Drawing.Point(123, 109);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(86, 21);
-            this.comboBox22.TabIndex = 1003;
+            this.t2part4.Location = new System.Drawing.Point(123, 109);
+            this.t2part4.Name = "t2part4";
+            this.t2part4.Size = new System.Drawing.Size(86, 21);
+            this.t2part4.TabIndex = 1003;
             // 
-            // comboBox23
+            // t2opr4
             // 
-            this.comboBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Items.AddRange(new object[] {
+            this.t2opr4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2opr4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2opr4.FormattingEnabled = true;
+            this.t2opr4.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox23.Location = new System.Drawing.Point(217, 109);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(92, 21);
-            this.comboBox23.TabIndex = 1003;
+            this.t2opr4.Location = new System.Drawing.Point(217, 109);
+            this.t2opr4.Name = "t2opr4";
+            this.t2opr4.Size = new System.Drawing.Size(92, 21);
+            this.t2opr4.TabIndex = 1003;
             // 
-            // comboBox24
+            // t2opr3
             // 
-            this.comboBox24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Items.AddRange(new object[] {
+            this.t2opr3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2opr3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2opr3.FormattingEnabled = true;
+            this.t2opr3.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox24.Location = new System.Drawing.Point(217, 83);
-            this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(92, 21);
-            this.comboBox24.TabIndex = 1003;
+            this.t2opr3.Location = new System.Drawing.Point(217, 83);
+            this.t2opr3.Name = "t2opr3";
+            this.t2opr3.Size = new System.Drawing.Size(92, 21);
+            this.t2opr3.TabIndex = 1003;
             // 
-            // comboBox25
+            // t2prog1
             // 
-            this.comboBox25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.Items.AddRange(new object[] {
+            this.t2prog1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2prog1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2prog1.FormattingEnabled = true;
+            this.t2prog1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox25.Location = new System.Drawing.Point(27, 31);
-            this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(88, 21);
-            this.comboBox25.TabIndex = 1004;
+            this.t2prog1.Location = new System.Drawing.Point(27, 31);
+            this.t2prog1.Name = "t2prog1";
+            this.t2prog1.Size = new System.Drawing.Size(88, 21);
+            this.t2prog1.TabIndex = 1004;
             // 
-            // comboBox26
+            // t2prog2
             // 
-            this.comboBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Items.AddRange(new object[] {
+            this.t2prog2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2prog2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2prog2.FormattingEnabled = true;
+            this.t2prog2.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox26.Location = new System.Drawing.Point(27, 57);
-            this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(88, 21);
-            this.comboBox26.TabIndex = 1004;
+            this.t2prog2.Location = new System.Drawing.Point(27, 57);
+            this.t2prog2.Name = "t2prog2";
+            this.t2prog2.Size = new System.Drawing.Size(88, 21);
+            this.t2prog2.TabIndex = 1004;
             // 
-            // comboBox27
+            // t2prog3
             // 
-            this.comboBox27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Items.AddRange(new object[] {
+            this.t2prog3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2prog3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2prog3.FormattingEnabled = true;
+            this.t2prog3.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox27.Location = new System.Drawing.Point(27, 83);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(88, 21);
-            this.comboBox27.TabIndex = 1004;
+            this.t2prog3.Location = new System.Drawing.Point(27, 83);
+            this.t2prog3.Name = "t2prog3";
+            this.t2prog3.Size = new System.Drawing.Size(88, 21);
+            this.t2prog3.TabIndex = 1004;
             // 
-            // comboBox28
+            // t2prog4
             // 
-            this.comboBox28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Items.AddRange(new object[] {
+            this.t2prog4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t2prog4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t2prog4.FormattingEnabled = true;
+            this.t2prog4.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox28.Location = new System.Drawing.Point(27, 109);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(88, 21);
-            this.comboBox28.TabIndex = 1004;
+            this.t2prog4.Location = new System.Drawing.Point(27, 109);
+            this.t2prog4.Name = "t2prog4";
+            this.t2prog4.Size = new System.Drawing.Size(88, 21);
+            this.t2prog4.TabIndex = 1004;
             // 
             // tabPage3
             // 
@@ -934,8 +934,8 @@
             this.singFixtTbl.Controls.Add(this.t3strt, 2, 2);
             this.singFixtTbl.Controls.Add(this.t3stop, 4, 2);
             this.singFixtTbl.Controls.Add(this.t3fixPosnTxt, 2, 1);
-            this.singFixtTbl.Controls.Add(this.comboBox15, 1, 1);
-            this.singFixtTbl.Controls.Add(this.comboBox16, 0, 1);
+            this.singFixtTbl.Controls.Add(this.t3opr1, 1, 1);
+            this.singFixtTbl.Controls.Add(this.t3part1, 0, 1);
             this.singFixtTbl.Location = new System.Drawing.Point(3, 30);
             this.singFixtTbl.Name = "singFixtTbl";
             this.singFixtTbl.RowCount = 3;
@@ -1044,33 +1044,33 @@
             this.t3fixPosnTxt.Size = new System.Drawing.Size(95, 20);
             this.t3fixPosnTxt.TabIndex = 2;
             // 
-            // comboBox15
+            // t3opr1
             // 
-            this.comboBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Items.AddRange(new object[] {
+            this.t3opr1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t3opr1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t3opr1.FormattingEnabled = true;
+            this.t3opr1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox15.Location = new System.Drawing.Point(95, 39);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(92, 21);
-            this.comboBox15.TabIndex = 9;
+            this.t3opr1.Location = new System.Drawing.Point(95, 39);
+            this.t3opr1.Name = "t3opr1";
+            this.t3opr1.Size = new System.Drawing.Size(92, 21);
+            this.t3opr1.TabIndex = 9;
             // 
-            // comboBox16
+            // t3part1
             // 
-            this.comboBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Items.AddRange(new object[] {
+            this.t3part1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t3part1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t3part1.FormattingEnabled = true;
+            this.t3part1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox16.Location = new System.Drawing.Point(5, 39);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(82, 21);
-            this.comboBox16.TabIndex = 10;
+            this.t3part1.Location = new System.Drawing.Point(5, 39);
+            this.t3part1.Name = "t3part1";
+            this.t3part1.Size = new System.Drawing.Size(82, 21);
+            this.t3part1.TabIndex = 10;
             // 
             // tabPage4
             // 
@@ -1135,10 +1135,10 @@
             this.fixtPallTbl.Controls.Add(this.t4stop1, 5, 2);
             this.fixtPallTbl.Controls.Add(this.t4strt2, 3, 4);
             this.fixtPallTbl.Controls.Add(this.t4stop2, 5, 4);
-            this.fixtPallTbl.Controls.Add(this.comboBox11, 1, 1);
-            this.fixtPallTbl.Controls.Add(this.comboBox12, 1, 3);
-            this.fixtPallTbl.Controls.Add(this.comboBox13, 2, 1);
-            this.fixtPallTbl.Controls.Add(this.comboBox14, 2, 3);
+            this.fixtPallTbl.Controls.Add(this.t4part1, 1, 1);
+            this.fixtPallTbl.Controls.Add(this.t4part2, 1, 3);
+            this.fixtPallTbl.Controls.Add(this.t4opr1, 2, 1);
+            this.fixtPallTbl.Controls.Add(this.t4opr2, 2, 3);
             this.fixtPallTbl.Location = new System.Drawing.Point(3, 30);
             this.fixtPallTbl.Name = "fixtPallTbl";
             this.fixtPallTbl.RowCount = 5;
@@ -1326,61 +1326,61 @@
             this.t4stop2.Text = "Stop";
             this.t4stop2.UseVisualStyleBackColor = true;
             // 
-            // comboBox11
+            // t4part1
             // 
-            this.comboBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.t4part1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t4part1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t4part1.FormattingEnabled = true;
+            this.t4part1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox11.Location = new System.Drawing.Point(60, 29);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(66, 21);
-            this.comboBox11.TabIndex = 18;
+            this.t4part1.Location = new System.Drawing.Point(60, 29);
+            this.t4part1.Name = "t4part1";
+            this.t4part1.Size = new System.Drawing.Size(66, 21);
+            this.t4part1.TabIndex = 18;
             // 
-            // comboBox12
+            // t4part2
             // 
-            this.comboBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
+            this.t4part2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t4part2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t4part2.FormattingEnabled = true;
+            this.t4part2.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox12.Location = new System.Drawing.Point(60, 88);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(66, 21);
-            this.comboBox12.TabIndex = 19;
+            this.t4part2.Location = new System.Drawing.Point(60, 88);
+            this.t4part2.Name = "t4part2";
+            this.t4part2.Size = new System.Drawing.Size(66, 21);
+            this.t4part2.TabIndex = 19;
             // 
-            // comboBox13
+            // t4opr1
             // 
-            this.comboBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.t4opr1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t4opr1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t4opr1.FormattingEnabled = true;
+            this.t4opr1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox13.Location = new System.Drawing.Point(134, 29);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(70, 21);
-            this.comboBox13.TabIndex = 20;
+            this.t4opr1.Location = new System.Drawing.Point(134, 29);
+            this.t4opr1.Name = "t4opr1";
+            this.t4opr1.Size = new System.Drawing.Size(70, 21);
+            this.t4opr1.TabIndex = 20;
             // 
-            // comboBox14
+            // t4opr2
             // 
-            this.comboBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.t4opr2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t4opr2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t4opr2.FormattingEnabled = true;
+            this.t4opr2.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox14.Location = new System.Drawing.Point(134, 88);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(70, 21);
-            this.comboBox14.TabIndex = 21;
+            this.t4opr2.Location = new System.Drawing.Point(134, 88);
+            this.t4opr2.Name = "t4opr2";
+            this.t4opr2.Size = new System.Drawing.Size(70, 21);
+            this.t4opr2.TabIndex = 21;
             // 
             // tabPage5
             // 
@@ -1435,8 +1435,8 @@
             this.multPartTbl.Controls.Add(this.t5noPrtTxt, 2, 1);
             this.multPartTbl.Controls.Add(this.t5strt, 2, 2);
             this.multPartTbl.Controls.Add(this.t5stop, 4, 2);
-            this.multPartTbl.Controls.Add(this.comboBox9, 1, 1);
-            this.multPartTbl.Controls.Add(this.comboBox10, 0, 1);
+            this.multPartTbl.Controls.Add(this.t5opr1, 1, 1);
+            this.multPartTbl.Controls.Add(this.t5part1, 0, 1);
             this.multPartTbl.Location = new System.Drawing.Point(3, 30);
             this.multPartTbl.Name = "multPartTbl";
             this.multPartTbl.RowCount = 3;
@@ -1547,33 +1547,33 @@
             this.t5stop.Text = "Stop";
             this.t5stop.UseVisualStyleBackColor = true;
             // 
-            // comboBox9
+            // t5opr1
             // 
-            this.comboBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.t5opr1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t5opr1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t5opr1.FormattingEnabled = true;
+            this.t5opr1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox9.Location = new System.Drawing.Point(100, 34);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(86, 21);
-            this.comboBox9.TabIndex = 9;
+            this.t5opr1.Location = new System.Drawing.Point(100, 34);
+            this.t5opr1.Name = "t5opr1";
+            this.t5opr1.Size = new System.Drawing.Size(86, 21);
+            this.t5opr1.TabIndex = 9;
             // 
-            // comboBox10
+            // t5part1
             // 
-            this.comboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.t5part1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t5part1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t5part1.FormattingEnabled = true;
+            this.t5part1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox10.Location = new System.Drawing.Point(5, 34);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(87, 21);
-            this.comboBox10.TabIndex = 10;
+            this.t5part1.Location = new System.Drawing.Point(5, 34);
+            this.t5part1.Name = "t5part1";
+            this.t5part1.Size = new System.Drawing.Size(87, 21);
+            this.t5part1.TabIndex = 10;
             // 
             // tabPage6
             // 
@@ -1631,10 +1631,10 @@
             this.twoPartTbl.Controls.Add(this.t6bp2Txt, 4, 2);
             this.twoPartTbl.Controls.Add(this.t6strt, 2, 3);
             this.twoPartTbl.Controls.Add(this.t6stop, 4, 3);
-            this.twoPartTbl.Controls.Add(this.comboBox5, 1, 1);
-            this.twoPartTbl.Controls.Add(this.comboBox6, 1, 2);
-            this.twoPartTbl.Controls.Add(this.comboBox7, 2, 1);
-            this.twoPartTbl.Controls.Add(this.comboBox8, 2, 2);
+            this.twoPartTbl.Controls.Add(this.t6part1, 1, 1);
+            this.twoPartTbl.Controls.Add(this.t6part2, 1, 2);
+            this.twoPartTbl.Controls.Add(this.t6opr1, 2, 1);
+            this.twoPartTbl.Controls.Add(this.t6opr2, 2, 2);
             this.twoPartTbl.Location = new System.Drawing.Point(3, 30);
             this.twoPartTbl.Name = "twoPartTbl";
             this.twoPartTbl.RowCount = 4;
@@ -1774,61 +1774,61 @@
             this.t6stop.Text = "Stop";
             this.t6stop.UseVisualStyleBackColor = true;
             // 
-            // comboBox5
+            // t6part1
             // 
-            this.comboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.t6part1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t6part1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t6part1.FormattingEnabled = true;
+            this.t6part1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox5.Location = new System.Drawing.Point(76, 27);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(93, 21);
-            this.comboBox5.TabIndex = 10;
+            this.t6part1.Location = new System.Drawing.Point(76, 27);
+            this.t6part1.Name = "t6part1";
+            this.t6part1.Size = new System.Drawing.Size(93, 21);
+            this.t6part1.TabIndex = 10;
             // 
-            // comboBox6
+            // t6part2
             // 
-            this.comboBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.t6part2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t6part2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t6part2.FormattingEnabled = true;
+            this.t6part2.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox6.Location = new System.Drawing.Point(76, 57);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(93, 21);
-            this.comboBox6.TabIndex = 11;
+            this.t6part2.Location = new System.Drawing.Point(76, 57);
+            this.t6part2.Name = "t6part2";
+            this.t6part2.Size = new System.Drawing.Size(93, 21);
+            this.t6part2.TabIndex = 11;
             // 
-            // comboBox7
+            // t6opr1
             // 
-            this.comboBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.t6opr1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t6opr1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t6opr1.FormattingEnabled = true;
+            this.t6opr1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox7.Location = new System.Drawing.Point(177, 27);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(112, 21);
-            this.comboBox7.TabIndex = 12;
+            this.t6opr1.Location = new System.Drawing.Point(177, 27);
+            this.t6opr1.Name = "t6opr1";
+            this.t6opr1.Size = new System.Drawing.Size(112, 21);
+            this.t6opr1.TabIndex = 12;
             // 
-            // comboBox8
+            // t6opr2
             // 
-            this.comboBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.t6opr2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t6opr2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t6opr2.FormattingEnabled = true;
+            this.t6opr2.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox8.Location = new System.Drawing.Point(177, 57);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(112, 21);
-            this.comboBox8.TabIndex = 13;
+            this.t6opr2.Location = new System.Drawing.Point(177, 57);
+            this.t6opr2.Name = "t6opr2";
+            this.t6opr2.Size = new System.Drawing.Size(112, 21);
+            this.t6opr2.TabIndex = 13;
             // 
             // tabPage7
             // 
@@ -1873,10 +1873,10 @@
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.twoPathTbl.Controls.Add(this.comboBox4, 2, 2);
-            this.twoPathTbl.Controls.Add(this.comboBox3, 1, 2);
-            this.twoPathTbl.Controls.Add(this.comboBox2, 2, 1);
-            this.twoPathTbl.Controls.Add(this.comboBox1, 1, 1);
+            this.twoPathTbl.Controls.Add(this.t7opr2, 2, 2);
+            this.twoPathTbl.Controls.Add(this.t7part2, 1, 2);
+            this.twoPathTbl.Controls.Add(this.t7opr1, 2, 1);
+            this.twoPathTbl.Controls.Add(this.t7part1, 1, 1);
             this.twoPathTbl.Controls.Add(this.label19, 0, 1);
             this.twoPathTbl.Controls.Add(this.label15, 1, 0);
             this.twoPathTbl.Controls.Add(this.label16, 2, 0);
@@ -1901,61 +1901,61 @@
             this.twoPathTbl.Size = new System.Drawing.Size(460, 115);
             this.twoPathTbl.TabIndex = 22;
             // 
-            // comboBox4
+            // t7opr2
             // 
-            this.comboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.t7opr2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t7opr2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t7opr2.FormattingEnabled = true;
+            this.t7opr2.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox4.Location = new System.Drawing.Point(176, 55);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(110, 21);
-            this.comboBox4.TabIndex = 15;
+            this.t7opr2.Location = new System.Drawing.Point(176, 55);
+            this.t7opr2.Name = "t7opr2";
+            this.t7opr2.Size = new System.Drawing.Size(110, 21);
+            this.t7opr2.TabIndex = 15;
             // 
-            // comboBox3
+            // t7part2
             // 
-            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.t7part2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t7part2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t7part2.FormattingEnabled = true;
+            this.t7part2.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox3.Location = new System.Drawing.Point(77, 55);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(91, 21);
-            this.comboBox3.TabIndex = 14;
+            this.t7part2.Location = new System.Drawing.Point(77, 55);
+            this.t7part2.Name = "t7part2";
+            this.t7part2.Size = new System.Drawing.Size(91, 21);
+            this.t7part2.TabIndex = 14;
             // 
-            // comboBox2
+            // t7opr1
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.t7opr1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t7opr1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t7opr1.FormattingEnabled = true;
+            this.t7opr1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox2.Location = new System.Drawing.Point(176, 29);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(110, 21);
-            this.comboBox2.TabIndex = 13;
+            this.t7opr1.Location = new System.Drawing.Point(176, 29);
+            this.t7opr1.Name = "t7opr1";
+            this.t7opr1.Size = new System.Drawing.Size(110, 21);
+            this.t7opr1.TabIndex = 13;
             // 
-            // comboBox1
+            // t7part1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.t7part1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.t7part1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t7part1.FormattingEnabled = true;
+            this.t7part1.Items.AddRange(new object[] {
             "Part1",
             "Part2",
             "Part3"});
-            this.comboBox1.Location = new System.Drawing.Point(77, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(91, 21);
-            this.comboBox1.TabIndex = 12;
+            this.t7part1.Location = new System.Drawing.Point(77, 29);
+            this.t7part1.Name = "t7part1";
+            this.t7part1.Size = new System.Drawing.Size(91, 21);
+            this.t7part1.TabIndex = 12;
             // 
             // label19
             // 
@@ -2485,8 +2485,8 @@
         internal System.Windows.Forms.Label oprNameLbl;
         internal System.Windows.Forms.TextBox t1gpTxt;
         internal System.Windows.Forms.Button t1strt;
-        private System.Windows.Forms.ComboBox t1prtNameTxt;
-        private System.Windows.Forms.ComboBox t1oprNameTxt;
+        private System.Windows.Forms.ComboBox t1part1;
+        private System.Windows.Forms.ComboBox t1opr1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TableLayoutPanel multProgTbl;
         internal System.Windows.Forms.Label label25;
@@ -2606,34 +2606,34 @@
         private System.Windows.Forms.Button logoutBtn;
         private System.Windows.Forms.Button settingBtn;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox comboBox17;
-        private System.Windows.Forms.ComboBox comboBox18;
-        private System.Windows.Forms.ComboBox comboBox19;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.ComboBox comboBox21;
-        private System.Windows.Forms.ComboBox comboBox22;
-        private System.Windows.Forms.ComboBox comboBox23;
-        private System.Windows.Forms.ComboBox comboBox24;
-        private System.Windows.Forms.ComboBox comboBox25;
-        private System.Windows.Forms.ComboBox comboBox26;
-        private System.Windows.Forms.ComboBox comboBox27;
-        private System.Windows.Forms.ComboBox comboBox28;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox t2part2;
+        private System.Windows.Forms.ComboBox t2part1;
+        private System.Windows.Forms.ComboBox t2opr1;
+        private System.Windows.Forms.ComboBox t2opr2;
+        private System.Windows.Forms.ComboBox t2part3;
+        private System.Windows.Forms.ComboBox t2part4;
+        private System.Windows.Forms.ComboBox t2opr4;
+        private System.Windows.Forms.ComboBox t2opr3;
+        private System.Windows.Forms.ComboBox t2prog1;
+        private System.Windows.Forms.ComboBox t2prog2;
+        private System.Windows.Forms.ComboBox t2prog3;
+        private System.Windows.Forms.ComboBox t2prog4;
+        private System.Windows.Forms.ComboBox t3opr1;
+        private System.Windows.Forms.ComboBox t3part1;
+        private System.Windows.Forms.ComboBox t4part1;
+        private System.Windows.Forms.ComboBox t4part2;
+        private System.Windows.Forms.ComboBox t4opr1;
+        private System.Windows.Forms.ComboBox t4opr2;
+        private System.Windows.Forms.ComboBox t5opr1;
+        private System.Windows.Forms.ComboBox t5part1;
+        private System.Windows.Forms.ComboBox t6part1;
+        private System.Windows.Forms.ComboBox t6part2;
+        private System.Windows.Forms.ComboBox t6opr1;
+        private System.Windows.Forms.ComboBox t6opr2;
+        private System.Windows.Forms.ComboBox t7opr2;
+        private System.Windows.Forms.ComboBox t7part2;
+        private System.Windows.Forms.ComboBox t7opr1;
+        private System.Windows.Forms.ComboBox t7part1;
         private System.Windows.Forms.CheckBox isSetup;
         private System.Windows.Forms.PictureBox setPixBox;
         private System.Windows.Forms.PictureBox opPicBox;
