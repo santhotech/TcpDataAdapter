@@ -55,36 +55,29 @@ namespace VimanaPoi
         }
         private void doLogin()
         {
-            DBConnect dbc = new DBConnect();
-
-            if (dbc.TestConnection())
+            Validations val = new Validations();
+            string error;
+            if((error = val.ValidateLogin(curEmpIdTxt.Text)) == String.Empty)
             {
-                if (curEmpIdTxt.Text != "")
-                {
-                    logInPnl.Visible = false;
-                    logoutBtn.Visible = true;
-                    empIdIndLbl.Text = "Current Employee :";
-                    empIdLbl.Visible = true;
-                    empIdLbl.Text = curEmpIdTxt.Text;
-                    nrmlPicBox.Visible = false;
-                    if (isSetup.Checked) { empIdLbl.Text += " (Setup)"; setPixBox.Visible = true; } else { opPicBox.Visible = true; }
-                    settingBtn.Enabled = false;
-                    //logBtn.Enabled = false;
-                    loadDefaults();
-                    greetLbl.Visible = true;
-                    string cmd = getCurrTime() + "|EMP|" + curEmpIdTxt.Text + "\n";
-                    MainfestionComboBoxes();
-                }
-                else
-                {
-                    MessageBox.Show("Enter your employee ID", "Error");
-                }
+                logInPnl.Visible = false;
+                logoutBtn.Visible = true;
+                empIdIndLbl.Text = "Current Employee :";
+                empIdLbl.Visible = true;
+                empIdLbl.Text = curEmpIdTxt.Text;
+                nrmlPicBox.Visible = false;
+                if (isSetup.Checked) { empIdLbl.Text += " (Setup)"; setPixBox.Visible = true; } else { opPicBox.Visible = true; }
+                settingBtn.Enabled = false;
+                //logBtn.Enabled = false;
+                loadDefaults();
+                greetLbl.Visible = true;
+                string cmd = getCurrTime() + "|EMP|" + curEmpIdTxt.Text + "\n";
+                MainfestionComboBoxes();
             }
-            else
+            else 
             {
-                Error("Unable to connect to DB! Check your DB settings");
-            }
-        }
+                Error(error);
+            }            
+        }           
 
         private void Error(string msg)
         {
