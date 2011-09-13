@@ -55,27 +55,42 @@ namespace VimanaPoi
         }
         private void doLogin()
         {
-            if (curEmpIdTxt.Text != "")
-            {               
-                logInPnl.Visible = false;
-                logoutBtn.Visible = true;
-                empIdIndLbl.Text = "Current Employee :";
-                empIdLbl.Visible = true;
-                empIdLbl.Text = curEmpIdTxt.Text;
-                nrmlPicBox.Visible = false;
-                if (isSetup.Checked) { empIdLbl.Text += " (Setup)"; setPixBox.Visible = true; } else { opPicBox.Visible = true; }
-                settingBtn.Enabled = false;
-                //logBtn.Enabled = false;
-                loadDefaults();
-                greetLbl.Visible = true;
-                string cmd = getCurrTime() + "|EMP|" + curEmpIdTxt.Text + "\n";
-                MainfestionComboBoxes();
+            DBConnect dbc = new DBConnect();
+
+            if (dbc.TestConnection())
+            {
+                if (curEmpIdTxt.Text != "")
+                {
+                    logInPnl.Visible = false;
+                    logoutBtn.Visible = true;
+                    empIdIndLbl.Text = "Current Employee :";
+                    empIdLbl.Visible = true;
+                    empIdLbl.Text = curEmpIdTxt.Text;
+                    nrmlPicBox.Visible = false;
+                    if (isSetup.Checked) { empIdLbl.Text += " (Setup)"; setPixBox.Visible = true; } else { opPicBox.Visible = true; }
+                    settingBtn.Enabled = false;
+                    //logBtn.Enabled = false;
+                    loadDefaults();
+                    greetLbl.Visible = true;
+                    string cmd = getCurrTime() + "|EMP|" + curEmpIdTxt.Text + "\n";
+                    MainfestionComboBoxes();
+                }
+                else
+                {
+                    MessageBox.Show("Enter your employee ID", "Error");
+                }
             }
             else
             {
-                MessageBox.Show("Enter your employee ID", "Error");
+                Error("Unable to connect to DB! Check your DB settings");
             }
         }
+
+        private void Error(string msg)
+        {
+            MessageBox.Show(msg,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+        }
+
         //loading default status settings
         private void loadDefaults()
         {            

@@ -36,6 +36,7 @@ namespace VimanaPoi
         {
             DBConnect dbc = new DBConnect();   
             ArrayList al = dbc.GetMachineNames();
+            machineNames.Items.Clear();
             machineNames.Items.AddRange(al.ToArray());
             machineNames.Text = Properties.Settings.Default.machinename;
         }
@@ -63,10 +64,10 @@ namespace VimanaPoi
             Properties.Settings.Default.server = dbserver.Text;
             Properties.Settings.Default.Save();
             DBConnect dbc1 = new DBConnect();
-            if (dbc1.OpenConnection())
+            if (dbc1.TestConnection())
             {
-                MessageBox.Show("DB Connection Successful! Settings Saved");
-                dbc1.CloseConnection();
+                MessageBox.Show("DB Connection Successful! Settings Saved");                
+                loadMachineNames();
             }
             else
             {

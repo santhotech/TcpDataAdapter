@@ -33,7 +33,7 @@ namespace VimanaPoi
             connection = new MySqlConnection(connectionString);
         }
 
-        public bool OpenConnection()
+        private bool OpenConnection()
         {
             try
             {
@@ -57,7 +57,7 @@ namespace VimanaPoi
         }
 
         //Close connection
-        public bool CloseConnection()
+        private bool CloseConnection()
         {
             try
             {
@@ -140,6 +140,19 @@ namespace VimanaPoi
                 this.CloseConnection();
             }
             return oper_numbers;
+        }
+
+        public bool TestConnection()
+        {
+            if (OpenConnection())
+            {
+                CloseConnection();
+                return true;                
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
