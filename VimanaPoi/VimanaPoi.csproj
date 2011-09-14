@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands.cs" />
+    <Compile Include="ControlContainer.cs" />
     <Compile Include="ControlManifest.cs" />
     <Compile Include="DBConnect.cs" />
     <Compile Include="MainForm.cs">

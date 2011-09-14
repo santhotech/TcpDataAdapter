@@ -75,5 +75,18 @@ namespace VimanaPoi
                 cb.Items.AddRange(OperNames.ToArray());
             }
         }
+
+        public bool ValidateControls(Control[] ctrl)
+        {            
+            foreach (Control ct in ctrl)
+            {
+                if (ct.Text == string.Empty)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
     }
 }

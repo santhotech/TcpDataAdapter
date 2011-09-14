@@ -56,7 +56,7 @@ namespace VimanaPoi
         }
 
         //Handles the data sending to the various clients that are connected.
-        private void sndData(string cmdTxt, int setFlg)
+        public void sndData(string cmdTxt)
         {            
             int a = clients.Count;            
             try

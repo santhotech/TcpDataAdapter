@@ -14,9 +14,11 @@ namespace VimanaPoi
         ControlManifest com;
         Commands cmd;
         TcpActions tcp;
+        Dictionary<string, ControlContainer> _manifest;
         public MainForm()
         {
-            InitializeComponent();                        
+            InitializeComponent();
+            _manifest = new Dictionary<string, ControlContainer>();        
             this.StartPosition = FormStartPosition.CenterScreen;
             Init_Login();
             com = new ControlManifest();
@@ -73,6 +75,8 @@ namespace VimanaPoi
         {
             com.tbl1strt = new Control[] { t1part1, t1opr1 };
             com.tbl1stop = new Control[] { t1gpTxt, t1bpTxt };
+            string cmdFormat = "{0}|part-type|{1}\n{0}|operation-type|{2}\n";
+            _manifest.Add("1", new ControlContainer { strt = com.tbl1strt, stop = com.tbl1stop, cmdStrt = cmdFormat });
 
             com.tbl2strt = new Control[] { t2prog1,t2part1,t2opr1,t2prog2,t2part2,t2opr2,t2prog3,t2part3,t2opr3,t2prog4,t2part4,t2opr4 };
             com.tbl2stop = new Control[] { t2gp1, t2bp1, t2gp2, t2bp2, t2gp3, t2bp3, t2gp4, t2bp4 };
@@ -198,8 +202,12 @@ namespace VimanaPoi
             Button b = (Button)sender;
             string typ = b.Name.Substring(2, 4);
             string ind = b.Name.Substring(1, 1);
-            MessageBox.Show(typ);
+            if (com.ValidateControls(_manifest[ind].strt))
+            {
+                tcp.sndData(String.Format(_manifest[ind].cmdStrt, com.GetData(_manifest[ind].strt)));
+            }
         }
+
                    
     }
 }
