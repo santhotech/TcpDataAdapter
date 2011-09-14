@@ -33,12 +33,47 @@ namespace VimanaPoi
         public Control[] tbl7strt;
         public Control[] tbl7stop;
 
+        Hashtable h = new Hashtable();
+        ArrayList al = new ArrayList();
+            
+
         public ControlManifest(){}
         public ControlManifest(ComboBox[] parts,ComboBox[] opr)
         {
             this.parts = parts;
             this.opr = opr;            
-            PopulateComboBoxes();            
+            PopulateComboBoxes();
+            h.Add("part", "Part Name");
+            h.Add("opr", "Operation Name");
+            h.Add("gp", "Good Parts");
+            h.Add("bp", "Bad Parts");
+            h.Add("fixPosn", "Parts per Fixture");
+            h.Add("noPrt", "Number of Parts");
+            al.Add("gp");
+            al.Add("bp");
+            al.Add("noPrt");
+            al.Add("fixPosn");
+        }
+
+        public bool CheckNumeric(TextBox[] tb)
+        {
+            foreach (TextBox t in tb)
+            {
+                if (!IsAllDigits(t.Text) && t.Enabled == true)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        bool IsAllDigits(string s)
+        {
+            foreach (char c in s)
+            {
+                if (!Char.IsDigit(c))
+                    return false;
+            }
+            return true;
         }
 
         public string[] GetData(Control[] ctrl)
@@ -81,6 +116,7 @@ namespace VimanaPoi
         {            
             foreach (Control ct in ctrl)
             {
+                string nm = ct.Name;
                 if (ct.Text == string.Empty)
                 {
                     return false;
