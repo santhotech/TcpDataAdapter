@@ -228,7 +228,11 @@ namespace VimanaPoi
             Control[] ctrl;
             string cmdToSend;
             if (typ == "strt") { ctrl = _manifest[ind].strt; cmdToSend = _manifest[ind].cmdStrt; } else { ctrl = _manifest[ind].stop; cmdToSend = _manifest[ind].cmdStop; }
-            if (com.ValidateControls(ctrl))
+            
+            object[] astatus = new object[1];
+            astatus = com.CheckOk(ctrl);
+            string status = (string)astatus[0];
+            if (status  == "true")
             {
                 b.Enabled = false;
                 tcp.sndData(String.Format(cmdToSend, com.GetData(ctrl)));
@@ -237,7 +241,8 @@ namespace VimanaPoi
             }
             else
             {
-                Error("Enter All the fields");
+                this.ActiveControl = (Control)astatus[1];                
+                Error(status);
             }
         }                           
     }

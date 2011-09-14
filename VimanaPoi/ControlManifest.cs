@@ -113,7 +113,8 @@ namespace VimanaPoi
         }
 
         public bool ValidateControls(Control[] ctrl)
-        {            
+        {
+            string error = string.Empty;
             foreach (Control ct in ctrl)
             {
                 string nm = ct.Name;
@@ -139,6 +140,75 @@ namespace VimanaPoi
                     ct.BackColor = Color.White;
                 }
             }
+        }
+
+        public string ValidationMessage(Control[] ctrl)
+        {
+            string error = string.Empty;
+
+            return error;
+        }
+
+        public object[] CheckOk(Control[] curObj)
+        {
+            Hashtable h = new Hashtable();
+            int count = 0;
+            h.Add("part", "Part Name");
+            h.Add("opr", "Operation Name");
+            h.Add("gp", "Good Parts");
+            h.Add("bp", "Bad Parts");
+            h.Add("fixPosn", "Parts per Fixture");
+            h.Add("noPrt", "Number of Parts");
+            string err = string.Empty;
+            object[] parameters = new object[2];
+            parameters[1] = null;
+            for (int i = 0; i < curObj.Length; i++)
+            {
+                if (curObj[i].Text == string.Empty)
+                {
+                    if (parameters[1] == null)
+                    {
+                        parameters[1] = curObj[i];
+                    }
+                    string curObjName = (string)curObj[i].Name;
+                    foreach (DictionaryEntry entry in h)
+                    {
+                        if (curObjName.IndexOf(entry.Key.ToString()) != -1)
+                        {
+                            for (int j = 1; j < 3; j++)
+                            {
+                                if (curObjName.Substring(2).IndexOf(j.ToString()) != -1)
+                                {
+                                    err += "Please enter " + entry.Value + j + Environment.NewLine;
+                                    count++;
+                                }
+                            }
+                            if (count == 0)
+                            {
+                                err += "Please enter " + entry.Value + Environment.NewLine;
+                            }
+                        }
+                    }
+                }
+                if (curObj[i].Name.Contains("fixPosn") || curObj[i].Name.Contains("noPrt") || curObj[i].Name.Contains("gp") || curObj[i].Name.Contains("bp"))
+                {
+                    if (!IsAllDigits(curObj[i].Text))
+                    {
+                        err += "Please enter only numbers for parts" + Environment.NewLine;
+                    }
+                }
+            }
+
+
+            if (err == string.Empty)
+            {
+                parameters[0] = "true";
+            }
+            else
+            {
+                parameters[0] = err;
+            }
+            return parameters;
         }
 
     }
