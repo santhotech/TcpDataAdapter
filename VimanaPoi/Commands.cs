@@ -22,5 +22,13 @@ namespace VimanaPoi
             return cmd;
         }
 
+        public string ThirdTable()
+        {
+            string cmdFormat = "{0}|part-type|{1}\n{0}|operation-type|{1}\n{0}|fixture-position|{2}\n";
+            string[] data = com.GetData(cmf.tbl3strt);
+            string cmd = String.Format(cmdFormat, data);
+            return cmd;
+        }
+
     }
 }

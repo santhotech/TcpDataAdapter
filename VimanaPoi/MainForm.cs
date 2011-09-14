@@ -146,23 +146,7 @@ namespace VimanaPoi
             twoPartBtn5.Enabled = Properties.Settings.Default.twopart;
             twoPathBtn6.Enabled = Properties.Settings.Default.twopath;             
         }
-        //switch start and stop
-        private void switchBtn(int flg, Button[] btn)
-        {
-            Button tst = btn[0];
-            Button tsp = btn[1];
-            if (flg == 1)
-            {
-                tst.Enabled = false;
-                tsp.Enabled = true;
-            }
-            if (flg == 2)
-            {
-                tst.Enabled = true;
-                tsp.Enabled = false;
-            }
-        }
-        //current time
+        
         public string getCurrTime()
         {
             return DateTime.UtcNow.ToString("o");
@@ -211,7 +195,10 @@ namespace VimanaPoi
 
         private void t1strt_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(cmd.SingProgTbl());
+            Button b = (Button)sender;
+            string typ = b.Name.Substring(2, 4);
+            string ind = b.Name.Substring(1, 1);
+            MessageBox.Show(typ);
         }
                    
     }
