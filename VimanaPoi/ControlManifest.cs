@@ -10,12 +10,27 @@ namespace VimanaPoi
     {
         ComboBox[] parts;
         ComboBox[] opr;
+        public Control[] tbl1;
+        public ControlManifest();
         public ControlManifest(ComboBox[] parts,ComboBox[] opr)
         {
             this.parts = parts;
-            this.opr = opr;
-            PopulateComboBoxes();
+            this.opr = opr;            
+            PopulateComboBoxes();            
         }
+
+        public string[] GetData(Control[] ctrl)
+        {
+            string[] str = new string[] { };
+            int i = 0;
+            foreach (Control ct in ctrl)
+            {
+                str[i] = ct.Text; 
+                i++;
+            }
+            return str;
+        }
+
         private void PopulateComboBoxes()
         {
             string macName = Properties.Settings.Default.machinename;

@@ -10,7 +10,8 @@ using System.Collections;
 namespace VimanaPoi
 {
     public partial class MainForm : Form
-    {                                
+    {
+        ControlManifest com = new ControlManifest();               
         public MainForm()
         {
             InitializeComponent();                        
@@ -39,8 +40,13 @@ namespace VimanaPoi
             };
             ComboBox[] opr = new ComboBox[] {
                 t1opr1,t2opr1,t2opr2,t2opr3,t2opr4,t3opr1,t4opr1,t4opr2,t5opr1,t6opr1,t6opr2,t7opr1,t7opr2
-            };
-            ControlManifest cm = new ControlManifest(parts, opr);
+            };            
+            ControlManifest cm = new ControlManifest(parts, opr);            
+        }
+
+        private void ManifestControls()
+        {
+            com.tbl1 = new Control[] { t1part1, t1opr1 };
         }
 
         private void disableAllMenu()
