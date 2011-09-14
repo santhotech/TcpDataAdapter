@@ -49,7 +49,7 @@ namespace VimanaPoi
                 //blocks until a client has connected to the server
                 TcpClient client = this.tcpListener.AcceptTcpClient();                
                 clients.Add(client);
-                count++;                                
+                ClientCount++;                                
                 Thread a = new Thread(new ParameterizedThreadStart(CheckClientActive));
                 a.Start(client);
             }
@@ -109,7 +109,7 @@ namespace VimanaPoi
                     if (bytesRead == 0)
                     {
                         //the client has disconnected from the server                        
-                        --count;                        
+                        --ClientCount;                        
                         clients.Remove(ob);
                         break;
                     }

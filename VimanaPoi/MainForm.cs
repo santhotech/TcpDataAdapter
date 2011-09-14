@@ -23,9 +23,26 @@ namespace VimanaPoi
             ManifestControls();
             cmd = new Commands(com);
             tcp = new TcpActions();
+            tcp.ClientCountChanged += new TcpActions.ClientCountChangedEventHandler(tcp_ClientCountChanged);
             string port = Properties.Settings.Default.port.ToString();
             sockStatLbl.Text = "Listening on port " + port;
         }
+
+        private void tcp_ClientCountChanged(int count)
+        {            
+            cliNumStatLbl.BeginInvoke((MethodInvoker)(() => cliNumStatLbl.Text  = count.ToString() + " " + GetClientMsg(count) + " Connected"));
+        }
+
+        private string GetClientMsg(int count)
+        {
+            if (count > 1)
+            {
+                return "Clients";
+            }
+            else
+                return "Client";
+        }
+
         private void Init_Login()
         {
             nrmlPicBox.Visible = true;
