@@ -30,34 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.controlPnl = new System.Windows.Forms.Panel();
-            this.greetLbl = new System.Windows.Forms.Label();
-            this.logInPnl = new System.Windows.Forms.Panel();
-            this.isSetup = new System.Windows.Forms.CheckBox();
-            this.loginBtn = new System.Windows.Forms.Button();
-            this.label30 = new System.Windows.Forms.Label();
-            this.curEmpIdTxt = new System.Windows.Forms.TextBox();
-            this.cliNumStatLbl = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.twoPathBtn6 = new System.Windows.Forms.Button();
-            this.twoPartBtn5 = new System.Windows.Forms.Button();
-            this.multPartBtn4 = new System.Windows.Forms.Button();
-            this.FixtPallBtn3 = new System.Windows.Forms.Button();
-            this.singFixtBtn2 = new System.Windows.Forms.Button();
-            this.multProgBtn1 = new System.Windows.Forms.Button();
-            this.singProgBtn0 = new System.Windows.Forms.Button();
-            this.sockStatLbl = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.empIdLbl = new System.Windows.Forms.Label();
-            this.empIdIndLbl = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.logoutBtn = new System.Windows.Forms.Button();
-            this.settingBtn = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.opPicBox = new System.Windows.Forms.PictureBox();
-            this.setPixBox = new System.Windows.Forms.PictureBox();
-            this.nrmlPicBox = new System.Windows.Forms.PictureBox();
             this.stackPanel1 = new StackPanel();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.singProgTbl = new System.Windows.Forms.TableLayoutPanel();
@@ -208,16 +180,35 @@
             this.t7bp2Txt = new System.Windows.Forms.TextBox();
             this.t7strt = new System.Windows.Forms.Button();
             this.t7stop = new System.Windows.Forms.Button();
+            this.greetLbl = new System.Windows.Forms.Label();
+            this.logInPnl = new System.Windows.Forms.Panel();
+            this.isSetup = new System.Windows.Forms.CheckBox();
+            this.loginBtn = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
+            this.curEmpIdTxt = new System.Windows.Forms.TextBox();
+            this.cliNumStatLbl = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.twoPathBtn6 = new System.Windows.Forms.Button();
+            this.twoPartBtn5 = new System.Windows.Forms.Button();
+            this.multPartBtn4 = new System.Windows.Forms.Button();
+            this.FixtPallBtn3 = new System.Windows.Forms.Button();
+            this.singFixtBtn2 = new System.Windows.Forms.Button();
+            this.multProgBtn1 = new System.Windows.Forms.Button();
+            this.singProgBtn0 = new System.Windows.Forms.Button();
+            this.sockStatLbl = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.empIdLbl = new System.Windows.Forms.Label();
+            this.empIdIndLbl = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.logoutBtn = new System.Windows.Forms.Button();
+            this.settingBtn = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.opPicBox = new System.Windows.Forms.PictureBox();
+            this.setPixBox = new System.Windows.Forms.PictureBox();
+            this.nrmlPicBox = new System.Windows.Forms.PictureBox();
             this.controlPnl.SuspendLayout();
-            this.logInPnl.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.opPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.setPixBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nrmlPicBox)).BeginInit();
             this.stackPanel1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.singProgTbl.SuspendLayout();
@@ -240,6 +231,15 @@
             this.tabPage7.SuspendLayout();
             this.panel11.SuspendLayout();
             this.twoPathTbl.SuspendLayout();
+            this.logInPnl.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.setPixBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nrmlPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // controlPnl
@@ -253,326 +253,6 @@
             this.controlPnl.Name = "controlPnl";
             this.controlPnl.Size = new System.Drawing.Size(484, 263);
             this.controlPnl.TabIndex = 31;
-            // 
-            // greetLbl
-            // 
-            this.greetLbl.AutoSize = true;
-            this.greetLbl.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.greetLbl.Location = new System.Drawing.Point(126, 57);
-            this.greetLbl.Name = "greetLbl";
-            this.greetLbl.Size = new System.Drawing.Size(232, 23);
-            this.greetLbl.TabIndex = 28;
-            this.greetLbl.Text = "Select an option from the Left";
-            this.greetLbl.Visible = false;
-            // 
-            // logInPnl
-            // 
-            this.logInPnl.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.logInPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.logInPnl.Controls.Add(this.isSetup);
-            this.logInPnl.Controls.Add(this.loginBtn);
-            this.logInPnl.Controls.Add(this.label30);
-            this.logInPnl.Controls.Add(this.curEmpIdTxt);
-            this.logInPnl.Location = new System.Drawing.Point(91, 83);
-            this.logInPnl.Name = "logInPnl";
-            this.logInPnl.Size = new System.Drawing.Size(308, 96);
-            this.logInPnl.TabIndex = 26;
-            this.logInPnl.Visible = false;
-            // 
-            // isSetup
-            // 
-            this.isSetup.AutoSize = true;
-            this.isSetup.ForeColor = System.Drawing.Color.White;
-            this.isSetup.Location = new System.Drawing.Point(168, 67);
-            this.isSetup.Name = "isSetup";
-            this.isSetup.Size = new System.Drawing.Size(54, 17);
-            this.isSetup.TabIndex = 17;
-            this.isSetup.Text = "Setup";
-            this.isSetup.UseVisualStyleBackColor = true;
-            // 
-            // loginBtn
-            // 
-            this.loginBtn.Location = new System.Drawing.Point(87, 61);
-            this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(75, 23);
-            this.loginBtn.TabIndex = 16;
-            this.loginBtn.Text = "Login";
-            this.loginBtn.UseVisualStyleBackColor = true;
-            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label30.Location = new System.Drawing.Point(111, 8);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(88, 20);
-            this.label30.TabIndex = 15;
-            this.label30.Text = "Employee ID";
-            // 
-            // curEmpIdTxt
-            // 
-            this.curEmpIdTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.curEmpIdTxt.Location = new System.Drawing.Point(87, 34);
-            this.curEmpIdTxt.Name = "curEmpIdTxt";
-            this.curEmpIdTxt.Size = new System.Drawing.Size(134, 20);
-            this.curEmpIdTxt.TabIndex = 3;
-            this.curEmpIdTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.curEmpIdTxt_GotFocus);
-            // 
-            // cliNumStatLbl
-            // 
-            this.cliNumStatLbl.AutoSize = true;
-            this.cliNumStatLbl.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cliNumStatLbl.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.cliNumStatLbl.Location = new System.Drawing.Point(1, 23);
-            this.cliNumStatLbl.Name = "cliNumStatLbl";
-            this.cliNumStatLbl.Size = new System.Drawing.Size(124, 16);
-            this.cliNumStatLbl.TabIndex = 20;
-            this.cliNumStatLbl.Text = "No Clients Connected";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.twoPathBtn6);
-            this.panel2.Controls.Add(this.twoPartBtn5);
-            this.panel2.Controls.Add(this.multPartBtn4);
-            this.panel2.Controls.Add(this.FixtPallBtn3);
-            this.panel2.Controls.Add(this.singFixtBtn2);
-            this.panel2.Controls.Add(this.multProgBtn1);
-            this.panel2.Controls.Add(this.singProgBtn0);
-            this.panel2.Location = new System.Drawing.Point(7, 73);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(196, 265);
-            this.panel2.TabIndex = 32;
-            // 
-            // twoPathBtn6
-            // 
-            this.twoPathBtn6.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.twoPathBtn6.Location = new System.Drawing.Point(3, 234);
-            this.twoPathBtn6.Name = "twoPathBtn6";
-            this.twoPathBtn6.Size = new System.Drawing.Size(186, 27);
-            this.twoPathBtn6.TabIndex = 6;
-            this.twoPathBtn6.TabStop = false;
-            this.twoPathBtn6.Text = "Two Parts - Two Paths";
-            this.twoPathBtn6.UseVisualStyleBackColor = true;
-            this.twoPathBtn6.Click += new System.EventHandler(this.menuButton_Click);
-            // 
-            // twoPartBtn5
-            // 
-            this.twoPartBtn5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.twoPartBtn5.Location = new System.Drawing.Point(2, 184);
-            this.twoPartBtn5.Name = "twoPartBtn5";
-            this.twoPartBtn5.Size = new System.Drawing.Size(186, 46);
-            this.twoPartBtn5.TabIndex = 5;
-            this.twoPartBtn5.TabStop = false;
-            this.twoPartBtn5.Text = "Two Different Parts - Single Workpiece";
-            this.twoPartBtn5.UseVisualStyleBackColor = true;
-            this.twoPartBtn5.Click += new System.EventHandler(this.menuButton_Click);
-            // 
-            // multPartBtn4
-            // 
-            this.multPartBtn4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.multPartBtn4.Location = new System.Drawing.Point(3, 135);
-            this.multPartBtn4.Name = "multPartBtn4";
-            this.multPartBtn4.Size = new System.Drawing.Size(186, 44);
-            this.multPartBtn4.TabIndex = 4;
-            this.multPartBtn4.TabStop = false;
-            this.multPartBtn4.Text = "Multiple Similar Parts - Single Workpiece";
-            this.multPartBtn4.UseVisualStyleBackColor = true;
-            this.multPartBtn4.Click += new System.EventHandler(this.menuButton_Click);
-            // 
-            // FixtPallBtn3
-            // 
-            this.FixtPallBtn3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FixtPallBtn3.Location = new System.Drawing.Point(3, 102);
-            this.FixtPallBtn3.Name = "FixtPallBtn3";
-            this.FixtPallBtn3.Size = new System.Drawing.Size(186, 27);
-            this.FixtPallBtn3.TabIndex = 3;
-            this.FixtPallBtn3.TabStop = false;
-            this.FixtPallBtn3.Text = "Pallet with Fixtures";
-            this.FixtPallBtn3.UseVisualStyleBackColor = true;
-            this.FixtPallBtn3.Click += new System.EventHandler(this.menuButton_Click);
-            // 
-            // singFixtBtn2
-            // 
-            this.singFixtBtn2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.singFixtBtn2.Location = new System.Drawing.Point(3, 69);
-            this.singFixtBtn2.Name = "singFixtBtn2";
-            this.singFixtBtn2.Size = new System.Drawing.Size(186, 27);
-            this.singFixtBtn2.TabIndex = 2;
-            this.singFixtBtn2.TabStop = false;
-            this.singFixtBtn2.Text = "Multiple Parts - Single Fixture";
-            this.singFixtBtn2.UseVisualStyleBackColor = true;
-            this.singFixtBtn2.Click += new System.EventHandler(this.menuButton_Click);
-            // 
-            // multProgBtn1
-            // 
-            this.multProgBtn1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.multProgBtn1.Location = new System.Drawing.Point(3, 36);
-            this.multProgBtn1.Name = "multProgBtn1";
-            this.multProgBtn1.Size = new System.Drawing.Size(186, 27);
-            this.multProgBtn1.TabIndex = 1;
-            this.multProgBtn1.TabStop = false;
-            this.multProgBtn1.Text = "Multiple Programs";
-            this.multProgBtn1.UseVisualStyleBackColor = true;
-            this.multProgBtn1.Click += new System.EventHandler(this.menuButton_Click);
-            // 
-            // singProgBtn0
-            // 
-            this.singProgBtn0.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.singProgBtn0.Location = new System.Drawing.Point(3, 3);
-            this.singProgBtn0.Name = "singProgBtn0";
-            this.singProgBtn0.Size = new System.Drawing.Size(186, 27);
-            this.singProgBtn0.TabIndex = 0;
-            this.singProgBtn0.TabStop = false;
-            this.singProgBtn0.Text = "Single Program";
-            this.singProgBtn0.UseVisualStyleBackColor = true;
-            this.singProgBtn0.Click += new System.EventHandler(this.menuButton_Click);
-            // 
-            // sockStatLbl
-            // 
-            this.sockStatLbl.AutoSize = true;
-            this.sockStatLbl.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sockStatLbl.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.sockStatLbl.Location = new System.Drawing.Point(1, 1);
-            this.sockStatLbl.Name = "sockStatLbl";
-            this.sockStatLbl.Size = new System.Drawing.Size(85, 16);
-            this.sockStatLbl.TabIndex = 19;
-            this.sockStatLbl.Text = "Socket Closed";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.cliNumStatLbl);
-            this.panel1.Controls.Add(this.sockStatLbl);
-            this.panel1.Location = new System.Drawing.Point(207, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(359, 53);
-            this.panel1.TabIndex = 19;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(632, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 55);
-            this.button1.TabIndex = 29;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // empIdLbl
-            // 
-            this.empIdLbl.AutoSize = true;
-            this.empIdLbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empIdLbl.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.empIdLbl.Location = new System.Drawing.Point(1, 24);
-            this.empIdLbl.Name = "empIdLbl";
-            this.empIdLbl.Size = new System.Drawing.Size(0, 15);
-            this.empIdLbl.TabIndex = 27;
-            // 
-            // empIdIndLbl
-            // 
-            this.empIdIndLbl.AutoSize = true;
-            this.empIdIndLbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empIdIndLbl.Location = new System.Drawing.Point(-1, 2);
-            this.empIdIndLbl.Name = "empIdIndLbl";
-            this.empIdIndLbl.Size = new System.Drawing.Size(138, 15);
-            this.empIdIndLbl.TabIndex = 26;
-            this.empIdIndLbl.Text = "No Employee Logged In";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.SystemColors.Info;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.Controls.Add(this.button1);
-            this.panel5.Controls.Add(this.panel4);
-            this.panel5.Controls.Add(this.settingBtn);
-            this.panel5.Controls.Add(this.panel1);
-            this.panel5.Location = new System.Drawing.Point(2, 344);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(693, 63);
-            this.panel5.TabIndex = 34;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.empIdLbl);
-            this.panel4.Controls.Add(this.empIdIndLbl);
-            this.panel4.Controls.Add(this.logoutBtn);
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(196, 53);
-            this.panel4.TabIndex = 25;
-            // 
-            // logoutBtn
-            // 
-            this.logoutBtn.Image = ((System.Drawing.Image)(resources.GetObject("logoutBtn.Image")));
-            this.logoutBtn.Location = new System.Drawing.Point(134, 2);
-            this.logoutBtn.Name = "logoutBtn";
-            this.logoutBtn.Size = new System.Drawing.Size(54, 43);
-            this.logoutBtn.TabIndex = 25;
-            this.logoutBtn.TabStop = false;
-            this.logoutBtn.UseVisualStyleBackColor = true;
-            this.logoutBtn.Visible = false;
-            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
-            // 
-            // settingBtn
-            // 
-            this.settingBtn.BackColor = System.Drawing.Color.White;
-            this.settingBtn.Enabled = false;
-            this.settingBtn.Image = ((System.Drawing.Image)(resources.GetObject("settingBtn.Image")));
-            this.settingBtn.Location = new System.Drawing.Point(572, 1);
-            this.settingBtn.Name = "settingBtn";
-            this.settingBtn.Size = new System.Drawing.Size(54, 55);
-            this.settingBtn.TabIndex = 24;
-            this.settingBtn.UseVisualStyleBackColor = false;
-            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.opPicBox);
-            this.panel3.Controls.Add(this.setPixBox);
-            this.panel3.Controls.Add(this.nrmlPicBox);
-            this.panel3.Location = new System.Drawing.Point(7, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(688, 65);
-            this.panel3.TabIndex = 33;
-            // 
-            // opPicBox
-            // 
-            this.opPicBox.Image = ((System.Drawing.Image)(resources.GetObject("opPicBox.Image")));
-            this.opPicBox.Location = new System.Drawing.Point(0, -1);
-            this.opPicBox.Name = "opPicBox";
-            this.opPicBox.Size = new System.Drawing.Size(685, 62);
-            this.opPicBox.TabIndex = 1;
-            this.opPicBox.TabStop = false;
-            this.opPicBox.Visible = false;
-            // 
-            // setPixBox
-            // 
-            this.setPixBox.Image = ((System.Drawing.Image)(resources.GetObject("setPixBox.Image")));
-            this.setPixBox.Location = new System.Drawing.Point(0, -1);
-            this.setPixBox.Name = "setPixBox";
-            this.setPixBox.Size = new System.Drawing.Size(685, 62);
-            this.setPixBox.TabIndex = 2;
-            this.setPixBox.TabStop = false;
-            this.setPixBox.Visible = false;
-            // 
-            // nrmlPicBox
-            // 
-            this.nrmlPicBox.Image = ((System.Drawing.Image)(resources.GetObject("nrmlPicBox.Image")));
-            this.nrmlPicBox.Location = new System.Drawing.Point(-1, -1);
-            this.nrmlPicBox.Name = "nrmlPicBox";
-            this.nrmlPicBox.Size = new System.Drawing.Size(685, 62);
-            this.nrmlPicBox.TabIndex = 0;
-            this.nrmlPicBox.TabStop = false;
             // 
             // stackPanel1
             // 
@@ -611,7 +291,7 @@
             this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
             this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 114F));
-            this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 179F));
+            this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181F));
             this.singProgTbl.Controls.Add(this.label32, 3, 0);
             this.singProgTbl.Controls.Add(this.t1stop, 3, 2);
             this.singProgTbl.Controls.Add(this.label31, 1, 0);
@@ -806,7 +486,7 @@
             this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
             this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
             this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 477F));
+            this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 479F));
             this.multProgTbl.Controls.Add(this.label25, 0, 4);
             this.multProgTbl.Controls.Add(this.label17, 3, 0);
             this.multProgTbl.Controls.Add(this.label2, 2, 0);
@@ -1188,7 +868,7 @@
             this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
             this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 319F));
+            this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 321F));
             this.singFixtTbl.Controls.Add(this.label3, 2, 0);
             this.singFixtTbl.Controls.Add(this.label7, 0, 0);
             this.singFixtTbl.Controls.Add(this.label8, 1, 0);
@@ -1381,7 +1061,7 @@
             this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
             this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
+            this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 387F));
             this.fixtPallTbl.Controls.Add(this.label26, 3, 0);
             this.fixtPallTbl.Controls.Add(this.label10, 2, 0);
             this.fixtPallTbl.Controls.Add(this.label9, 1, 0);
@@ -1689,7 +1369,7 @@
             this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.64029F));
             this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
+            this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
             this.multPartTbl.Controls.Add(this.label24, 2, 0);
             this.multPartTbl.Controls.Add(this.label11, 0, 0);
             this.multPartTbl.Controls.Add(this.label12, 1, 0);
@@ -1718,7 +1398,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label24.Location = new System.Drawing.Point(113, 2);
+            this.label24.Location = new System.Drawing.Point(110, 2);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(93, 16);
             this.label24.TabIndex = 6;
@@ -1740,9 +1420,9 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label12.Location = new System.Drawing.Point(59, 2);
+            this.label12.Location = new System.Drawing.Point(58, 2);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(46, 27);
+            this.label12.Size = new System.Drawing.Size(43, 27);
             this.label12.TabIndex = 3;
             this.label12.Text = "Operation";
             // 
@@ -1751,7 +1431,7 @@
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label39.Location = new System.Drawing.Point(216, 2);
+            this.label39.Location = new System.Drawing.Point(213, 2);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(67, 16);
             this.label39.TabIndex = 3;
@@ -1762,7 +1442,7 @@
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label40.Location = new System.Drawing.Point(295, 2);
+            this.label40.Location = new System.Drawing.Point(292, 2);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(59, 16);
             this.label40.TabIndex = 3;
@@ -1771,7 +1451,7 @@
             // t5gpTxt
             // 
             this.t5gpTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t5gpTxt.Location = new System.Drawing.Point(216, 34);
+            this.t5gpTxt.Location = new System.Drawing.Point(213, 34);
             this.t5gpTxt.Name = "t5gpTxt";
             this.t5gpTxt.Size = new System.Drawing.Size(71, 20);
             this.t5gpTxt.TabIndex = 4;
@@ -1779,7 +1459,7 @@
             // t5bpTxt
             // 
             this.t5bpTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t5bpTxt.Location = new System.Drawing.Point(295, 34);
+            this.t5bpTxt.Location = new System.Drawing.Point(292, 34);
             this.t5bpTxt.Name = "t5bpTxt";
             this.t5bpTxt.Size = new System.Drawing.Size(61, 20);
             this.t5bpTxt.TabIndex = 5;
@@ -1788,14 +1468,14 @@
             // 
             this.t5noPrtTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.t5noPrtTxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.t5noPrtTxt.Location = new System.Drawing.Point(113, 34);
+            this.t5noPrtTxt.Location = new System.Drawing.Point(110, 34);
             this.t5noPrtTxt.Name = "t5noPrtTxt";
             this.t5noPrtTxt.Size = new System.Drawing.Size(93, 20);
             this.t5noPrtTxt.TabIndex = 2;
             // 
             // t5strt
             // 
-            this.t5strt.Location = new System.Drawing.Point(113, 64);
+            this.t5strt.Location = new System.Drawing.Point(110, 64);
             this.t5strt.Name = "t5strt";
             this.t5strt.Size = new System.Drawing.Size(93, 23);
             this.t5strt.TabIndex = 3;
@@ -1805,7 +1485,7 @@
             // t5stop
             // 
             this.t5stop.Enabled = false;
-            this.t5stop.Location = new System.Drawing.Point(295, 64);
+            this.t5stop.Location = new System.Drawing.Point(292, 64);
             this.t5stop.Name = "t5stop";
             this.t5stop.Size = new System.Drawing.Size(59, 23);
             this.t5stop.TabIndex = 6;
@@ -1821,9 +1501,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t5opr1.Location = new System.Drawing.Point(59, 34);
+            this.t5opr1.Location = new System.Drawing.Point(58, 34);
             this.t5opr1.Name = "t5opr1";
-            this.t5opr1.Size = new System.Drawing.Size(46, 21);
+            this.t5opr1.Size = new System.Drawing.Size(44, 21);
             this.t5opr1.TabIndex = 9;
             // 
             // t5part1
@@ -1837,7 +1517,7 @@
             "Part3"});
             this.t5part1.Location = new System.Drawing.Point(5, 34);
             this.t5part1.Name = "t5part1";
-            this.t5part1.Size = new System.Drawing.Size(46, 21);
+            this.t5part1.Size = new System.Drawing.Size(45, 21);
             this.t5part1.TabIndex = 10;
             // 
             // tabPage6
@@ -1882,7 +1562,7 @@
             this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.90411F));
             this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119F));
             this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
+            this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
             this.twoPartTbl.Controls.Add(this.label14, 0, 1);
             this.twoPartTbl.Controls.Add(this.label21, 1, 0);
             this.twoPartTbl.Controls.Add(this.label22, 2, 0);
@@ -1918,7 +1598,7 @@
             this.label14.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label14.Location = new System.Drawing.Point(5, 24);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(29, 28);
+            this.label14.Size = new System.Drawing.Size(25, 28);
             this.label14.TabIndex = 7;
             this.label14.Text = "Part 1";
             // 
@@ -1927,7 +1607,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label21.Location = new System.Drawing.Point(43, 2);
+            this.label21.Location = new System.Drawing.Point(41, 2);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(37, 20);
             this.label21.TabIndex = 5;
@@ -1938,7 +1618,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label22.Location = new System.Drawing.Point(96, 2);
+            this.label22.Location = new System.Drawing.Point(93, 2);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(60, 16);
             this.label22.TabIndex = 3;
@@ -1951,7 +1631,7 @@
             this.label23.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label23.Location = new System.Drawing.Point(5, 2);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(29, 16);
+            this.label23.Size = new System.Drawing.Size(25, 20);
             this.label23.TabIndex = 6;
             this.label23.Text = "Part";
             // 
@@ -1960,7 +1640,7 @@
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label41.Location = new System.Drawing.Point(217, 2);
+            this.label41.Location = new System.Drawing.Point(214, 2);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(67, 16);
             this.label41.TabIndex = 3;
@@ -1973,7 +1653,7 @@
             this.label13.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label13.Location = new System.Drawing.Point(5, 54);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(29, 29);
+            this.label13.Size = new System.Drawing.Size(25, 29);
             this.label13.TabIndex = 8;
             this.label13.Text = "Part 2";
             // 
@@ -1982,7 +1662,7 @@
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label42.Location = new System.Drawing.Point(295, 2);
+            this.label42.Location = new System.Drawing.Point(292, 2);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(59, 16);
             this.label42.TabIndex = 3;
@@ -1991,7 +1671,7 @@
             // t6gp1Txt
             // 
             this.t6gp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6gp1Txt.Location = new System.Drawing.Point(217, 27);
+            this.t6gp1Txt.Location = new System.Drawing.Point(214, 27);
             this.t6gp1Txt.Name = "t6gp1Txt";
             this.t6gp1Txt.Size = new System.Drawing.Size(68, 20);
             this.t6gp1Txt.TabIndex = 5;
@@ -1999,7 +1679,7 @@
             // t6bp1Txt
             // 
             this.t6bp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6bp1Txt.Location = new System.Drawing.Point(295, 27);
+            this.t6bp1Txt.Location = new System.Drawing.Point(292, 27);
             this.t6bp1Txt.Name = "t6bp1Txt";
             this.t6bp1Txt.Size = new System.Drawing.Size(63, 20);
             this.t6bp1Txt.TabIndex = 6;
@@ -2007,7 +1687,7 @@
             // t6gp2Txt
             // 
             this.t6gp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6gp2Txt.Location = new System.Drawing.Point(217, 57);
+            this.t6gp2Txt.Location = new System.Drawing.Point(214, 57);
             this.t6gp2Txt.Name = "t6gp2Txt";
             this.t6gp2Txt.Size = new System.Drawing.Size(68, 20);
             this.t6gp2Txt.TabIndex = 7;
@@ -2015,14 +1695,14 @@
             // t6bp2Txt
             // 
             this.t6bp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6bp2Txt.Location = new System.Drawing.Point(295, 57);
+            this.t6bp2Txt.Location = new System.Drawing.Point(292, 57);
             this.t6bp2Txt.Name = "t6bp2Txt";
             this.t6bp2Txt.Size = new System.Drawing.Size(63, 20);
             this.t6bp2Txt.TabIndex = 8;
             // 
             // t6strt
             // 
-            this.t6strt.Location = new System.Drawing.Point(96, 88);
+            this.t6strt.Location = new System.Drawing.Point(93, 88);
             this.t6strt.Name = "t6strt";
             this.t6strt.Size = new System.Drawing.Size(67, 23);
             this.t6strt.TabIndex = 4;
@@ -2032,7 +1712,7 @@
             // t6stop
             // 
             this.t6stop.Enabled = false;
-            this.t6stop.Location = new System.Drawing.Point(295, 88);
+            this.t6stop.Location = new System.Drawing.Point(292, 88);
             this.t6stop.Name = "t6stop";
             this.t6stop.Size = new System.Drawing.Size(61, 23);
             this.t6stop.TabIndex = 9;
@@ -2048,9 +1728,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t6part1.Location = new System.Drawing.Point(43, 27);
+            this.t6part1.Location = new System.Drawing.Point(41, 27);
             this.t6part1.Name = "t6part1";
-            this.t6part1.Size = new System.Drawing.Size(45, 21);
+            this.t6part1.Size = new System.Drawing.Size(44, 21);
             this.t6part1.TabIndex = 10;
             // 
             // t6part2
@@ -2062,9 +1742,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t6part2.Location = new System.Drawing.Point(43, 57);
+            this.t6part2.Location = new System.Drawing.Point(41, 57);
             this.t6part2.Name = "t6part2";
-            this.t6part2.Size = new System.Drawing.Size(45, 21);
+            this.t6part2.Size = new System.Drawing.Size(44, 21);
             this.t6part2.TabIndex = 11;
             // 
             // t6opr1
@@ -2076,7 +1756,7 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t6opr1.Location = new System.Drawing.Point(96, 27);
+            this.t6opr1.Location = new System.Drawing.Point(93, 27);
             this.t6opr1.Name = "t6opr1";
             this.t6opr1.Size = new System.Drawing.Size(112, 21);
             this.t6opr1.TabIndex = 12;
@@ -2090,7 +1770,7 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t6opr2.Location = new System.Drawing.Point(96, 57);
+            this.t6opr2.Location = new System.Drawing.Point(93, 57);
             this.t6opr2.Name = "t6opr2";
             this.t6opr2.Size = new System.Drawing.Size(112, 21);
             this.t6opr2.TabIndex = 13;
@@ -2137,7 +1817,7 @@
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.97102F));
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174F));
             this.twoPathTbl.Controls.Add(this.t7opr2, 2, 2);
             this.twoPathTbl.Controls.Add(this.t7part2, 1, 2);
             this.twoPathTbl.Controls.Add(this.t7opr1, 2, 1);
@@ -2175,7 +1855,7 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t7opr2.Location = new System.Drawing.Point(95, 55);
+            this.t7opr2.Location = new System.Drawing.Point(92, 55);
             this.t7opr2.Name = "t7opr2";
             this.t7opr2.Size = new System.Drawing.Size(110, 21);
             this.t7opr2.TabIndex = 15;
@@ -2189,9 +1869,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t7part2.Location = new System.Drawing.Point(43, 55);
+            this.t7part2.Location = new System.Drawing.Point(42, 55);
             this.t7part2.Name = "t7part2";
-            this.t7part2.Size = new System.Drawing.Size(44, 21);
+            this.t7part2.Size = new System.Drawing.Size(42, 21);
             this.t7part2.TabIndex = 14;
             // 
             // t7opr1
@@ -2203,7 +1883,7 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t7opr1.Location = new System.Drawing.Point(95, 29);
+            this.t7opr1.Location = new System.Drawing.Point(92, 29);
             this.t7opr1.Name = "t7opr1";
             this.t7opr1.Size = new System.Drawing.Size(110, 21);
             this.t7opr1.TabIndex = 13;
@@ -2217,9 +1897,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t7part1.Location = new System.Drawing.Point(43, 29);
+            this.t7part1.Location = new System.Drawing.Point(42, 29);
             this.t7part1.Name = "t7part1";
-            this.t7part1.Size = new System.Drawing.Size(44, 21);
+            this.t7part1.Size = new System.Drawing.Size(42, 21);
             this.t7part1.TabIndex = 12;
             // 
             // label19
@@ -2238,7 +1918,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label15.Location = new System.Drawing.Point(43, 2);
+            this.label15.Location = new System.Drawing.Point(42, 2);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(37, 22);
             this.label15.TabIndex = 11;
@@ -2249,7 +1929,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label16.Location = new System.Drawing.Point(95, 2);
+            this.label16.Location = new System.Drawing.Point(92, 2);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(60, 16);
             this.label16.TabIndex = 3;
@@ -2271,7 +1951,7 @@
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label43.Location = new System.Drawing.Point(213, 2);
+            this.label43.Location = new System.Drawing.Point(210, 2);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(67, 16);
             this.label43.TabIndex = 3;
@@ -2293,7 +1973,7 @@
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label44.Location = new System.Drawing.Point(289, 2);
+            this.label44.Location = new System.Drawing.Point(286, 2);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(59, 16);
             this.label44.TabIndex = 3;
@@ -2302,7 +1982,7 @@
             // t7gp2Txt
             // 
             this.t7gp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7gp2Txt.Location = new System.Drawing.Point(213, 55);
+            this.t7gp2Txt.Location = new System.Drawing.Point(210, 55);
             this.t7gp2Txt.Name = "t7gp2Txt";
             this.t7gp2Txt.Size = new System.Drawing.Size(67, 20);
             this.t7gp2Txt.TabIndex = 7;
@@ -2310,7 +1990,7 @@
             // t7gp1Txt
             // 
             this.t7gp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7gp1Txt.Location = new System.Drawing.Point(213, 29);
+            this.t7gp1Txt.Location = new System.Drawing.Point(210, 29);
             this.t7gp1Txt.Name = "t7gp1Txt";
             this.t7gp1Txt.Size = new System.Drawing.Size(67, 20);
             this.t7gp1Txt.TabIndex = 5;
@@ -2318,7 +1998,7 @@
             // t7bp1Txt
             // 
             this.t7bp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7bp1Txt.Location = new System.Drawing.Point(289, 29);
+            this.t7bp1Txt.Location = new System.Drawing.Point(286, 29);
             this.t7bp1Txt.Name = "t7bp1Txt";
             this.t7bp1Txt.Size = new System.Drawing.Size(69, 20);
             this.t7bp1Txt.TabIndex = 6;
@@ -2326,14 +2006,14 @@
             // t7bp2Txt
             // 
             this.t7bp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7bp2Txt.Location = new System.Drawing.Point(289, 55);
+            this.t7bp2Txt.Location = new System.Drawing.Point(286, 55);
             this.t7bp2Txt.Name = "t7bp2Txt";
             this.t7bp2Txt.Size = new System.Drawing.Size(69, 20);
             this.t7bp2Txt.TabIndex = 8;
             // 
             // t7strt
             // 
-            this.t7strt.Location = new System.Drawing.Point(95, 85);
+            this.t7strt.Location = new System.Drawing.Point(92, 85);
             this.t7strt.Name = "t7strt";
             this.t7strt.Size = new System.Drawing.Size(62, 25);
             this.t7strt.TabIndex = 4;
@@ -2343,12 +2023,332 @@
             // t7stop
             // 
             this.t7stop.Enabled = false;
-            this.t7stop.Location = new System.Drawing.Point(289, 85);
+            this.t7stop.Location = new System.Drawing.Point(286, 85);
             this.t7stop.Name = "t7stop";
             this.t7stop.Size = new System.Drawing.Size(70, 25);
             this.t7stop.TabIndex = 9;
             this.t7stop.Text = "Stop";
             this.t7stop.UseVisualStyleBackColor = true;
+            // 
+            // greetLbl
+            // 
+            this.greetLbl.AutoSize = true;
+            this.greetLbl.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greetLbl.Location = new System.Drawing.Point(126, 57);
+            this.greetLbl.Name = "greetLbl";
+            this.greetLbl.Size = new System.Drawing.Size(232, 23);
+            this.greetLbl.TabIndex = 28;
+            this.greetLbl.Text = "Select an option from the Left";
+            this.greetLbl.Visible = false;
+            // 
+            // logInPnl
+            // 
+            this.logInPnl.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.logInPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.logInPnl.Controls.Add(this.isSetup);
+            this.logInPnl.Controls.Add(this.loginBtn);
+            this.logInPnl.Controls.Add(this.label30);
+            this.logInPnl.Controls.Add(this.curEmpIdTxt);
+            this.logInPnl.Location = new System.Drawing.Point(91, 83);
+            this.logInPnl.Name = "logInPnl";
+            this.logInPnl.Size = new System.Drawing.Size(308, 96);
+            this.logInPnl.TabIndex = 26;
+            this.logInPnl.Visible = false;
+            // 
+            // isSetup
+            // 
+            this.isSetup.AutoSize = true;
+            this.isSetup.ForeColor = System.Drawing.Color.White;
+            this.isSetup.Location = new System.Drawing.Point(168, 67);
+            this.isSetup.Name = "isSetup";
+            this.isSetup.Size = new System.Drawing.Size(54, 17);
+            this.isSetup.TabIndex = 17;
+            this.isSetup.Text = "Setup";
+            this.isSetup.UseVisualStyleBackColor = true;
+            // 
+            // loginBtn
+            // 
+            this.loginBtn.Location = new System.Drawing.Point(87, 61);
+            this.loginBtn.Name = "loginBtn";
+            this.loginBtn.Size = new System.Drawing.Size(75, 23);
+            this.loginBtn.TabIndex = 16;
+            this.loginBtn.Text = "Login";
+            this.loginBtn.UseVisualStyleBackColor = true;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label30.Location = new System.Drawing.Point(111, 8);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(88, 20);
+            this.label30.TabIndex = 15;
+            this.label30.Text = "Employee ID";
+            // 
+            // curEmpIdTxt
+            // 
+            this.curEmpIdTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.curEmpIdTxt.Location = new System.Drawing.Point(87, 34);
+            this.curEmpIdTxt.Name = "curEmpIdTxt";
+            this.curEmpIdTxt.Size = new System.Drawing.Size(134, 20);
+            this.curEmpIdTxt.TabIndex = 3;
+            this.curEmpIdTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.curEmpIdTxt_GotFocus);
+            // 
+            // cliNumStatLbl
+            // 
+            this.cliNumStatLbl.AutoSize = true;
+            this.cliNumStatLbl.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cliNumStatLbl.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.cliNumStatLbl.Location = new System.Drawing.Point(1, 23);
+            this.cliNumStatLbl.Name = "cliNumStatLbl";
+            this.cliNumStatLbl.Size = new System.Drawing.Size(124, 16);
+            this.cliNumStatLbl.TabIndex = 20;
+            this.cliNumStatLbl.Text = "No Clients Connected";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.twoPathBtn6);
+            this.panel2.Controls.Add(this.twoPartBtn5);
+            this.panel2.Controls.Add(this.multPartBtn4);
+            this.panel2.Controls.Add(this.FixtPallBtn3);
+            this.panel2.Controls.Add(this.singFixtBtn2);
+            this.panel2.Controls.Add(this.multProgBtn1);
+            this.panel2.Controls.Add(this.singProgBtn0);
+            this.panel2.Location = new System.Drawing.Point(7, 73);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(196, 265);
+            this.panel2.TabIndex = 32;
+            // 
+            // twoPathBtn6
+            // 
+            this.twoPathBtn6.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.twoPathBtn6.Location = new System.Drawing.Point(3, 234);
+            this.twoPathBtn6.Name = "twoPathBtn6";
+            this.twoPathBtn6.Size = new System.Drawing.Size(186, 27);
+            this.twoPathBtn6.TabIndex = 6;
+            this.twoPathBtn6.TabStop = false;
+            this.twoPathBtn6.Text = "Two Parts - Two Paths";
+            this.twoPathBtn6.UseVisualStyleBackColor = true;
+            this.twoPathBtn6.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // twoPartBtn5
+            // 
+            this.twoPartBtn5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.twoPartBtn5.Location = new System.Drawing.Point(2, 184);
+            this.twoPartBtn5.Name = "twoPartBtn5";
+            this.twoPartBtn5.Size = new System.Drawing.Size(186, 46);
+            this.twoPartBtn5.TabIndex = 5;
+            this.twoPartBtn5.TabStop = false;
+            this.twoPartBtn5.Text = "Two Different Parts - Single Workpiece";
+            this.twoPartBtn5.UseVisualStyleBackColor = true;
+            this.twoPartBtn5.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // multPartBtn4
+            // 
+            this.multPartBtn4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multPartBtn4.Location = new System.Drawing.Point(3, 135);
+            this.multPartBtn4.Name = "multPartBtn4";
+            this.multPartBtn4.Size = new System.Drawing.Size(186, 44);
+            this.multPartBtn4.TabIndex = 4;
+            this.multPartBtn4.TabStop = false;
+            this.multPartBtn4.Text = "Multiple Similar Parts - Single Workpiece";
+            this.multPartBtn4.UseVisualStyleBackColor = true;
+            this.multPartBtn4.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // FixtPallBtn3
+            // 
+            this.FixtPallBtn3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FixtPallBtn3.Location = new System.Drawing.Point(3, 102);
+            this.FixtPallBtn3.Name = "FixtPallBtn3";
+            this.FixtPallBtn3.Size = new System.Drawing.Size(186, 27);
+            this.FixtPallBtn3.TabIndex = 3;
+            this.FixtPallBtn3.TabStop = false;
+            this.FixtPallBtn3.Text = "Pallet with Fixtures";
+            this.FixtPallBtn3.UseVisualStyleBackColor = true;
+            this.FixtPallBtn3.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // singFixtBtn2
+            // 
+            this.singFixtBtn2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.singFixtBtn2.Location = new System.Drawing.Point(3, 69);
+            this.singFixtBtn2.Name = "singFixtBtn2";
+            this.singFixtBtn2.Size = new System.Drawing.Size(186, 27);
+            this.singFixtBtn2.TabIndex = 2;
+            this.singFixtBtn2.TabStop = false;
+            this.singFixtBtn2.Text = "Multiple Parts - Single Fixture";
+            this.singFixtBtn2.UseVisualStyleBackColor = true;
+            this.singFixtBtn2.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // multProgBtn1
+            // 
+            this.multProgBtn1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multProgBtn1.Location = new System.Drawing.Point(3, 36);
+            this.multProgBtn1.Name = "multProgBtn1";
+            this.multProgBtn1.Size = new System.Drawing.Size(186, 27);
+            this.multProgBtn1.TabIndex = 1;
+            this.multProgBtn1.TabStop = false;
+            this.multProgBtn1.Text = "Multiple Programs";
+            this.multProgBtn1.UseVisualStyleBackColor = true;
+            this.multProgBtn1.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // singProgBtn0
+            // 
+            this.singProgBtn0.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.singProgBtn0.Location = new System.Drawing.Point(3, 3);
+            this.singProgBtn0.Name = "singProgBtn0";
+            this.singProgBtn0.Size = new System.Drawing.Size(186, 27);
+            this.singProgBtn0.TabIndex = 0;
+            this.singProgBtn0.TabStop = false;
+            this.singProgBtn0.Text = "Single Program";
+            this.singProgBtn0.UseVisualStyleBackColor = true;
+            this.singProgBtn0.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // sockStatLbl
+            // 
+            this.sockStatLbl.AutoSize = true;
+            this.sockStatLbl.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sockStatLbl.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.sockStatLbl.Location = new System.Drawing.Point(1, 1);
+            this.sockStatLbl.Name = "sockStatLbl";
+            this.sockStatLbl.Size = new System.Drawing.Size(85, 16);
+            this.sockStatLbl.TabIndex = 19;
+            this.sockStatLbl.Text = "Socket Closed";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.cliNumStatLbl);
+            this.panel1.Controls.Add(this.sockStatLbl);
+            this.panel1.Location = new System.Drawing.Point(207, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(359, 53);
+            this.panel1.TabIndex = 19;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(632, 1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(54, 55);
+            this.button1.TabIndex = 29;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // empIdLbl
+            // 
+            this.empIdLbl.AutoSize = true;
+            this.empIdLbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.empIdLbl.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.empIdLbl.Location = new System.Drawing.Point(1, 24);
+            this.empIdLbl.Name = "empIdLbl";
+            this.empIdLbl.Size = new System.Drawing.Size(0, 15);
+            this.empIdLbl.TabIndex = 27;
+            // 
+            // empIdIndLbl
+            // 
+            this.empIdIndLbl.AutoSize = true;
+            this.empIdIndLbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.empIdIndLbl.Location = new System.Drawing.Point(-1, 2);
+            this.empIdIndLbl.Name = "empIdIndLbl";
+            this.empIdIndLbl.Size = new System.Drawing.Size(138, 15);
+            this.empIdIndLbl.TabIndex = 26;
+            this.empIdIndLbl.Text = "No Employee Logged In";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.Info;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.button1);
+            this.panel5.Controls.Add(this.panel4);
+            this.panel5.Controls.Add(this.settingBtn);
+            this.panel5.Controls.Add(this.panel1);
+            this.panel5.Location = new System.Drawing.Point(2, 344);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(693, 63);
+            this.panel5.TabIndex = 34;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.empIdLbl);
+            this.panel4.Controls.Add(this.empIdIndLbl);
+            this.panel4.Controls.Add(this.logoutBtn);
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(196, 53);
+            this.panel4.TabIndex = 25;
+            // 
+            // logoutBtn
+            // 
+            this.logoutBtn.Image = ((System.Drawing.Image)(resources.GetObject("logoutBtn.Image")));
+            this.logoutBtn.Location = new System.Drawing.Point(134, 2);
+            this.logoutBtn.Name = "logoutBtn";
+            this.logoutBtn.Size = new System.Drawing.Size(54, 43);
+            this.logoutBtn.TabIndex = 25;
+            this.logoutBtn.TabStop = false;
+            this.logoutBtn.UseVisualStyleBackColor = true;
+            this.logoutBtn.Visible = false;
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
+            // 
+            // settingBtn
+            // 
+            this.settingBtn.BackColor = System.Drawing.Color.White;
+            this.settingBtn.Enabled = false;
+            this.settingBtn.Image = ((System.Drawing.Image)(resources.GetObject("settingBtn.Image")));
+            this.settingBtn.Location = new System.Drawing.Point(572, 1);
+            this.settingBtn.Name = "settingBtn";
+            this.settingBtn.Size = new System.Drawing.Size(54, 55);
+            this.settingBtn.TabIndex = 24;
+            this.settingBtn.UseVisualStyleBackColor = false;
+            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.opPicBox);
+            this.panel3.Controls.Add(this.setPixBox);
+            this.panel3.Controls.Add(this.nrmlPicBox);
+            this.panel3.Location = new System.Drawing.Point(7, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(688, 65);
+            this.panel3.TabIndex = 33;
+            // 
+            // opPicBox
+            // 
+            this.opPicBox.Image = ((System.Drawing.Image)(resources.GetObject("opPicBox.Image")));
+            this.opPicBox.Location = new System.Drawing.Point(0, -1);
+            this.opPicBox.Name = "opPicBox";
+            this.opPicBox.Size = new System.Drawing.Size(685, 62);
+            this.opPicBox.TabIndex = 1;
+            this.opPicBox.TabStop = false;
+            this.opPicBox.Visible = false;
+            // 
+            // setPixBox
+            // 
+            this.setPixBox.Image = ((System.Drawing.Image)(resources.GetObject("setPixBox.Image")));
+            this.setPixBox.Location = new System.Drawing.Point(0, -1);
+            this.setPixBox.Name = "setPixBox";
+            this.setPixBox.Size = new System.Drawing.Size(685, 62);
+            this.setPixBox.TabIndex = 2;
+            this.setPixBox.TabStop = false;
+            this.setPixBox.Visible = false;
+            // 
+            // nrmlPicBox
+            // 
+            this.nrmlPicBox.Image = ((System.Drawing.Image)(resources.GetObject("nrmlPicBox.Image")));
+            this.nrmlPicBox.Location = new System.Drawing.Point(-1, -1);
+            this.nrmlPicBox.Name = "nrmlPicBox";
+            this.nrmlPicBox.Size = new System.Drawing.Size(685, 62);
+            this.nrmlPicBox.TabIndex = 0;
+            this.nrmlPicBox.TabStop = false;
             // 
             // MainForm
             // 
@@ -2365,18 +2365,6 @@
             this.Text = "System Insights : vimana Part and Operation Input";
             this.controlPnl.ResumeLayout(false);
             this.controlPnl.PerformLayout();
-            this.logInPnl.ResumeLayout(false);
-            this.logInPnl.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.opPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.setPixBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nrmlPicBox)).EndInit();
             this.stackPanel1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.singProgTbl.ResumeLayout(false);
@@ -2413,6 +2401,18 @@
             this.panel11.PerformLayout();
             this.twoPathTbl.ResumeLayout(false);
             this.twoPathTbl.PerformLayout();
+            this.logInPnl.ResumeLayout(false);
+            this.logInPnl.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.opPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.setPixBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nrmlPicBox)).EndInit();
             this.ResumeLayout(false);
 
         }

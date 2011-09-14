@@ -88,5 +88,13 @@ namespace VimanaPoi
             return true;
         }
 
+        public void ReadUnRead(Control[] ctrl,bool bl)
+        {
+            foreach (Control ct in ctrl)
+            {
+                ct.Enabled = bl;
+            }
+        }
+
     }
 }
