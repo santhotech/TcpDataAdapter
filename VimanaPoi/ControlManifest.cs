@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 using System.Collections;
+using System.Drawing;
 
 namespace VimanaPoi
 {
@@ -14,14 +15,14 @@ namespace VimanaPoi
         public Control[] tbl1strt;
         public Control[] tbl1stop;
 
-        public Control[] tbl2strt;
-        public Control[] tbl2stop;
+       // public Control[] tbl2strt;
+      //  public Control[] tbl2stop;
 
         public Control[] tbl3strt;
         public Control[] tbl3stop;
 
-        public Control[] tbl4strt;
-        public Control[] tbl4stop;
+       // public Control[] tbl4strt;
+       // public Control[] tbl4stop;
 
         public Control[] tbl5strt;
         public Control[] tbl5stop;
@@ -93,6 +94,14 @@ namespace VimanaPoi
             foreach (Control ct in ctrl)
             {
                 ct.Enabled = bl;
+                if (bl == true)
+                {
+                    ct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+                }
+                else
+                {
+                    ct.BackColor = Color.White;
+                }
             }
         }
 
