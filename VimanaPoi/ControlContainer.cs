@@ -11,5 +11,7 @@ namespace VimanaPoi
         public Control[] stop { get; set; }
         public String cmdStrt { get; set; }
         public String cmdStop { get; set; }
+        public Button strtBtn { get; set; }
+        public Button stopBtn { get; set; }
     }
 }

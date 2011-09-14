@@ -30,6 +30,19 @@ namespace VimanaPoi
             sockStatLbl.Text = "Listening on port " + port;
         }
 
+        public void Form1_Closing(object sender, CancelEventArgs cArgs)
+        {
+            Environment.Exit(0);
+            if (sender == this)
+            {
+                //MessageBox.Show("Form Closing Event....");
+                if (sender != this)
+                {
+                    cArgs.Cancel = true;
+                }
+            }
+        }
+
         private void tcp_ClientCountChanged(int count)
         {            
             cliNumStatLbl.BeginInvoke((MethodInvoker)(() => cliNumStatLbl.Text  = count.ToString() + " " + GetClientMsg(count) + " Connected"));
@@ -79,31 +92,31 @@ namespace VimanaPoi
             com.tbl1stop = new Control[] { t1gpTxt, t1bpTxt };
             cmdFormat = "{0}|part-type|{1}\n{0}|operation-type|{2}\n";
             cmdStop = "{0}|part-count-good|{1}\n{0}|part-count-bad|{2}\n";
-            _manifest.Add("1", new ControlContainer { strt = com.tbl1strt, stop = com.tbl1stop, cmdStrt = cmdFormat, cmdStop = cmdStop });
+            _manifest.Add("1", new ControlContainer { strt = com.tbl1strt, stop = com.tbl1stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = t1strt, stopBtn = t1stop });
             
             com.tbl3strt = new Control[] { t3part1, t3opr1, t3fixPosnTxt };
             com.tbl3stop = new Control[] { t3gpTxt, t3bpTxt };
             cmdFormat = "{0}|part-type|{1}\n{0}|operation-type|{2}\n{0}|fixture-positions|{3}\n";
             cmdStop = "{0}|part-count-good|{1}\n{0}|part-count-bad|{2}\n";
-            _manifest.Add("3", new ControlContainer { strt = com.tbl3strt, stop = com.tbl3stop, cmdStrt = cmdFormat, cmdStop = cmdStop });            
+            _manifest.Add("3", new ControlContainer { strt = com.tbl3strt, stop = com.tbl3stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = t3strt, stopBtn = t3stop });            
 
             com.tbl5strt = new Control[] { t5part1, t5opr1, t5noPrtTxt };
             com.tbl5stop = new Control[] { t5gpTxt, t5bpTxt };
             cmdFormat = "{0}|part-type|{1}\n{0}|operation-type|{2}\n{0}|parts-per-workpiece|{3}\n";
             cmdStop = "{0}|part-count-good|{1}\n{0}|part-count-bad|{2}\n";
-            _manifest.Add("5", new ControlContainer { strt = com.tbl5strt, stop = com.tbl5stop, cmdStrt = cmdFormat, cmdStop = cmdStop });
+            _manifest.Add("5", new ControlContainer { strt = com.tbl5strt, stop = com.tbl5stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = t5strt, stopBtn = t5stop });
 
             com.tbl6strt = new Control[] { t6part1, t6opr1, t6part2, t6opr2 };
             com.tbl6stop = new Control[] { t6gp1Txt, t6bp1Txt, t6gp2Txt, t6bp2Txt };
             cmdFormat = "{0}|multi-part-config|nparts=2;part-type1={1};operation-type1={2};part-type2={3};operation-type2={4}\n";
             cmdStop = "{0}|part-count-multiple|good1={1};bad1={2};good2={3};bad2={4};\n";
-            _manifest.Add("6", new ControlContainer { strt = com.tbl6strt, stop = com.tbl6stop, cmdStrt = cmdFormat, cmdStop = cmdStop });
+            _manifest.Add("6", new ControlContainer { strt = com.tbl6strt, stop = com.tbl6stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = t6strt, stopBtn = t6stop });
 
             com.tbl7strt = new Control[] { t7part1, t7opr1, t7part2, t7opr2 };
             com.tbl7stop = new Control[] { t7gp1Txt, t7bp1Txt, t7gp2Txt, t7bp2Txt };
             cmdFormat = "{0}|path-config|path=1;part-type1={1};operation-type1={2};path=2;part-type={3};operation-type={4}\n";
             cmdStop = "{0}|part-count-multiple|good1={1};bad1={2};good2={3};bad2={4};\n";
-            _manifest.Add("7", new ControlContainer { strt = com.tbl7strt, stop = com.tbl7stop, cmdStrt = cmdFormat, cmdStop = cmdStop });
+            _manifest.Add("7", new ControlContainer { strt = com.tbl7strt, stop = com.tbl7stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = t7strt, stopBtn = t7stop });
 
         }
 
@@ -199,6 +212,7 @@ namespace VimanaPoi
             string name = n.Name;
             int index = Int32.Parse(name.Substring(name.Length - 1, 1));
             stackPanel1.SelectedIndex = index;
+            com.ReadUnRead(_manifest[(index + 1).ToString()].stop, false);
         }     
 
         private void button1_Click(object sender, EventArgs e)
@@ -210,13 +224,16 @@ namespace VimanaPoi
         {
             Button b = (Button)sender;
             string typ = b.Name.Substring(2, 4);
-            string ind = b.Name.Substring(1, 1);
-            b.Enabled = false;
+            string ind = b.Name.Substring(1, 1);        
             Control[] ctrl;
-            if (typ == "strt") { ctrl = _manifest[ind].strt; } else { ctrl = _manifest[ind].stop; }
+            string cmdToSend;
+            if (typ == "strt") { ctrl = _manifest[ind].strt; cmdToSend = _manifest[ind].cmdStrt; } else { ctrl = _manifest[ind].stop; cmdToSend = _manifest[ind].cmdStop; }
             if (com.ValidateControls(ctrl))
             {
-                tcp.sndData(String.Format(_manifest[ind].cmdStrt, com.GetData(_manifest[ind].strt)));
+                b.Enabled = false;
+                tcp.sndData(String.Format(cmdToSend, com.GetData(ctrl)));
+                if (typ == "strt") { com.ReadUnRead(_manifest[ind].strt, false); com.ReadUnRead(_manifest[ind].stop, true); disableAllMenu(); _manifest[ind].stopBtn.Enabled = true; }
+                if (typ == "stop") { com.ReadUnRead(_manifest[ind].stop, false); com.ReadUnRead(_manifest[ind].strt, true); loadDefaults(); _manifest[ind].strtBtn.Enabled = true; }
             }
             else
             {
