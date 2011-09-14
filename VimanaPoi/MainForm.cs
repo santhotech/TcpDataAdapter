@@ -117,6 +117,7 @@ namespace VimanaPoi
             twoPartBtn5.Enabled = false;
             twoPathBtn6.Enabled = false;
         }
+
         private void doLogin()
         {
             Validations val = new Validations();
@@ -164,10 +165,9 @@ namespace VimanaPoi
         {
             return DateTime.UtcNow.ToString("o");
         }
-        //capturing key event        
+            
         void curEmpIdTxt_GotFocus(Object sender, KeyEventArgs e)
-        {
-            //MessageBox.Show(e.KeyCode.ToString());
+        {            
             if (e.KeyCode.ToString() == "Return")
             {
                 doLogin();
@@ -222,13 +222,6 @@ namespace VimanaPoi
             {
                 Error("Enter All the fields");
             }
-        }
-
-        private void t1strt_Click(object sender, EventArgs e)
-        {
-
-        }
-
-                   
+        }                           
     }
 }
