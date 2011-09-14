@@ -12,7 +12,8 @@ namespace VimanaPoi
     public partial class MainForm : Form
     {
         ControlManifest com;
-        Commands cmd;       
+        Commands cmd;
+        TcpActions tcp;
         public MainForm()
         {
             InitializeComponent();                        
@@ -20,7 +21,10 @@ namespace VimanaPoi
             Init_Login();
             com = new ControlManifest();
             ManifestControls();
-            cmd = new Commands(com);  
+            cmd = new Commands(com);
+            tcp = new TcpActions();
+            string port = Properties.Settings.Default.port.ToString();
+            sockStatLbl.Text = "Listening on port " + port;
         }
         private void Init_Login()
         {

@@ -15,6 +15,22 @@ namespace VimanaPoi
         private ArrayList clients;
         private int count;
 
+        public delegate void ClientCountChangedEventHandler(int clientCount);
+        public event ClientCountChangedEventHandler ClientCountChanged;
+        
+        public int ClientCount
+        {
+            get { return this.count; }
+            set
+            {
+                this.count = value;
+                if (ClientCountChanged != null)
+                {
+                    this.ClientCountChanged(count);
+                }
+            }
+        }
+
         public TcpActions()
         {            
             int port = Properties.Settings.Default.port;
