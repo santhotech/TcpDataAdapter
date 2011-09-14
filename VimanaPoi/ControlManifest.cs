@@ -10,8 +10,29 @@ namespace VimanaPoi
     {
         ComboBox[] parts;
         ComboBox[] opr;
-        public Control[] tbl1;
-        public ControlManifest();
+        
+        public Control[] tbl1strt;
+        public Control[] tbl1stop;
+
+        public Control[] tbl2strt;
+        public Control[] tbl2stop;
+
+        public Control[] tbl3strt;
+        public Control[] tbl3stop;
+
+        public Control[] tbl4strt;
+        public Control[] tbl4stop;
+
+        public Control[] tbl5strt;
+        public Control[] tbl5stop;
+
+        public Control[] tbl6strt;
+        public Control[] tbl6stop;
+
+        public Control[] tbl7strt;
+        public Control[] tbl7stop;
+
+        public ControlManifest(){}
         public ControlManifest(ComboBox[] parts,ComboBox[] opr)
         {
             this.parts = parts;
@@ -21,14 +42,20 @@ namespace VimanaPoi
 
         public string[] GetData(Control[] ctrl)
         {
-            string[] str = new string[] { };
-            int i = 0;
+            string[] str = new string[ctrl.Length+1]; 
+            int i = 1;
+            str[0] = getCurrTime();
             foreach (Control ct in ctrl)
             {
                 str[i] = ct.Text; 
                 i++;
             }
             return str;
+        }
+
+        public string getCurrTime()
+        {
+            return DateTime.UtcNow.ToString("o");
         }
 
         private void PopulateComboBoxes()

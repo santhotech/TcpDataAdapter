@@ -6,16 +6,20 @@ namespace VimanaPoi
 {
     class Commands
     {
-        ControlManifest com = new ControlManifest(); 
-        public string getCurrTime()
+        ControlManifest cmf;
+        public Commands(ControlManifest cmf)
         {
-            return DateTime.UtcNow.ToString("o");
+            this.cmf = cmf;
         }
+        ControlManifest com = new ControlManifest(); 
+        
 
-        public void SingProgTbl()
+        public string SingProgTbl()
         {
             string cmdFormat = "{0}|part-type|{1}\n{0}|operation-type|{2}\n";
-            string cmd = String.Format(cmdFormat, getCurrTime(), com.GetData(com.tbl1));
+            string[] data = com.GetData(cmf.tbl1strt);
+            string cmd = String.Format(cmdFormat, data);
+            return cmd;
         }
 
     }

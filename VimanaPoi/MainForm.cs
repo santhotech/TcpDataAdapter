@@ -11,12 +11,16 @@ namespace VimanaPoi
 {
     public partial class MainForm : Form
     {
-        ControlManifest com = new ControlManifest();               
+        ControlManifest com;
+        Commands cmd;       
         public MainForm()
         {
             InitializeComponent();                        
             this.StartPosition = FormStartPosition.CenterScreen;
-            Init_Login();        
+            Init_Login();
+            com = new ControlManifest();
+            ManifestControls();
+            cmd = new Commands(com);  
         }
         private void Init_Login()
         {
@@ -46,7 +50,27 @@ namespace VimanaPoi
 
         private void ManifestControls()
         {
-            com.tbl1 = new Control[] { t1part1, t1opr1 };
+            com.tbl1strt = new Control[] { t1part1, t1opr1 };
+            com.tbl1stop = new Control[] { t1gpTxt, t1bpTxt };
+
+            com.tbl2strt = new Control[] { t2prog1,t2part1,t2opr1,t2prog2,t2part2,t2opr2,t2prog3,t2part3,t2opr3,t2prog4,t2part4,t2opr4 };
+            com.tbl2stop = new Control[] { t2gp1, t2bp1, t2gp2, t2bp2, t2gp3, t2bp3, t2gp4, t2bp4 };
+
+            com.tbl3strt = new Control[] { t3part1, t3opr1, t3fixPosnTxt };
+            com.tbl3stop = new Control[] { t3gpTxt, t3bpTxt };
+
+            com.tbl4strt = new Control[] { t4part1, t4opr1, t4fixPosn1Txt, t4part2, t4opr2, t4fixPosn2Txt };
+            com.tbl4stop = new Control[] { t4gp1Txt, t4bp1Txt, t4gp2Txt, t4bp2Txt };
+
+            com.tbl5strt = new Control[] { t5part1, t5opr1, t5noPrtTxt };
+            com.tbl5stop = new Control[] { t5gpTxt, t5bpTxt };
+
+            com.tbl6strt = new Control[] { t6part1, t6opr1, t6part2, t6opr2 };
+            com.tbl6stop = new Control[] { t6gp1Txt, t6bp1Txt, t6gp2Txt, t6bp2Txt };
+
+            com.tbl7strt = new Control[] { t7part1, t7opr1, t7part2, t7opr2 };
+            com.tbl7stop = new Control[] { t7gp1Txt, t7bp1Txt, t7gp2Txt, t7bp2Txt };
+
         }
 
         private void disableAllMenu()
@@ -162,6 +186,11 @@ namespace VimanaPoi
         private void button1_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void t1strt_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(cmd.SingProgTbl());
         }
                    
     }
