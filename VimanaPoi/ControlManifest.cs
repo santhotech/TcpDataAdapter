@@ -89,6 +89,18 @@ namespace VimanaPoi
             return str;
         }
 
+        public string[] GetShowData(Control[] ctrl)
+        {
+            string[] str = new string[ctrl.Length + 1];
+            int i = 0;            
+            foreach (Control ct in ctrl)
+            {
+                str[i] = ct.Text;
+                i++;
+            }
+            return str;
+        }
+
         public string getCurrTime()
         {
             return DateTime.UtcNow.ToString("o");
