@@ -521,6 +521,11 @@ namespace VimanaPoi
             td.MakeReadOnly(c);
             td.MakeReadOnly(b);
         }
+
+        private void PopulateOperation(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.Text);
+        }
        
                   
     }

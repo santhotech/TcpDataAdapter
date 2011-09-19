@@ -15,14 +15,8 @@ namespace VimanaPoi
         public Control[] tbl1strt;
         public Control[] tbl1stop;
 
-       // public Control[] tbl2strt;
-      //  public Control[] tbl2stop;
-
         public Control[] tbl3strt;
         public Control[] tbl3stop;
-
-       // public Control[] tbl4strt;
-       // public Control[] tbl4stop;
 
         public Control[] tbl5strt;
         public Control[] tbl5stop;
@@ -66,6 +60,7 @@ namespace VimanaPoi
             }
             return true;
         }
+
         bool IsAllDigits(string s)
         {
             foreach (char c in s)
@@ -222,6 +217,5 @@ namespace VimanaPoi
             }
             return parameters;
         }
-
     }
 }
