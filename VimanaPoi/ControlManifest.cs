@@ -175,7 +175,7 @@ namespace VimanaPoi
                     {
                         if (curObjName.IndexOf(entry.Key.ToString()) != -1)
                         {
-                            for (int j = 1; j < 3; j++)
+                            for (int j = 1; j < 5; j++)
                             {
                                 if (curObjName.Substring(2).IndexOf(j.ToString()) != -1)
                                 {
