@@ -90,9 +90,9 @@ namespace VimanaPoi
             disableAllMenu();
             logInPnl.Visible = true;
             logoutBtn.Visible = false;
-            empIdLbl.Visible = false;
-            macNameLbl.Text = Properties.Settings.Default.machinename;
+            empIdLbl.Visible = false;            
             empIdIndLbl.Text = "Not Logged In";
+            macNameLbl.Text = "N/A";
             greetLbl.Visible = false;
         }
 
@@ -218,6 +218,7 @@ namespace VimanaPoi
                 greetLbl.Visible = true;
                 string cmd = getCurrTime() + "|EMP|" + curEmpIdTxt.Text + "\n";
                 MainfestionComboBoxes();
+                macNameLbl.Text = Properties.Settings.Default.machinename;
             }
             else 
             {
