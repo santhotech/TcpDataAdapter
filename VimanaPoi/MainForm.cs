@@ -28,6 +28,28 @@ namespace VimanaPoi
             tcp.ClientCountChanged += new TcpActions.ClientCountChangedEventHandler(tcp_ClientCountChanged);
             string port = Properties.Settings.Default.port.ToString();
             sockStatLbl.Text = "Listening on port " + port;
+            MultiProgTblInit();
+        }
+        MultiProgTbl td = new MultiProgTbl();
+        public void MultiProgTblInit()
+        {            
+            //textboex of table 2 separately
+            td.t2progBox = new TextBox[4] { t2prog1, t2prog2, t2prog3, t2prog4 };
+            td.t2partBox = new ComboBox[4] { t2part1, t2part2, t2part3, t2part4 };
+            td.t2operBox = new ComboBox[4] { t2opr1, t2opr2, t2opr3, t2opr4 };
+            td.t2gpbox = new TextBox[4] { t2gp1, t2gp2, t2gp3, t2gp4 };
+            td.t2bpbox = new TextBox[4] { t2bp1, t2bp2, t2bp3, t2bp4 };
+            //adding table 2 textbox to array
+            var t2sndlist = new List<Control>();
+            t2sndlist.AddRange(td.t2progBox);
+            t2sndlist.AddRange(td.t2partBox);
+            t2sndlist.AddRange(td.t2operBox);
+            td.t2snd = t2sndlist.ToArray();
+            var t2stplist = new List<TextBox>();
+            t2stplist.AddRange(td.t2gpbox);
+            t2stplist.AddRange(td.t2bpbox);
+            td.t2stp = t2stplist.ToArray();
+            td.t2btn = new Button[] { t2strt, t2stop };
         }
 
         public void Form1_Closing(object sender, CancelEventArgs cArgs)
@@ -244,6 +266,179 @@ namespace VimanaPoi
                 this.ActiveControl = (Control)astatus[1];                
                 Error(status);
             }
-        }                           
+        }
+        private void switchBtn(int flg, Button[] btn)
+        {
+            Button tst = btn[0];
+            Button tsp = btn[1];
+            if (flg == 1)
+            {
+                tst.Enabled = false;
+                tsp.Enabled = true;
+            }
+            if (flg == 2)
+            {
+                tst.Enabled = true;
+                tsp.Enabled = false;
+            }
+        }
+        public void getFrmMultProgTbl(int flg)
+        {
+            string cmd = string.Empty;
+            string err = string.Empty;
+            int j = 1;
+            int errCnt = 0;
+            Hashtable h = new Hashtable();
+            h.Add("prg", "Program");
+            h.Add("prt", "Part Name");
+            h.Add("opr", "Operation");
+            h.Add("gp", "Good Parts");
+            h.Add("bp", "Bad Parts");
+            var t = new List<Control>();
+            var k = new List<Control>();
+            Control[] m;
+            Control[] n;
+            if (flg == 1)
+            {
+                string showCmd = string.Empty;
+                Control tb = new Control();
+                tb = null;
+                for (int i = 0; i < 4; i++)
+                {
+                    if (td.t2progBox[i].Text == "" && td.t2partBox[i].Text == "" && td.t2operBox[i].Text == "")
+                    {
+                        t.Add(td.t2progBox[i]);
+                        t.Add(td.t2partBox[i]);
+                        t.Add(td.t2operBox[i]);
+                        errCnt++;
+                        if (errCnt == 4)
+                        {
+                            err += "Enter atleast one row of data";
+                        }
+                    }
+                    else if (td.t2progBox[i].Text != "" && td.t2partBox[i].Text != "" && td.t2operBox[i].Text != "")
+                    {
+                        cmd += "prgm" + j + "=" + td.t2progBox[i].Text + ";ptype" + j + "=" + td.t2partBox[i].Text + ";otype" + j + "=" + td.t2operBox[i].Text + ";";
+                        t.Add(td.t2progBox[i]);
+                        t.Add(td.t2partBox[i]);
+                        t.Add(td.t2operBox[i]);
+                        k.Add(td.t2gpbox[i]);
+                        k.Add(td.t2bpbox[i]);
+                        showCmd += "Program " + j + " - " + td.t2progBox[i].Text + "\nPart " + j + " - " + td.t2partBox[i].Text + "\nOperation " + j + " - " + td.t2operBox[i].Text + "\n\n";
+                    }
+                    else if (td.t2progBox[i].Text != "" || td.t2partBox[i].Text != "" || td.t2operBox[i].Text != "")
+                    {
+                        if (td.t2progBox[i].Text == "") { if (tb == null) { tb = td.t2progBox[i]; } err += "Please enter " + h[td.t2progBox[i].Name.ToString().Substring(2, 3)] + " " + (i + 1) + Environment.NewLine; }
+                        if (td.t2partBox[i].Text == "") { if (tb == null) { tb = td.t2partBox[i]; } err += "Please enter " + h[td.t2partBox[i].Name.ToString().Substring(2, 3)] + " " + (i + 1) + Environment.NewLine; }
+                        if (td.t2operBox[i].Text == "") { if (tb == null) { tb = td.t2operBox[i]; } err += "Please enter " + h[td.t2operBox[i].Name.ToString().Substring(2, 3)] + " " + (i + 1) + Environment.NewLine; }
+
+                    }
+                    j++;
+                }
+                if (err == string.Empty && cmd != string.Empty)
+                {
+                    if (MessageBox.Show(showCmd, "Confirm", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        m = t.ToArray();
+                        n = k.ToArray();
+                        //td.ClearBoxes(m);
+                        td.MakeReadOnly(m);
+                        td.MakeNotReadOnly(n);
+                        string fullCmd = getCurrTime() + "|" + "program-config" + "|" + cmd + "\n";
+                        switchBtn(1, td.t2btn);
+                        disableAllMenu();
+                        tcp.sndData(fullCmd);                        
+                    }
+                }
+                else
+                {
+                    this.ActiveControl = tb;
+                    MessageBox.Show(err, "Error");
+                }
+
+            }
+            else if (flg == 2)
+            {
+                TextBox tb = new TextBox();
+                tb = null;
+                string showCmd = string.Empty;
+                for (int i = 0; i < 4; i++)
+                {
+                    if (td.t2gpbox[i].Enabled == true)
+                    {
+                        if (td.t2gpbox[i].Text == "") { if (tb == null) { tb = td.t2gpbox[i]; } err += "Please enter " + h[td.t2gpbox[i].Name.ToString().Substring(2, 2)] + " " + (i + 1) + Environment.NewLine; }
+                        if (td.t2bpbox[i].Text == "") { if (tb == null) { tb = td.t2bpbox[i]; } err += "Please enter " + h[td.t2bpbox[i].Name.ToString().Substring(2, 2)] + " " + (i + 1) + Environment.NewLine; }
+                        if (td.t2gpbox[i].Text != "" && td.t2bpbox[i].Text != "")
+                        {
+                            showCmd += "Good Parts " + j + " - " + td.t2gpbox[i].Text + "\nBad Parts " + j + " - " + td.t2bpbox[i].Text + "\n\n";
+                            cmd += "good" + j + "=" + td.t2gpbox[i].Text + ";bad" + j + "=" + td.t2bpbox[i].Text + ";";
+                        }
+                    }
+                    j++;
+                }
+                if (err == string.Empty && cmd != string.Empty)
+                {
+                    if (td.CheckNumeric(td.t2gpbox) && td.CheckNumeric(td.t2bpbox))
+                    {
+                        if (MessageBox.Show(showCmd, "Confirm", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        {
+                            string fullCmd = getCurrTime() + "|" + "part-count-multiple" + "|" + cmd + "\n";
+                            switchBtn(2, td.t2btn);
+                            tcp.sndData(fullCmd);  
+                            HandleAfterSend(td.t2stp, td.t2snd, 2, td.t2btn);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Enter only numbers for Part Count", "Error");
+                    }
+                }
+                else
+                {
+                    this.ActiveControl = tb;
+                    MessageBox.Show(err, "Error");
+                }
+            }
+        }
+
+        public void HandleAfterSend(Control[] frm, Control[] to, int flag, Button[] btn)
+        {
+            td.MakeReadOnly(frm);
+            td.MakeNotReadOnly(to);
+            disableAllMenu();
+            if (flag == 2)
+            {
+                //td.ClearBoxes(frm);
+                this.ActiveControl = to[0];
+
+            }
+            switchBtn(flag, btn);
+            if (flag == 2)
+            {
+                if ((t4stop1.Enabled == false) && (t4stop2.Enabled == false))
+                {
+                    loadDefaults();
+                }
+            }
+        }
+
+        private void MultiProgClick(object sender, EventArgs e)
+        {
+            greetLbl.Visible = false;
+            stackPanel1.SelectedIndex = 1;
+            stackPanel1.Visible = true;                       
+            HandleAfterSend(td.t2stp, td.t2snd, 2, td.t2btn);
+        }
+
+        private void t2strt_Click(object sender, EventArgs e)
+        {
+            getFrmMultProgTbl(1);
+        }
+
+        private void t2stop_Click(object sender, EventArgs e)
+        {
+            getFrmMultProgTbl(2);
+        }
+                  
     }
 }

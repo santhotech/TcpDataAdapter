@@ -417,7 +417,7 @@
             this.multProgBtn1.TabStop = false;
             this.multProgBtn1.Text = "Multiple Programs";
             this.multProgBtn1.UseVisualStyleBackColor = true;
-            this.multProgBtn1.Click += new System.EventHandler(this.menuButton_Click);
+            this.multProgBtn1.Click += new System.EventHandler(this.MultiProgClick);
             // 
             // singProgBtn0
             // 
@@ -611,7 +611,7 @@
             this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
             this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 114F));
-            this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 191F));
+            this.singProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
             this.singProgTbl.Controls.Add(this.label32, 3, 0);
             this.singProgTbl.Controls.Add(this.t1stop, 3, 2);
             this.singProgTbl.Controls.Add(this.label31, 1, 0);
@@ -807,7 +807,7 @@
             this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
             this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
             this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 489F));
+            this.multProgTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 499F));
             this.multProgTbl.Controls.Add(this.label25, 0, 4);
             this.multProgTbl.Controls.Add(this.label17, 3, 0);
             this.multProgTbl.Controls.Add(this.label2, 2, 0);
@@ -1024,6 +1024,7 @@
             this.t2strt.TabIndex = 12;
             this.t2strt.Text = "Start";
             this.t2strt.UseVisualStyleBackColor = true;
+            this.t2strt.Click += new System.EventHandler(this.t2strt_Click);
             // 
             // t2stop
             // 
@@ -1034,6 +1035,7 @@
             this.t2stop.TabIndex = 21;
             this.t2stop.Text = "Stop";
             this.t2stop.UseVisualStyleBackColor = true;
+            this.t2stop.Click += new System.EventHandler(this.t2stop_Click);
             // 
             // t2part2
             // 
@@ -1189,7 +1191,7 @@
             this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
             this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 331F));
+            this.singFixtTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 341F));
             this.singFixtTbl.Controls.Add(this.label3, 2, 0);
             this.singFixtTbl.Controls.Add(this.label7, 0, 0);
             this.singFixtTbl.Controls.Add(this.label8, 1, 0);
@@ -1384,7 +1386,7 @@
             this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
             this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 397F));
+            this.fixtPallTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 407F));
             this.fixtPallTbl.Controls.Add(this.label26, 3, 0);
             this.fixtPallTbl.Controls.Add(this.label10, 2, 0);
             this.fixtPallTbl.Controls.Add(this.label9, 1, 0);
@@ -1692,7 +1694,7 @@
             this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.64029F));
             this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.multPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
             this.multPartTbl.Controls.Add(this.label24, 2, 0);
             this.multPartTbl.Controls.Add(this.label11, 0, 0);
             this.multPartTbl.Controls.Add(this.label12, 1, 0);
@@ -1721,7 +1723,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label24.Location = new System.Drawing.Point(205, 2);
+            this.label24.Location = new System.Drawing.Point(190, 2);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(93, 16);
             this.label24.TabIndex = 6;
@@ -1743,7 +1745,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label12.Location = new System.Drawing.Point(106, 2);
+            this.label12.Location = new System.Drawing.Point(98, 2);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(60, 16);
             this.label12.TabIndex = 3;
@@ -1754,7 +1756,7 @@
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label39.Location = new System.Drawing.Point(308, 2);
+            this.label39.Location = new System.Drawing.Point(293, 2);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(67, 16);
             this.label39.TabIndex = 3;
@@ -1765,7 +1767,7 @@
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label40.Location = new System.Drawing.Point(384, 2);
+            this.label40.Location = new System.Drawing.Point(369, 2);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(59, 16);
             this.label40.TabIndex = 3;
@@ -1774,7 +1776,7 @@
             // t5gpTxt
             // 
             this.t5gpTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t5gpTxt.Location = new System.Drawing.Point(308, 34);
+            this.t5gpTxt.Location = new System.Drawing.Point(293, 34);
             this.t5gpTxt.Name = "t5gpTxt";
             this.t5gpTxt.Size = new System.Drawing.Size(68, 20);
             this.t5gpTxt.TabIndex = 4;
@@ -1782,7 +1784,7 @@
             // t5bpTxt
             // 
             this.t5bpTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t5bpTxt.Location = new System.Drawing.Point(384, 34);
+            this.t5bpTxt.Location = new System.Drawing.Point(369, 34);
             this.t5bpTxt.Name = "t5bpTxt";
             this.t5bpTxt.Size = new System.Drawing.Size(59, 20);
             this.t5bpTxt.TabIndex = 5;
@@ -1791,14 +1793,14 @@
             // 
             this.t5noPrtTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.t5noPrtTxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.t5noPrtTxt.Location = new System.Drawing.Point(205, 34);
+            this.t5noPrtTxt.Location = new System.Drawing.Point(190, 34);
             this.t5noPrtTxt.Name = "t5noPrtTxt";
             this.t5noPrtTxt.Size = new System.Drawing.Size(93, 20);
             this.t5noPrtTxt.TabIndex = 2;
             // 
             // t5strt
             // 
-            this.t5strt.Location = new System.Drawing.Point(205, 64);
+            this.t5strt.Location = new System.Drawing.Point(190, 64);
             this.t5strt.Name = "t5strt";
             this.t5strt.Size = new System.Drawing.Size(93, 23);
             this.t5strt.TabIndex = 3;
@@ -1809,7 +1811,7 @@
             // t5stop
             // 
             this.t5stop.Enabled = false;
-            this.t5stop.Location = new System.Drawing.Point(384, 64);
+            this.t5stop.Location = new System.Drawing.Point(369, 64);
             this.t5stop.Name = "t5stop";
             this.t5stop.Size = new System.Drawing.Size(59, 23);
             this.t5stop.TabIndex = 6;
@@ -1826,9 +1828,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t5opr1.Location = new System.Drawing.Point(106, 34);
+            this.t5opr1.Location = new System.Drawing.Point(98, 34);
             this.t5opr1.Name = "t5opr1";
-            this.t5opr1.Size = new System.Drawing.Size(91, 21);
+            this.t5opr1.Size = new System.Drawing.Size(84, 21);
             this.t5opr1.TabIndex = 9;
             // 
             // t5part1
@@ -1842,7 +1844,7 @@
             "Part3"});
             this.t5part1.Location = new System.Drawing.Point(5, 34);
             this.t5part1.Name = "t5part1";
-            this.t5part1.Size = new System.Drawing.Size(93, 21);
+            this.t5part1.Size = new System.Drawing.Size(85, 21);
             this.t5part1.TabIndex = 10;
             // 
             // tabPage6
@@ -1887,7 +1889,7 @@
             this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.90411F));
             this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
             this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.twoPartTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
             this.twoPartTbl.Controls.Add(this.label14, 0, 1);
             this.twoPartTbl.Controls.Add(this.label21, 1, 0);
             this.twoPartTbl.Controls.Add(this.label22, 2, 0);
@@ -1932,7 +1934,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label21.Location = new System.Drawing.Point(81, 2);
+            this.label21.Location = new System.Drawing.Point(75, 2);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(61, 16);
             this.label21.TabIndex = 5;
@@ -1943,7 +1945,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label22.Location = new System.Drawing.Point(189, 2);
+            this.label22.Location = new System.Drawing.Point(174, 2);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(60, 16);
             this.label22.TabIndex = 3;
@@ -1965,7 +1967,7 @@
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label41.Location = new System.Drawing.Point(307, 2);
+            this.label41.Location = new System.Drawing.Point(292, 2);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(67, 16);
             this.label41.TabIndex = 3;
@@ -1987,7 +1989,7 @@
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label42.Location = new System.Drawing.Point(384, 2);
+            this.label42.Location = new System.Drawing.Point(369, 2);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(59, 16);
             this.label42.TabIndex = 3;
@@ -1996,7 +1998,7 @@
             // t6gp1Txt
             // 
             this.t6gp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6gp1Txt.Location = new System.Drawing.Point(307, 27);
+            this.t6gp1Txt.Location = new System.Drawing.Point(292, 27);
             this.t6gp1Txt.Name = "t6gp1Txt";
             this.t6gp1Txt.Size = new System.Drawing.Size(68, 20);
             this.t6gp1Txt.TabIndex = 5;
@@ -2004,7 +2006,7 @@
             // t6bp1Txt
             // 
             this.t6bp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6bp1Txt.Location = new System.Drawing.Point(384, 27);
+            this.t6bp1Txt.Location = new System.Drawing.Point(369, 27);
             this.t6bp1Txt.Name = "t6bp1Txt";
             this.t6bp1Txt.Size = new System.Drawing.Size(59, 20);
             this.t6bp1Txt.TabIndex = 6;
@@ -2012,7 +2014,7 @@
             // t6gp2Txt
             // 
             this.t6gp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6gp2Txt.Location = new System.Drawing.Point(307, 57);
+            this.t6gp2Txt.Location = new System.Drawing.Point(292, 57);
             this.t6gp2Txt.Name = "t6gp2Txt";
             this.t6gp2Txt.Size = new System.Drawing.Size(68, 20);
             this.t6gp2Txt.TabIndex = 7;
@@ -2020,14 +2022,14 @@
             // t6bp2Txt
             // 
             this.t6bp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t6bp2Txt.Location = new System.Drawing.Point(384, 57);
+            this.t6bp2Txt.Location = new System.Drawing.Point(369, 57);
             this.t6bp2Txt.Name = "t6bp2Txt";
             this.t6bp2Txt.Size = new System.Drawing.Size(59, 20);
             this.t6bp2Txt.TabIndex = 8;
             // 
             // t6strt
             // 
-            this.t6strt.Location = new System.Drawing.Point(189, 88);
+            this.t6strt.Location = new System.Drawing.Point(174, 88);
             this.t6strt.Name = "t6strt";
             this.t6strt.Size = new System.Drawing.Size(67, 23);
             this.t6strt.TabIndex = 4;
@@ -2038,7 +2040,7 @@
             // t6stop
             // 
             this.t6stop.Enabled = false;
-            this.t6stop.Location = new System.Drawing.Point(384, 88);
+            this.t6stop.Location = new System.Drawing.Point(369, 88);
             this.t6stop.Name = "t6stop";
             this.t6stop.Size = new System.Drawing.Size(59, 23);
             this.t6stop.TabIndex = 9;
@@ -2055,9 +2057,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t6part1.Location = new System.Drawing.Point(81, 27);
+            this.t6part1.Location = new System.Drawing.Point(75, 27);
             this.t6part1.Name = "t6part1";
-            this.t6part1.Size = new System.Drawing.Size(100, 21);
+            this.t6part1.Size = new System.Drawing.Size(91, 21);
             this.t6part1.TabIndex = 10;
             // 
             // t6part2
@@ -2069,9 +2071,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t6part2.Location = new System.Drawing.Point(81, 57);
+            this.t6part2.Location = new System.Drawing.Point(75, 57);
             this.t6part2.Name = "t6part2";
-            this.t6part2.Size = new System.Drawing.Size(100, 21);
+            this.t6part2.Size = new System.Drawing.Size(91, 21);
             this.t6part2.TabIndex = 11;
             // 
             // t6opr1
@@ -2083,7 +2085,7 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t6opr1.Location = new System.Drawing.Point(189, 27);
+            this.t6opr1.Location = new System.Drawing.Point(174, 27);
             this.t6opr1.Name = "t6opr1";
             this.t6opr1.Size = new System.Drawing.Size(110, 21);
             this.t6opr1.TabIndex = 12;
@@ -2097,7 +2099,7 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t6opr2.Location = new System.Drawing.Point(189, 57);
+            this.t6opr2.Location = new System.Drawing.Point(174, 57);
             this.t6opr2.Name = "t6opr2";
             this.t6opr2.Size = new System.Drawing.Size(110, 21);
             this.t6opr2.TabIndex = 13;
@@ -2144,7 +2146,7 @@
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.97102F));
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
             this.twoPathTbl.Controls.Add(this.t7opr2, 2, 2);
             this.twoPathTbl.Controls.Add(this.t7part2, 1, 2);
             this.twoPathTbl.Controls.Add(this.t7opr1, 2, 1);
@@ -2182,7 +2184,7 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t7opr2.Location = new System.Drawing.Point(181, 55);
+            this.t7opr2.Location = new System.Drawing.Point(166, 55);
             this.t7opr2.Name = "t7opr2";
             this.t7opr2.Size = new System.Drawing.Size(110, 21);
             this.t7opr2.TabIndex = 15;
@@ -2196,9 +2198,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t7part2.Location = new System.Drawing.Point(79, 55);
+            this.t7part2.Location = new System.Drawing.Point(73, 55);
             this.t7part2.Name = "t7part2";
-            this.t7part2.Size = new System.Drawing.Size(94, 21);
+            this.t7part2.Size = new System.Drawing.Size(85, 21);
             this.t7part2.TabIndex = 14;
             // 
             // t7opr1
@@ -2210,7 +2212,7 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t7opr1.Location = new System.Drawing.Point(181, 29);
+            this.t7opr1.Location = new System.Drawing.Point(166, 29);
             this.t7opr1.Name = "t7opr1";
             this.t7opr1.Size = new System.Drawing.Size(110, 21);
             this.t7opr1.TabIndex = 13;
@@ -2224,9 +2226,9 @@
             "Part1",
             "Part2",
             "Part3"});
-            this.t7part1.Location = new System.Drawing.Point(79, 29);
+            this.t7part1.Location = new System.Drawing.Point(73, 29);
             this.t7part1.Name = "t7part1";
-            this.t7part1.Size = new System.Drawing.Size(94, 21);
+            this.t7part1.Size = new System.Drawing.Size(85, 21);
             this.t7part1.TabIndex = 12;
             // 
             // label19
@@ -2245,7 +2247,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label15.Location = new System.Drawing.Point(79, 2);
+            this.label15.Location = new System.Drawing.Point(73, 2);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(61, 16);
             this.label15.TabIndex = 11;
@@ -2256,7 +2258,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label16.Location = new System.Drawing.Point(181, 2);
+            this.label16.Location = new System.Drawing.Point(166, 2);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(60, 16);
             this.label16.TabIndex = 3;
@@ -2278,7 +2280,7 @@
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label43.Location = new System.Drawing.Point(300, 2);
+            this.label43.Location = new System.Drawing.Point(285, 2);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(67, 16);
             this.label43.TabIndex = 3;
@@ -2300,7 +2302,7 @@
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label44.Location = new System.Drawing.Point(377, 2);
+            this.label44.Location = new System.Drawing.Point(362, 2);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(59, 16);
             this.label44.TabIndex = 3;
@@ -2309,7 +2311,7 @@
             // t7gp2Txt
             // 
             this.t7gp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7gp2Txt.Location = new System.Drawing.Point(300, 55);
+            this.t7gp2Txt.Location = new System.Drawing.Point(285, 55);
             this.t7gp2Txt.Name = "t7gp2Txt";
             this.t7gp2Txt.Size = new System.Drawing.Size(67, 20);
             this.t7gp2Txt.TabIndex = 7;
@@ -2317,7 +2319,7 @@
             // t7gp1Txt
             // 
             this.t7gp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7gp1Txt.Location = new System.Drawing.Point(300, 29);
+            this.t7gp1Txt.Location = new System.Drawing.Point(285, 29);
             this.t7gp1Txt.Name = "t7gp1Txt";
             this.t7gp1Txt.Size = new System.Drawing.Size(67, 20);
             this.t7gp1Txt.TabIndex = 5;
@@ -2325,7 +2327,7 @@
             // t7bp1Txt
             // 
             this.t7bp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7bp1Txt.Location = new System.Drawing.Point(377, 29);
+            this.t7bp1Txt.Location = new System.Drawing.Point(362, 29);
             this.t7bp1Txt.Name = "t7bp1Txt";
             this.t7bp1Txt.Size = new System.Drawing.Size(66, 20);
             this.t7bp1Txt.TabIndex = 6;
@@ -2333,14 +2335,14 @@
             // t7bp2Txt
             // 
             this.t7bp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7bp2Txt.Location = new System.Drawing.Point(377, 55);
+            this.t7bp2Txt.Location = new System.Drawing.Point(362, 55);
             this.t7bp2Txt.Name = "t7bp2Txt";
             this.t7bp2Txt.Size = new System.Drawing.Size(66, 20);
             this.t7bp2Txt.TabIndex = 8;
             // 
             // t7strt
             // 
-            this.t7strt.Location = new System.Drawing.Point(181, 85);
+            this.t7strt.Location = new System.Drawing.Point(166, 85);
             this.t7strt.Name = "t7strt";
             this.t7strt.Size = new System.Drawing.Size(62, 25);
             this.t7strt.TabIndex = 4;
@@ -2351,7 +2353,7 @@
             // t7stop
             // 
             this.t7stop.Enabled = false;
-            this.t7stop.Location = new System.Drawing.Point(377, 85);
+            this.t7stop.Location = new System.Drawing.Point(362, 85);
             this.t7stop.Name = "t7stop";
             this.t7stop.Size = new System.Drawing.Size(66, 25);
             this.t7stop.TabIndex = 9;
