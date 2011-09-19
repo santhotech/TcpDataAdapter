@@ -91,21 +91,22 @@ namespace VimanaPoi
             logInPnl.Visible = true;
             logoutBtn.Visible = false;
             empIdLbl.Visible = false;
-            empIdIndLbl.Text = "No Employee Logged In";
+            macNameLbl.Text = Properties.Settings.Default.machinename;
+            empIdIndLbl.Text = "Not Logged In";
             greetLbl.Visible = false;
         }
 
         private void MainfestionComboBoxes()
         {
             ComboBox[] parts = new ComboBox[] {
-                t1part1,t2part1,t2part2,t2part3,t2part4,t3part1,t4part1,t4part2,t5part1,t6part1,t6part2,t7part1,t7part2
+                t1part1,t2part1,t2part2,t2part3,t2part4,t3part1,t4part1,t4part2,t4part3,t4part4,t5part1,t6part1,t6part2,t7part1,t7part2
             };
             ComboBox[] opr = new ComboBox[] {
-                t1opr1,t2opr1,t2opr2,t2opr3,t2opr4,t3opr1,t4opr1,t4opr2,t5opr1,t6opr1,t6opr2,t7opr1,t7opr2
+                t1opr1,t2opr1,t2opr2,t2opr3,t2opr4,t3opr1,t4opr1,t4opr2,t4opr3,t4opr4,t5opr1,t6opr1,t6opr2,t7opr1,t7opr2
             };            
             ControlManifest cm = new ControlManifest(parts, opr);            
         }
-
+        
         private void ManifestControls()
         {
             string cmdFormat, cmdStop;
@@ -257,6 +258,7 @@ namespace VimanaPoi
 
         private void menuButton_Click(object sender, EventArgs e)
         {
+            isOnMultiPall = false;
             greetLbl.Visible = false;
             stackPanel1.Visible = true;
             Button n = (Button)sender;
@@ -270,7 +272,7 @@ namespace VimanaPoi
         {
             Environment.Exit(0);
         }
-
+        int palletCnt = 0;
         private void AllButtons_click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
@@ -282,19 +284,28 @@ namespace VimanaPoi
             ind = b.Name.Substring(5, 2);   
             Control[] ctrl;
             string cmdToSend;
-            if (typ == "strt") { ctrl = _manifest[ind].strt; cmdToSend = _manifest[ind].cmdStrt; } else { ctrl = _manifest[ind].stop; cmdToSend = _manifest[ind].cmdStop; }
+            if (typ == "strt") 
+            {
+                if (isOnMultiPall) { palletCnt++; }
+                ctrl = _manifest[ind].strt; cmdToSend = _manifest[ind].cmdStrt; 
+            } 
+            else 
+            {
+                if (isOnMultiPall) { palletCnt--; }
+                ctrl = _manifest[ind].stop; cmdToSend = _manifest[ind].cmdStop; 
+            }
             
             object[] astatus = new object[1];
             astatus = com.CheckOk(ctrl);
             string status = (string)astatus[0];
             if (status  == "true")
-            {
-                b.Enabled = false;
+            {                
                 if (MessageBox.Show(String.Format(cmdToSend, com.GetData(ctrl)), "Confirm", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     tcp.sndData(String.Format(cmdToSend, com.GetData(ctrl)));
                     if (typ == "strt") { com.ReadUnRead(_manifest[ind].strt, false); com.ReadUnRead(_manifest[ind].stop, true); disableAllMenu(); _manifest[ind].stopBtn.Enabled = true; }
-                    if (typ == "stop") { com.ReadUnRead(_manifest[ind].stop, false); com.ReadUnRead(_manifest[ind].strt, true); loadDefaults(); _manifest[ind].strtBtn.Enabled = true; }
+                    if (typ == "stop") { com.ReadUnRead(_manifest[ind].stop, false); com.ReadUnRead(_manifest[ind].strt, true); if (palletCnt == 0) { loadDefaults(); } _manifest[ind].strtBtn.Enabled = true; }
+                    b.Enabled = false;
                 }
             }
             else
@@ -457,9 +468,10 @@ namespace VimanaPoi
                 }
             }
         }
-
+        
         private void MultiProgClick(object sender, EventArgs e)
         {
+            isOnMultiPall = false;
             greetLbl.Visible = false;
             stackPanel1.SelectedIndex = 1;
             stackPanel1.Visible = true;                       
@@ -475,9 +487,10 @@ namespace VimanaPoi
         {
             getFrmMultProgTbl(2);
         }
-
+        bool isOnMultiPall;
         private void MultPanlClick(object sender, EventArgs e)
         {
+            isOnMultiPall = true;
             greetLbl.Visible = false;
             stackPanel1.SelectedIndex = 3;
             stackPanel1.Visible = true;
