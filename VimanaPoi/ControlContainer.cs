@@ -13,5 +13,7 @@ namespace VimanaPoi
         public String cmdStop { get; set; }
         public Button strtBtn { get; set; }
         public Button stopBtn { get; set; }
+        public String strtcnf { get; set; }
+        public String stopcnf { get; set; }
     }
 }

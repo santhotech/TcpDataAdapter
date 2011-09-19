@@ -109,12 +109,15 @@ namespace VimanaPoi
         private void ManifestControls()
         {
             string cmdFormat, cmdStop;
+            //string strtc, stopc;
             Control[] strt, stop;
 
             com.tbl1strt = new Control[] { t1part1, t1opr1 };
             com.tbl1stop = new Control[] { t1gpTxt, t1bpTxt };
             cmdFormat = "{0}|part-type|{1}\n{0}|operation-type|{2}\n";
             cmdStop = "{0}|part-count-good|{1}\n{0}|part-count-bad|{2}\n";
+            //strtc = "Part Type - {0}\nOperation Type - {1}";
+            //stopc = "Good Parts - {0}\n Bad Parts - {1}";
             _manifest.Add("1", new ControlContainer { strt = com.tbl1strt, stop = com.tbl1stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = tstrt1, stopBtn = tstop1 });
             
             com.tbl3strt = new Control[] { t3part1, t3opr1, t3fixPosnTxt };
@@ -287,9 +290,12 @@ namespace VimanaPoi
             if (status  == "true")
             {
                 b.Enabled = false;
-                tcp.sndData(String.Format(cmdToSend, com.GetData(ctrl)));
-                if (typ == "strt") { com.ReadUnRead(_manifest[ind].strt, false); com.ReadUnRead(_manifest[ind].stop, true); disableAllMenu(); _manifest[ind].stopBtn.Enabled = true; }
-                if (typ == "stop") { com.ReadUnRead(_manifest[ind].stop, false); com.ReadUnRead(_manifest[ind].strt, true); loadDefaults(); _manifest[ind].strtBtn.Enabled = true; }
+                if (MessageBox.Show(String.Format(cmdToSend, com.GetData(ctrl)), "Confirm", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    tcp.sndData(String.Format(cmdToSend, com.GetData(ctrl)));
+                    if (typ == "strt") { com.ReadUnRead(_manifest[ind].strt, false); com.ReadUnRead(_manifest[ind].stop, true); disableAllMenu(); _manifest[ind].stopBtn.Enabled = true; }
+                    if (typ == "stop") { com.ReadUnRead(_manifest[ind].stop, false); com.ReadUnRead(_manifest[ind].strt, true); loadDefaults(); _manifest[ind].strtBtn.Enabled = true; }
+                }
             }
             else
             {
