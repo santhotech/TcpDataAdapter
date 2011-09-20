@@ -49,6 +49,7 @@
     <Compile Include="ControlContainer.cs" />
     <Compile Include="ControlManifest.cs" />
     <Compile Include="DBConnect.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -10,6 +10,7 @@ namespace VimanaPoi
 {
     class TcpActions
     {
+        Logger log;
         private TcpListener tcpListener;
         private Thread listenThread;
         private ArrayList clients;
@@ -32,7 +33,8 @@ namespace VimanaPoi
         }
 
         public TcpActions()
-        {            
+        {
+            log = new Logger();
             int port = Properties.Settings.Default.port;
             this.tcpListener = new TcpListener(IPAddress.Any, port);
             this.listenThread = new Thread(new ThreadStart(ListenForClients));
@@ -58,13 +60,15 @@ namespace VimanaPoi
         //Handles the data sending to the various clients that are connected.
         public void sndData(string cmdTxt)
         {            
-            int a = clients.Count;            
+            int a = clients.Count;
+            log.WriteLog(cmdTxt);
             try
             {
                 foreach (object ob in clients)
                 {
                     try
                     {
+                        
                         TcpClient tcpClient = (TcpClient)ob;
                         NetworkStream clientStream = tcpClient.GetStream();
                         ASCIIEncoding encoder = new ASCIIEncoding();
