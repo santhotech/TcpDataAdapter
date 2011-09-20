@@ -375,8 +375,8 @@ namespace VimanaPoi
             int j = 1;
             int errCnt = 0;
             Hashtable h = new Hashtable();
-            h.Add("prg", "Program");
-            h.Add("prt", "Part Name");
+            h.Add("prog", "Program");
+            h.Add("part", "Part Name");
             h.Add("opr", "Operation");
             h.Add("gp", "Good Parts");
             h.Add("bp", "Bad Parts");
@@ -414,8 +414,8 @@ namespace VimanaPoi
                     }
                     else if (td.t2progBox[i].Text != "" || td.t2partBox[i].Text != "" || td.t2operBox[i].Text != "")
                     {
-                        if (td.t2progBox[i].Text == "") { if (tb == null) { tb = td.t2progBox[i]; } err += "Please enter " + h[td.t2progBox[i].Name.ToString().Substring(2, 3)] + " " + (i + 1) + Environment.NewLine; }
-                        if (td.t2partBox[i].Text == "") { if (tb == null) { tb = td.t2partBox[i]; } err += "Please enter " + h[td.t2partBox[i].Name.ToString().Substring(2, 3)] + " " + (i + 1) + Environment.NewLine; }
+                        if (td.t2progBox[i].Text == "") { if (tb == null) { tb = td.t2progBox[i]; } err += "Please enter " + h[td.t2progBox[i].Name.ToString().Substring(2, 4)] + " " + (i + 1) + Environment.NewLine; }
+                        if (td.t2partBox[i].Text == "") { if (tb == null) { tb = td.t2partBox[i]; } err += "Please enter " + h[td.t2partBox[i].Name.ToString().Substring(2, 4)] + " " + (i + 1) + Environment.NewLine; }
                         if (td.t2operBox[i].Text == "") { if (tb == null) { tb = td.t2operBox[i]; } err += "Please enter " + h[td.t2operBox[i].Name.ToString().Substring(2, 3)] + " " + (i + 1) + Environment.NewLine; }
 
                     }
