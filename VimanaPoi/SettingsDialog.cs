@@ -15,6 +15,7 @@ namespace VimanaPoi
         public SettingsDialog()
         {
             InitializeComponent();
+            this.pwdTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pwdTxtChange);
             textBox1.Text = Properties.Settings.Default.port.ToString();
             checkBox1.Checked = Properties.Settings.Default.singprog;
             checkBox2.Checked = Properties.Settings.Default.multprog;
@@ -27,6 +28,7 @@ namespace VimanaPoi
             dbpwd.Text = Properties.Settings.Default.password;
             dbname.Text = Properties.Settings.Default.dbname;
             dbserver.Text = Properties.Settings.Default.server;
+            dbport.Text = Properties.Settings.Default.dbport;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.ShowInTaskbar = false;            
             loadMachineNames();
@@ -62,6 +64,7 @@ namespace VimanaPoi
             Properties.Settings.Default.password = dbpwd.Text;
             Properties.Settings.Default.dbname = dbname.Text;
             Properties.Settings.Default.server = dbserver.Text;
+            Properties.Settings.Default.dbport = dbport.Text;
             Properties.Settings.Default.Save();
             DBConnect dbc1 = new DBConnect();
             if (dbc1.TestConnection())
@@ -82,6 +85,11 @@ namespace VimanaPoi
 
         private void pwdBtn_Click(object sender, EventArgs e)
         {
+            CheckLogin();
+        }
+
+        private void CheckLogin()
+        {
             if (pwdTxt.Text == "TFT001")
             {
                 passPnl.Visible = false;
@@ -91,6 +99,15 @@ namespace VimanaPoi
             {
                 MessageBox.Show("Wrong Password!");
             }
-        }        
+        }
+
+        void pwdTxtChange(Object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "Return")
+            {
+                CheckLogin();
+            }
+        }
+
     }
 }

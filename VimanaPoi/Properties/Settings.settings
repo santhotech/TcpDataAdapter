@@ -33,13 +33,16 @@
       <Value Profile="(Default)">root</Value>
     </Setting>
     <Setting Name="password" Type="System.String" Scope="User">
-      <Value Profile="(Default)">starindus</Value>
+      <Value Profile="(Default)">*******</Value>
     </Setting>
     <Setting Name="dbname" Type="System.String" Scope="User">
       <Value Profile="(Default)">partops</Value>
     </Setting>
     <Setting Name="machinename" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dbport" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3306</Value>
     </Setting>
   </Settings>
 </SettingsFile>

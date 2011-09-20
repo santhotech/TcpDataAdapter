@@ -380,6 +380,7 @@
             this.mainPnl.Name = "mainPnl";
             this.mainPnl.Size = new System.Drawing.Size(434, 311);
             this.mainPnl.TabIndex = 9;
+            this.mainPnl.Visible = false;
             // 
             // passPnl
             // 

@@ -13,7 +13,7 @@ namespace VimanaPoi
         private string database;
         private string uid;
         private string password;
-
+        private string dbport;
         //Constructor
         public DBConnect()
         {
@@ -27,9 +27,11 @@ namespace VimanaPoi
             database = Properties.Settings.Default.dbname;
             uid = Properties.Settings.Default.username;
             password = Properties.Settings.Default.password;
+            dbport = Properties.Settings.Default.dbport;
             string connectionString;
-            connectionString = "SERVER=" + server + ";" + "DATABASE=" + 
-		    database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+            connectionString = "SERVER=" + server + ";" + "DATABASE=" +
+            database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";PORT=" + dbport + ";";
+            
             connection = new MySqlConnection(connectionString);
         }
 
