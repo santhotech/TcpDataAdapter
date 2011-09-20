@@ -15,9 +15,26 @@ namespace VimanaPoi
         Commands cmd;
         TcpActions tcp;
         Dictionary<string, ControlContainer> _manifest;
+        Hashtable partOps;
         public MainForm()
         {
             InitializeComponent();
+            partOps = new Hashtable();
+            partOps.Add(t1part1, t1opr1);
+            partOps.Add(t2part1, t2opr1);
+            partOps.Add(t2part2, t2opr2);
+            partOps.Add(t2part3, t2opr3);
+            partOps.Add(t2part4, t2opr4);
+            partOps.Add(t3part1, t3opr1);
+            partOps.Add(t4part1, t4opr1);
+            partOps.Add(t4part2, t4opr2);
+            partOps.Add(t4part3, t4opr3);
+            partOps.Add(t4part4, t4opr4);
+            partOps.Add(t5part1, t5opr1);
+            partOps.Add(t6part1, t6opr1);
+            partOps.Add(t6part2, t6opr2);
+            partOps.Add(t7part1, t7opr1);
+            partOps.Add(t7part2, t7opr2);
             _manifest = new Dictionary<string, ControlContainer>();        
             this.StartPosition = FormStartPosition.CenterScreen;
             Init_Login();
@@ -526,8 +543,18 @@ namespace VimanaPoi
 
         private void PopulateOperation(object sender, EventArgs e)
         {
-            MessageBox.Show(this.Text);
+            ArrayList ops;
+            DBConnect dbc = new DBConnect();
+            ComboBox cb = (ComboBox)sender;
+            string partNme = cb.Text;
+            string macNme = Properties.Settings.Default.machinename;
+            ops = dbc.GetOperationNames(macNme,partNme);
+            ComboBox opBox = (ComboBox)partOps[sender];
+            opBox.Items.Clear();
+            opBox.Items.AddRange(ops.ToArray());
         }
+
+     
        
                   
     }

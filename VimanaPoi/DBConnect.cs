@@ -141,6 +141,23 @@ namespace VimanaPoi
             }
             return oper_numbers;
         }
+        public ArrayList GetOperationNames(string deviceName,string partNme)
+        {
+            string query = "SELECT DISTINCT PART_OPER_NO FROM parts WHERE PREF_MACH_SER_NO = '" + deviceName + "' and PART_NO = '" + partNme + "' ORDER BY PART_OPER_NO";
+            ArrayList oper_numbers = new ArrayList();
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    oper_numbers.Add(dataReader["PART_OPER_NO"]);
+                }
+                dataReader.Close();
+                this.CloseConnection();
+            }
+            return oper_numbers;
+        }
 
         public bool TestConnection()
         {
