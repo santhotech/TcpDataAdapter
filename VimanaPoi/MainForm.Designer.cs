@@ -683,12 +683,12 @@
             this.singProgTbl.Controls.Add(this.prdNumberLbl, 0, 0);
             this.singProgTbl.Controls.Add(this.oprNameLbl, 3, 0);
             this.singProgTbl.Controls.Add(this.t1gpTxt, 3, 1);
-            this.singProgTbl.Controls.Add(this.tstrt1, 1, 2);
             this.singProgTbl.Controls.Add(this.t1part1, 0, 1);
             this.singProgTbl.Controls.Add(this.t1opr1, 1, 1);
             this.singProgTbl.Controls.Add(this.t1bpTxt, 4, 1);
             this.singProgTbl.Controls.Add(this.label59, 2, 0);
             this.singProgTbl.Controls.Add(this.t1trgt1, 2, 1);
+            this.singProgTbl.Controls.Add(this.tstrt1, 2, 2);
             this.singProgTbl.Location = new System.Drawing.Point(3, 30);
             this.singProgTbl.Name = "singProgTbl";
             this.singProgTbl.RowCount = 3;
@@ -715,7 +715,7 @@
             this.tstop1.Enabled = false;
             this.tstop1.Location = new System.Drawing.Point(464, 58);
             this.tstop1.Name = "tstop1";
-            this.tstop1.Size = new System.Drawing.Size(74, 22);
+            this.tstop1.Size = new System.Drawing.Size(80, 22);
             this.tstop1.TabIndex = 5;
             this.tstop1.Text = "Stop";
             this.tstop1.UseVisualStyleBackColor = true;
@@ -764,9 +764,9 @@
             // 
             // tstrt1
             // 
-            this.tstrt1.Location = new System.Drawing.Point(120, 58);
+            this.tstrt1.Location = new System.Drawing.Point(242, 58);
             this.tstrt1.Name = "tstrt1";
-            this.tstrt1.Size = new System.Drawing.Size(80, 22);
+            this.tstrt1.Size = new System.Drawing.Size(111, 22);
             this.tstrt1.TabIndex = 2;
             this.tstrt1.Text = "Start";
             this.tstrt1.UseVisualStyleBackColor = true;
@@ -894,7 +894,6 @@
             this.multProgTbl.Controls.Add(this.t2bp2, 6, 2);
             this.multProgTbl.Controls.Add(this.t2bp3, 6, 3);
             this.multProgTbl.Controls.Add(this.t2bp4, 6, 4);
-            this.multProgTbl.Controls.Add(this.t2strt, 3, 5);
             this.multProgTbl.Controls.Add(this.t2stop, 6, 5);
             this.multProgTbl.Controls.Add(this.t2part2, 2, 2);
             this.multProgTbl.Controls.Add(this.t2part1, 2, 1);
@@ -913,6 +912,7 @@
             this.multProgTbl.Controls.Add(this.t2trgt2, 4, 2);
             this.multProgTbl.Controls.Add(this.t2trgt3, 4, 3);
             this.multProgTbl.Controls.Add(this.t2trgt4, 4, 4);
+            this.multProgTbl.Controls.Add(this.t2strt, 4, 5);
             this.multProgTbl.Location = new System.Drawing.Point(3, 30);
             this.multProgTbl.Name = "multProgTbl";
             this.multProgTbl.RowCount = 6;
@@ -1092,9 +1092,9 @@
             // 
             // t2strt
             // 
-            this.t2strt.Location = new System.Drawing.Point(217, 135);
+            this.t2strt.Location = new System.Drawing.Point(317, 135);
             this.t2strt.Name = "t2strt";
-            this.t2strt.Size = new System.Drawing.Size(84, 23);
+            this.t2strt.Size = new System.Drawing.Size(79, 23);
             this.t2strt.TabIndex = 12;
             this.t2strt.Text = "Start";
             this.t2strt.UseVisualStyleBackColor = true;
@@ -2192,7 +2192,6 @@
             this.twoPartTbl.Controls.Add(this.t6bp1Txt, 5, 1);
             this.twoPartTbl.Controls.Add(this.t6gp2Txt, 4, 2);
             this.twoPartTbl.Controls.Add(this.t6bp2Txt, 5, 2);
-            this.twoPartTbl.Controls.Add(this.tstrt6, 2, 3);
             this.twoPartTbl.Controls.Add(this.tstop6, 5, 3);
             this.twoPartTbl.Controls.Add(this.t6part1, 1, 1);
             this.twoPartTbl.Controls.Add(this.t6part2, 1, 2);
@@ -2201,6 +2200,7 @@
             this.twoPartTbl.Controls.Add(this.label56, 3, 0);
             this.twoPartTbl.Controls.Add(this.t6trgt1, 3, 1);
             this.twoPartTbl.Controls.Add(this.t6trgt2, 3, 2);
+            this.twoPartTbl.Controls.Add(this.tstrt6, 3, 3);
             this.twoPartTbl.Location = new System.Drawing.Point(3, 30);
             this.twoPartTbl.Name = "twoPartTbl";
             this.twoPartTbl.RowCount = 4;
@@ -2323,9 +2323,9 @@
             // 
             // tstrt6
             // 
-            this.tstrt6.Location = new System.Drawing.Point(169, 88);
+            this.tstrt6.Location = new System.Drawing.Point(275, 88);
             this.tstrt6.Name = "tstrt6";
-            this.tstrt6.Size = new System.Drawing.Size(67, 23);
+            this.tstrt6.Size = new System.Drawing.Size(109, 23);
             this.tstrt6.TabIndex = 4;
             this.tstrt6.Text = "Start";
             this.tstrt6.UseVisualStyleBackColor = true;
@@ -2441,9 +2441,9 @@
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.67227F));
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.32773F));
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
-            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 103F));
+            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
             this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.twoPathTbl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96F));
             this.twoPathTbl.Controls.Add(this.t7opr2, 2, 2);
             this.twoPathTbl.Controls.Add(this.t7part2, 1, 2);
             this.twoPathTbl.Controls.Add(this.t7opr1, 2, 1);
@@ -2459,11 +2459,11 @@
             this.twoPathTbl.Controls.Add(this.t7gp1Txt, 4, 1);
             this.twoPathTbl.Controls.Add(this.t7bp1Txt, 5, 1);
             this.twoPathTbl.Controls.Add(this.t7bp2Txt, 5, 2);
-            this.twoPathTbl.Controls.Add(this.tstrt7, 2, 3);
             this.twoPathTbl.Controls.Add(this.tstop7, 5, 3);
             this.twoPathTbl.Controls.Add(this.label55, 3, 0);
             this.twoPathTbl.Controls.Add(this.t7trgt1, 3, 1);
             this.twoPathTbl.Controls.Add(this.t7trgt2, 3, 2);
+            this.twoPathTbl.Controls.Add(this.tstrt7, 3, 3);
             this.twoPathTbl.Location = new System.Drawing.Point(3, 30);
             this.twoPathTbl.Name = "twoPathTbl";
             this.twoPathTbl.RowCount = 4;
@@ -2486,7 +2486,7 @@
             "Part3"});
             this.t7opr2.Location = new System.Drawing.Point(170, 55);
             this.t7opr2.Name = "t7opr2";
-            this.t7opr2.Size = new System.Drawing.Size(101, 21);
+            this.t7opr2.Size = new System.Drawing.Size(106, 21);
             this.t7opr2.TabIndex = 15;
             // 
             // t7part2
@@ -2500,7 +2500,7 @@
             "Part3"});
             this.t7part2.Location = new System.Drawing.Point(56, 55);
             this.t7part2.Name = "t7part2";
-            this.t7part2.Size = new System.Drawing.Size(94, 21);
+            this.t7part2.Size = new System.Drawing.Size(106, 21);
             this.t7part2.TabIndex = 14;
             this.t7part2.SelectedIndexChanged += new System.EventHandler(this.PopulateOperation);
             // 
@@ -2515,7 +2515,7 @@
             "Part3"});
             this.t7opr1.Location = new System.Drawing.Point(170, 29);
             this.t7opr1.Name = "t7opr1";
-            this.t7opr1.Size = new System.Drawing.Size(101, 21);
+            this.t7opr1.Size = new System.Drawing.Size(106, 21);
             this.t7opr1.TabIndex = 13;
             // 
             // t7part1
@@ -2529,7 +2529,7 @@
             "Part3"});
             this.t7part1.Location = new System.Drawing.Point(56, 29);
             this.t7part1.Name = "t7part1";
-            this.t7part1.Size = new System.Drawing.Size(94, 21);
+            this.t7part1.Size = new System.Drawing.Size(106, 21);
             this.t7part1.TabIndex = 12;
             this.t7part1.SelectedIndexChanged += new System.EventHandler(this.PopulateOperation);
             // 
@@ -2582,7 +2582,7 @@
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label43.Location = new System.Drawing.Point(374, 2);
+            this.label43.Location = new System.Drawing.Point(389, 2);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(67, 16);
             this.label43.TabIndex = 3;
@@ -2604,7 +2604,7 @@
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label44.Location = new System.Drawing.Point(451, 2);
+            this.label44.Location = new System.Drawing.Point(472, 2);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(59, 16);
             this.label44.TabIndex = 3;
@@ -2613,7 +2613,7 @@
             // t7gp2Txt
             // 
             this.t7gp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7gp2Txt.Location = new System.Drawing.Point(374, 55);
+            this.t7gp2Txt.Location = new System.Drawing.Point(389, 55);
             this.t7gp2Txt.Name = "t7gp2Txt";
             this.t7gp2Txt.Size = new System.Drawing.Size(67, 20);
             this.t7gp2Txt.TabIndex = 7;
@@ -2621,7 +2621,7 @@
             // t7gp1Txt
             // 
             this.t7gp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7gp1Txt.Location = new System.Drawing.Point(374, 29);
+            this.t7gp1Txt.Location = new System.Drawing.Point(389, 29);
             this.t7gp1Txt.Name = "t7gp1Txt";
             this.t7gp1Txt.Size = new System.Drawing.Size(67, 20);
             this.t7gp1Txt.TabIndex = 5;
@@ -2629,7 +2629,7 @@
             // t7bp1Txt
             // 
             this.t7bp1Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7bp1Txt.Location = new System.Drawing.Point(451, 29);
+            this.t7bp1Txt.Location = new System.Drawing.Point(472, 29);
             this.t7bp1Txt.Name = "t7bp1Txt";
             this.t7bp1Txt.Size = new System.Drawing.Size(66, 20);
             this.t7bp1Txt.TabIndex = 6;
@@ -2637,16 +2637,16 @@
             // t7bp2Txt
             // 
             this.t7bp2Txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.t7bp2Txt.Location = new System.Drawing.Point(451, 55);
+            this.t7bp2Txt.Location = new System.Drawing.Point(472, 55);
             this.t7bp2Txt.Name = "t7bp2Txt";
             this.t7bp2Txt.Size = new System.Drawing.Size(66, 20);
             this.t7bp2Txt.TabIndex = 8;
             // 
             // tstrt7
             // 
-            this.tstrt7.Location = new System.Drawing.Point(170, 85);
+            this.tstrt7.Location = new System.Drawing.Point(284, 85);
             this.tstrt7.Name = "tstrt7";
-            this.tstrt7.Size = new System.Drawing.Size(62, 25);
+            this.tstrt7.Size = new System.Drawing.Size(82, 25);
             this.tstrt7.TabIndex = 4;
             this.tstrt7.Text = "Start";
             this.tstrt7.UseVisualStyleBackColor = true;
@@ -2655,7 +2655,7 @@
             // tstop7
             // 
             this.tstop7.Enabled = false;
-            this.tstop7.Location = new System.Drawing.Point(451, 85);
+            this.tstop7.Location = new System.Drawing.Point(472, 85);
             this.tstop7.Name = "tstop7";
             this.tstop7.Size = new System.Drawing.Size(66, 25);
             this.tstop7.TabIndex = 9;
@@ -2726,7 +2726,7 @@
             this.t7trgt1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.t7trgt1.Location = new System.Drawing.Point(284, 29);
             this.t7trgt1.Name = "t7trgt1";
-            this.t7trgt1.Size = new System.Drawing.Size(82, 20);
+            this.t7trgt1.Size = new System.Drawing.Size(84, 20);
             this.t7trgt1.TabIndex = 5;
             // 
             // t7trgt2
