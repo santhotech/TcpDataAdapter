@@ -551,6 +551,12 @@ namespace VimanaPoi
             ComboBox opBox = (ComboBox)partOps[sender];
             opBox.Items.Clear();
             opBox.Items.AddRange(ops.ToArray());
+            string tblindx = cb.Name.Substring(1, 1);
+            string rowindx = cb.Name.Substring(6, 1);
+            string trgtname = "t" + tblindx + "trgt" + rowindx;            
+            Control[] trgtArr = this.Controls.Find(trgtname, true);
+            TextBox trgt = trgtArr[0] as TextBox;
+            trgt.Text = string.Empty;
         }
 
         private void SetTarget(object sender, EventArgs e)
@@ -566,7 +572,7 @@ namespace VimanaPoi
             Control[] trgtArr = this.Controls.Find(trgtname, true);
             TextBox trgt = trgtArr[0] as TextBox;
             string macName = Properties.Settings.Default.machinename;
-            if(prt.Text != string.Empty && cb.Text != string.Empty) 
+            if (prt.Text != string.Empty && cb.Text != string.Empty)
             {
                 trgt.Text = dbc.GetTarget(macName, prt.Text, cb.Text, appCat);
             }            
