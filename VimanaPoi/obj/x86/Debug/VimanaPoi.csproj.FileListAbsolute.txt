@@ -9,3 +9,4 @@ C:\Users\santhosh\Documents\Visual Studio 2010\Projects\VimanaPoi\VimanaPoi\obj\
 C:\Users\santhosh\Documents\Visual Studio 2010\Projects\VimanaPoi\VimanaPoi\obj\x86\Debug\VimanaPoi.MainForm.resources
 C:\Users\santhosh\Documents\Visual Studio 2010\Projects\VimanaPoi\VimanaPoi\obj\x86\Debug\VimanaPoi.SettingsDialog.resources
 C:\Users\santhosh\Documents\Visual Studio 2010\Projects\VimanaPoi\VimanaPoi\bin\Debug\VimanaPoi.exe.config
+C:\Users\santhosh\Documents\Visual Studio 2010\Projects\VimanaPoi\VimanaPoi\bin\Debug\MySql.Data.dll

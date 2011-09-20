@@ -173,7 +173,7 @@ namespace VimanaPoi
 
             strt = new Control[] { t4part1 , t4opr1, t4fixPosn1Txt, t4trgt1 };
             stop = new Control[] { t4gp1Txt, t4bp1Txt };
-            cmdFormat = "{0}|pallet-1-fixture-positions|{1}\n{0}|pallet-1-part-type|{2}\n{0}|pallet-1-operation-type|{3}\n{0}|part-count-target|{4}\n";
+            cmdFormat = "{0}|pallet-1-fixture-positions|{1}\n{0}|pallet-1-part-type|{2}\n{0}|pallet-1-operation-type|{3}\n{0}|pallet-1-part-count-target|{4}\n";
             cmdStop = "{0}|pallet-1-part-count-good|{1}\n{0}|pallet-1-part-count-bad|{2}\n";
             strtc = "Pallet 1\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}\nTarget Quantity - {3}";
             stopc = "Pallet 1\n\nGood Parts - {0}\nBad Parts - {1}";
@@ -181,7 +181,7 @@ namespace VimanaPoi
 
             strt = new Control[] { t4part2, t4opr2, t4fixPosn2Txt, t4trgt2 };
             stop = new Control[] { t4gp2Txt, t4bp2Txt };
-            cmdFormat = "{0}|pallet-2-fixture-positions|{1}\n{0}|pallet-2-part-type|{2}\n{0}|pallet-2-operation-type|{3}\n{0}|part-count-target|{4}\n";
+            cmdFormat = "{0}|pallet-2-fixture-positions|{1}\n{0}|pallet-2-part-type|{2}\n{0}|pallet-2-operation-type|{3}\n{0}|pallet-2-part-count-target|{4}\n";
             cmdStop = "{0}|pallet-2-part-count-good|{1}\n{0}|pallet-2-part-count-bad|{2}\n";
             strtc = "Pallet 2\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}\nTarget Quantity - {3}";
             stopc = "Pallet 2\n\nGood Parts - {0}\nBad Parts - {1}";
@@ -189,7 +189,7 @@ namespace VimanaPoi
 
             strt = new Control[] { t4part3, t4opr3, t4fixPosn3Txt, t4trgt3 };
             stop = new Control[] { t4gp3Txt, t4bp3Txt };
-            cmdFormat = "{0}|pallet-3-fixture-positions|{1}\n{0}|pallet-3-part-type|{2}\n{0}|pallet-3-operation-type|{3}\n{0}|part-count-target|{4}\n";
+            cmdFormat = "{0}|pallet-3-fixture-positions|{1}\n{0}|pallet-3-part-type|{2}\n{0}|pallet-3-operation-type|{3}\n{0}|pallet-3-part-count-target|{4}\n";
             cmdStop = "{0}|pallet-3-part-count-good|{1}\n{0}|pallet-3-part-count-bad|{2}\n";
             strtc = "Pallet 3\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}\nTarget Quantity - {3}";
             stopc = "Pallet 3\n\nGood Parts - {0}\nBad Parts - {1}";
@@ -197,7 +197,7 @@ namespace VimanaPoi
 
             strt = new Control[] { t4part4, t4opr4, t4fixPosn4Txt, t4trgt4 };
             stop = new Control[] { t4gp4Txt, t4bp4Txt };
-            cmdFormat = "{0}|pallet-4-fixture-positions|{1}\n{0}|pallet-4-part-type|{2}\n{0}|pallet-4-operation-type|{3}\n{0}|part-count-target|{4}\n";
+            cmdFormat = "{0}|pallet-4-fixture-positions|{1}\n{0}|pallet-4-part-type|{2}\n{0}|pallet-4-operation-type|{3}\n{0}|pallet-4-part-count-target|{4}\n";
             cmdStop = "{0}|pallet-4-part-count-good|{1}\n{0}|pallet-4-part-count-bad|{2}\n";
             strtc = "Pallet 4\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}\nTarget Quantity - {3}";
             stopc = "Pallet 4\n\nGood Parts - {0}\nBad Parts - {1}";

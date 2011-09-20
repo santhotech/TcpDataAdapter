@@ -17,7 +17,7 @@ namespace VimanaPoi
         {
             try
             {
-                statement = statement + "[EOL]" + Environment.NewLine;
+                statement = statement + Environment.NewLine;
                 File.AppendAllText(fileName, statement);
             }
             catch { Console.WriteLine("Unable to write log"); }
