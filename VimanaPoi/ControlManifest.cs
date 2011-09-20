@@ -133,7 +133,7 @@ namespace VimanaPoi
             return true;
         }
 
-        public void ReadUnRead(Control[] ctrl,bool bl)
+        public void ReadUnRead(Control[] ctrl,bool bl,bool clear)
         {
             foreach (Control ct in ctrl)
             {
@@ -146,6 +146,10 @@ namespace VimanaPoi
                 {
                     ct.BackColor = Color.White;
                 }
+                if (clear == true)
+                {
+                    ct.Text = string.Empty;
+                }                
             }
         }
 

@@ -299,7 +299,7 @@ namespace VimanaPoi
             string name = n.Name;
             int index = Int32.Parse(name.Substring(name.Length - 1, 1));
             stackPanel1.SelectedIndex = index;
-            com.ReadUnRead(_manifest[(index + 1).ToString()].stop, false);
+            com.ReadUnRead(_manifest[(index + 1).ToString()].stop, false, false);
         }     
 
         private void button1_Click(object sender, EventArgs e)
@@ -342,8 +342,8 @@ namespace VimanaPoi
                 if (MessageBox.Show(String.Format(cmdToShow, com.GetShowData(ctrl)), "Confirm", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     tcp.sndData(String.Format(cmdToSend, com.GetData(ctrl)));
-                    if (typ == "strt") { if (isOnMultiPall) { palletCnt++; } com.ReadUnRead(_manifest[ind].strt, false); com.ReadUnRead(_manifest[ind].stop, true); disableAllMenu(); _manifest[ind].stopBtn.Enabled = true; }
-                    if (typ == "stop") { if (isOnMultiPall) { palletCnt--; } com.ReadUnRead(_manifest[ind].stop, false); com.ReadUnRead(_manifest[ind].strt, true); if (palletCnt == 0) { loadDefaults(); } _manifest[ind].strtBtn.Enabled = true; }
+                    if (typ == "strt") { if (isOnMultiPall) { palletCnt++; } com.ReadUnRead(_manifest[ind].strt, false,false); com.ReadUnRead(_manifest[ind].stop, true,true); disableAllMenu(); _manifest[ind].stopBtn.Enabled = true; }
+                    if (typ == "stop") { if (isOnMultiPall) { palletCnt--; } com.ReadUnRead(_manifest[ind].stop, false,true); com.ReadUnRead(_manifest[ind].strt, true,false); if (palletCnt == 0) { loadDefaults(); } _manifest[ind].strtBtn.Enabled = true; }
                     b.Enabled = false;
                 }
             }
