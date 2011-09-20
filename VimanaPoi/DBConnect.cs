@@ -159,6 +159,19 @@ namespace VimanaPoi
             return oper_numbers;
         }
 
+        public string GetTarget(string macname, string partname, string oprname)
+        {
+            string trgt = string.Empty;
+            string query = "SELECT QTY_ON_ORDER FROM parts WHERE PREF_MACH_SER_NO = '" + macname + "' and PART_NO = '" + partname + "' and PART_OPER_NO = '" + oprname + "' ORDER BY PART_OPER_NO";            
+            if (this.OpenConnection() == true)
+            {                
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                trgt = cmd.ExecuteScalar() + "";
+                this.CloseConnection();
+            }
+            return trgt;
+        }
+
         public bool TestConnection()
         {
             if (OpenConnection())

@@ -166,6 +166,7 @@ namespace VimanaPoi
             h.Add("bp", "Bad Parts");
             h.Add("fixPosn", "Parts per Fixture");
             h.Add("noPrt", "Number of Parts");
+            h.Add("trgt", "Target");
             string err = string.Empty;
             object[] parameters = new object[2];
             parameters[1] = null;
