@@ -217,6 +217,8 @@ namespace VimanaPoi
                 loadDefaults();
                 greetLbl.Visible = true;
                 string cmd = getCurrTime() + "|EMP|" + curEmpIdTxt.Text + "\n";
+                cmd += getCurrTime() + "|EMP-TYPE|setup\n";
+                tcp.sndData(cmd);                
                 MainfestionComboBoxes();
                 macNameLbl.Text = Properties.Settings.Default.machinename;
             }
