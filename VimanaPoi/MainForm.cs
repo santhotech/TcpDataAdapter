@@ -134,7 +134,7 @@ namespace VimanaPoi
             com.tbl1stop = new Control[] { t1gpTxt, t1bpTxt };
             cmdFormat = "{0}|part-type|{1}\n{0}|operation-type|{2}\n{0}|part-count-target|{3}\n";
             cmdStop = "{0}|part-count-good|{1}\n{0}|part-count-bad|{2}\n";
-            strtc = "Part Type - {0}\nOperation Type - {1}";
+            strtc = "Part Type - {0}\nOperation Type - {1}\nTarget Quantity - {2}";
             stopc = "Good Parts - {0}\nBad Parts - {1}";
             _manifest.Add("1", new ControlContainer { strt = com.tbl1strt, stop = com.tbl1stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = tstrt1, stopBtn = tstop1, strtcnf = strtc, stopcnf = stopc });
             
@@ -142,7 +142,7 @@ namespace VimanaPoi
             com.tbl3stop = new Control[] { t3gpTxt, t3bpTxt };
             cmdFormat = "{0}|part-type|{1}\n{0}|operation-type|{2}\n{0}|fixture-positions|{3}\n{0}|part-count-target|{4}\n";
             cmdStop = "{0}|part-count-good|{1}\n{0}|part-count-bad|{2}\n";
-            strtc = "Part Type - {0}\nOperation Type - {1}\nFixture Position - {2}";
+            strtc = "Part Type - {0}\nOperation Type - {1}\nFixture Position - {2}\nTarget Quantity - {3}";
             stopc = "Good Parts - {0}\nBad Parts - {1}";
             _manifest.Add("3", new ControlContainer { strt = com.tbl3strt, stop = com.tbl3stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = tstrt3, stopBtn = tstop3, strtcnf = strtc, stopcnf = stopc });            
 
@@ -150,7 +150,7 @@ namespace VimanaPoi
             com.tbl5stop = new Control[] { t5gpTxt, t5bpTxt };
             cmdFormat = "{0}|part-type|{1}\n{0}|operation-type|{2}\n{0}|parts-per-workpiece|{3}\n{0}|part-count-target|{4}\n";
             cmdStop = "{0}|part-count-good|{1}\n{0}|part-count-bad|{2}\n";
-            strtc = "Part Type - {0}\nOperation Type - {1}\nParts per Workpiece - {2}";
+            strtc = "Part Type - {0}\nOperation Type - {1}\nParts per Workpiece - {2}\nTarget Quantity - {3}";
             stopc = "Good Parts - {0}\nBad Parts - {1}";
             _manifest.Add("5", new ControlContainer { strt = com.tbl5strt, stop = com.tbl5stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = tstrt5, stopBtn = tstop5, strtcnf = strtc, stopcnf = stopc });
 
@@ -158,7 +158,7 @@ namespace VimanaPoi
             com.tbl6stop = new Control[] { t6gp1Txt, t6bp1Txt, t6gp2Txt, t6bp2Txt };
             cmdFormat = "{0}|multi-part-config|nparts=2;part-type1={1};operation-type1={2};part-count-target1={5};part-type2={3};operation-type2={4};part-count-target2={6}\n";
             cmdStop = "{0}|part-count-multiple|good1={1};bad1={2};good2={3};bad2={4};\n";
-            strtc = "Part 1\n\nPart Type - {0}\nOperation Type - {1}\n\nPart 2\n\nPart Type - {2}\nOperation Type - {3}";
+            strtc = "Part 1\n\nPart Type - {0}\nOperation Type - {1}\nTarget Quantity - {4}\n\nPart 2\n\nPart Type - {2}\nOperation Type - {3}\nTarget Quantity - {5}";
             stopc = "Part 1\n\nGood Parts - {0}\nBad Parts - {1}\n\nPart 2\n\nGood Parts - {2}\nBad Parts - {3}";
             _manifest.Add("6", new ControlContainer { strt = com.tbl6strt, stop = com.tbl6stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = tstrt6, stopBtn = tstop6, strtcnf = strtc, stopcnf = stopc });
 
@@ -166,7 +166,7 @@ namespace VimanaPoi
             com.tbl7stop = new Control[] { t7gp1Txt, t7bp1Txt, t7gp2Txt, t7bp2Txt };
             cmdFormat = "{0}|path-config|path=1;part-type1={1};operation-type1={2};part-count-target1={5};path=2;part-type={3};operation-type={4};part-count-target2={6}\n";
             cmdStop = "{0}|part-count-multiple|good1={1};bad1={2};good2={3};bad2={4};\n";
-            strtc = "Path 1\n\nPart Type - {0}\nOperation Type - {1}\n\nPath 2\n\nPart Type - {2}\nOperation Type - {3}";
+            strtc = "Path 1\n\nPart Type - {0}\nOperation Type - {1}\nTarget Quantity - {4}\n\nPath 2\n\nPart Type - {2}\nOperation Type - {3}\nTarget Quantity - {5}";
             stopc = "Path 1\n\nGood Parts - {0}\nBad Parts - {1}\n\nPath 2\n\nGood Parts - {2}\nBad Parts - {3}";
             _manifest.Add("7", new ControlContainer { strt = com.tbl7strt, stop = com.tbl7stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = tstrt7, stopBtn = tstop7, strtcnf = strtc, stopcnf = stopc });
 
@@ -174,7 +174,7 @@ namespace VimanaPoi
             stop = new Control[] { t4gp1Txt, t4bp1Txt };
             cmdFormat = "{0}|pallet-1-fixture-positions|{1}\n{0}|pallet-1-part-type|{2}\n{0}|pallet-1-operation-type|{3}\n{0}|part-count-target|{4}\n";
             cmdStop = "{0}|pallet-1-part-count-good|{1}\n{0}|pallet-1-part-count-bad|{2}\n";
-            strtc = "Pallet 1\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}";
+            strtc = "Pallet 1\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}\nTarget Quantity - {3}";
             stopc = "Pallet 1\n\nGood Parts - {0}\nBad Parts - {1}";
             _manifest.Add("8", new ControlContainer { strt = strt, stop = stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = tstrt8, stopBtn = tstop8, strtcnf = strtc, stopcnf = stopc });
 
@@ -182,7 +182,7 @@ namespace VimanaPoi
             stop = new Control[] { t4gp2Txt, t4bp2Txt };
             cmdFormat = "{0}|pallet-2-fixture-positions|{1}\n{0}|pallet-2-part-type|{2}\n{0}|pallet-2-operation-type|{3}\n{0}|part-count-target|{4}\n";
             cmdStop = "{0}|pallet-2-part-count-good|{1}\n{0}|pallet-2-part-count-bad|{2}\n";
-            strtc = "Pallet 2\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}";
+            strtc = "Pallet 2\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}\nTarget Quantity - {3}";
             stopc = "Pallet 2\n\nGood Parts - {0}\nBad Parts - {1}";
             _manifest.Add("9", new ControlContainer { strt = strt, stop = stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = tstrt9, stopBtn = tstop9, strtcnf = strtc, stopcnf = stopc });
 
@@ -190,7 +190,7 @@ namespace VimanaPoi
             stop = new Control[] { t4gp3Txt, t4bp3Txt };
             cmdFormat = "{0}|pallet-3-fixture-positions|{1}\n{0}|pallet-3-part-type|{2}\n{0}|pallet-3-operation-type|{3}\n{0}|part-count-target|{4}\n";
             cmdStop = "{0}|pallet-3-part-count-good|{1}\n{0}|pallet-3-part-count-bad|{2}\n";
-            strtc = "Pallet 3\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}";
+            strtc = "Pallet 3\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}\nTarget Quantity - {3}";
             stopc = "Pallet 3\n\nGood Parts - {0}\nBad Parts - {1}";
             _manifest.Add("10", new ControlContainer { strt = strt, stop = stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = tstrt10, stopBtn = tstop10, strtcnf = strtc, stopcnf = stopc });
 
@@ -198,7 +198,7 @@ namespace VimanaPoi
             stop = new Control[] { t4gp4Txt, t4bp4Txt };
             cmdFormat = "{0}|pallet-4-fixture-positions|{1}\n{0}|pallet-4-part-type|{2}\n{0}|pallet-4-operation-type|{3}\n{0}|part-count-target|{4}\n";
             cmdStop = "{0}|pallet-4-part-count-good|{1}\n{0}|pallet-4-part-count-bad|{2}\n";
-            strtc = "Pallet 4\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}";
+            strtc = "Pallet 4\n\nFixture Position - {2}\nPart Name - {0}\nOperation Type - {1}\nTarget Quantity - {3}";
             stopc = "Pallet 4\n\nGood Parts - {0}\nBad Parts - {1}";
             _manifest.Add("11", new ControlContainer { strt = strt, stop = stop, cmdStrt = cmdFormat, cmdStop = cmdStop, strtBtn = tstrt11, stopBtn = tstop11, strtcnf = strtc, stopcnf = stopc });
         }

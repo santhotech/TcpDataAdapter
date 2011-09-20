@@ -222,7 +222,7 @@
   <data name="setPixBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAwAAAAA+CAYAAACcGXzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AABHVSURBVHhe7Z3PqyVHFcffn+Bu1m5cZClukpUwy2zMf6CL
+        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAABHVSURBVHhe7Z3PqyVHFcffn+Bu1m5cZClukpUwy2zMf6CL
         CWQj+AcEV9m4iNm6M7vZCMLAEAhEUCLoIoIBiQxECAFJgk40wUze/Lje73uv51VXV51zqm7fd2/f/iwe
         mum+1VWnPl19vlXnVJ1tnry74Q8bwAAMwAAMwAAMwAAMwMA6GDijo9fR0fQz/QwDMAADMAADMAADMCAG
         EACsgLACBAMwAAMwAAMwAAMwsCIGjlIAPP3s/U3tb3P+JYCuCFBmKpipgAEYgAEYgAEYgIF5GThKAfDo
@@ -304,7 +304,7 @@
   <data name="nrmlPicBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAwAAAAA+CAYAAACcGXzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AABFlSURBVHhe7Z3PiiVJFYfrEdzN2o0PIK5qJfQLOG+gm1oK
+        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAABFlSURBVHhe7Z3PiiVJFYfrEdzN2o0PIK5qJfQLOG+gm1oK
         PsDg3o21deeyN4IgFL3qAWUEXbTggCANIwwDMjNoj87gdFf/Se/vVmdV3MiIc07EzVt98+YXUOh0Rsaf
         LyIv5xdxTsTZQIIABCAAAQhAAAIQgAAEVkPgbDU9paMQgAAEIAABCEAAAhCAwIAAYBJAAAIQgAAEIAAB
         CEBgRQSOUgC8/vyjofY3XH+1ouGhqxCAAAQgAAEIQAACEJiXwFEKgOcP3xtqfxIGJAhAAAIQgAAEIAAB
@@ -384,7 +384,7 @@
   <data name="opPicBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAwAAAAA+CAYAAACcGXzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAABDUSURBVHhe7Z2/iyXHEcf3T3B2sROjRImxAmWGSxRaShSe
+        YQUAAAAJcEhZcwAADr0AAA69AUf7kK0AABDUSURBVHhe7Z2/iyXHEcf3T3B2sROjRImxAmWGSxRaShSe
         HSg1WLlwpMSJuVCZw7tAyGAQF53BRgZb4gwWGIxBBiEwkjifLAnrbvfuxvt9u7Pb09NdVT1v9u2bN59g
         sXUzr39Uf2amvt1V3UcfPnyj4w8bwAAMwAAMwAAMwAAMwMA6GDhioNcx0Iwz4wwDMAADMAADMAADMCAG
         EACsgLACBAMwAAMwAAMwAAMwsCIGEAArGmxUP6ofBmAABmAABmAABmBgbwXAs88/6Gp/3fFXqFSECwzA
