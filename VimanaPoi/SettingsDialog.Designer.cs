@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.machineNames = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,10 +58,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.mainPnl = new System.Windows.Forms.Panel();
             this.passPnl = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pwdTxt = new System.Windows.Forms.TextBox();
             this.pwdBtn = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
+            this.pwdTxt = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.mainPnl.SuspendLayout();
@@ -169,6 +169,15 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Application Settings";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 225);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 16);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "TCP Settings";
             // 
             // label8
             // 
@@ -392,24 +401,6 @@
             this.passPnl.Size = new System.Drawing.Size(434, 311);
             this.passPnl.TabIndex = 10;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(136, 111);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(152, 16);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Please enter password";
-            // 
-            // pwdTxt
-            // 
-            this.pwdTxt.Location = new System.Drawing.Point(160, 132);
-            this.pwdTxt.Name = "pwdTxt";
-            this.pwdTxt.PasswordChar = '*';
-            this.pwdTxt.Size = new System.Drawing.Size(100, 20);
-            this.pwdTxt.TabIndex = 1;
-            // 
             // pwdBtn
             // 
             this.pwdBtn.Location = new System.Drawing.Point(172, 160);
@@ -420,14 +411,23 @@
             this.pwdBtn.UseVisualStyleBackColor = true;
             this.pwdBtn.Click += new System.EventHandler(this.pwdBtn_Click);
             // 
-            // label10
+            // pwdTxt
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 225);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 16);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Tcp Settings";
+            this.pwdTxt.Location = new System.Drawing.Point(160, 132);
+            this.pwdTxt.Name = "pwdTxt";
+            this.pwdTxt.PasswordChar = '*';
+            this.pwdTxt.Size = new System.Drawing.Size(100, 20);
+            this.pwdTxt.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(136, 111);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(152, 16);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Please enter password";
             // 
             // SettingsDialog
             // 
