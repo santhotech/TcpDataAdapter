@@ -29,13 +29,14 @@ namespace VimanaPoi
 
         Hashtable h = new Hashtable();
         ArrayList al = new ArrayList();
-            
+        string cat;
 
         public ControlManifest(){}
-        public ControlManifest(ComboBox[] parts,ComboBox[] opr)
+        public ControlManifest(ComboBox[] parts,ComboBox[] opr,string cat)
         {
             this.parts = parts;
-            this.opr = opr;            
+            this.opr = opr;
+            this.cat = cat;
             PopulateComboBoxes();
             h.Add("part", "Part Name");
             h.Add("opr", "Operation Name");
@@ -47,6 +48,7 @@ namespace VimanaPoi
             al.Add("bp");
             al.Add("noPrt");
             al.Add("fixPosn");
+            
         }
 
         public bool CheckNumeric(TextBox[] tb)
@@ -105,7 +107,7 @@ namespace VimanaPoi
         {
             string macName = Properties.Settings.Default.machinename;
             DBConnect dbc = new DBConnect();
-            ArrayList partNames = dbc.GetPartNames(macName);
+            ArrayList partNames = dbc.GetPartNames(macName,this.cat);
             ArrayList OperNames = dbc.GetOperationNames(macName);
             foreach (ComboBox cb in parts)
             {

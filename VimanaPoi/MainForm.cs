@@ -16,6 +16,7 @@ namespace VimanaPoi
         TcpActions tcp;
         Dictionary<string, ControlContainer> _manifest;
         Hashtable partOps;
+        string appCat;
         public MainForm()
         {
             InitializeComponent();
@@ -120,8 +121,8 @@ namespace VimanaPoi
             };
             ComboBox[] opr = new ComboBox[] {
                 t1opr1,t2opr1,t2opr2,t2opr3,t2opr4,t3opr1,t4opr1,t4opr2,t4opr3,t4opr4,t5opr1,t6opr1,t6opr2,t7opr1,t7opr2
-            };            
-            ControlManifest cm = new ControlManifest(parts, opr);            
+            };
+            ControlManifest cm = new ControlManifest(parts, opr, appCat);            
         }
         
         private void ManifestControls()
@@ -226,7 +227,7 @@ namespace VimanaPoi
                 empIdLbl.Visible = true;
                 empIdLbl.Text = curEmpIdTxt.Text;
                 nrmlPicBox.Visible = false;
-                if (isSetup.Checked) { empIdLbl.Text += " (Setup)"; setPixBox.Visible = true; } else { opPicBox.Visible = true; }
+                if (isSetup.Checked) { appCat = "S"; empIdLbl.Text += " (Setup)"; setPixBox.Visible = true; } else { appCat = "P"; opPicBox.Visible = true; }
                 settingBtn.Enabled = false;
                 //logBtn.Enabled = false;
                 loadDefaults();
@@ -546,7 +547,7 @@ namespace VimanaPoi
             ComboBox cb = (ComboBox)sender;
             string partNme = cb.Text;
             string macNme = Properties.Settings.Default.machinename;
-            ops = dbc.GetOperationNames(macNme,partNme);
+            ops = dbc.GetOperationNames(macNme, partNme, appCat);
             ComboBox opBox = (ComboBox)partOps[sender];
             opBox.Items.Clear();
             opBox.Items.AddRange(ops.ToArray());
@@ -567,7 +568,7 @@ namespace VimanaPoi
             string macName = Properties.Settings.Default.machinename;
             if(prt.Text != string.Empty && cb.Text != string.Empty) 
             {
-                trgt.Text = dbc.GetTarget(macName, prt.Text, cb.Text);
+                trgt.Text = dbc.GetTarget(macName, prt.Text, cb.Text, appCat);
             }            
         }
 

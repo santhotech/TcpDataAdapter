@@ -109,9 +109,9 @@ namespace VimanaPoi
             }
         }
 
-        public ArrayList GetPartNames(string deviceName)
+        public ArrayList GetPartNames(string deviceName,string cat)
         {
-            string query = "SELECT DISTINCT PART_NO FROM parts WHERE PREF_MACH_SER_NO = '" + deviceName + "' ORDER BY PRIORITY ASC LIMIT 0,5";            
+            string query = "SELECT DISTINCT PART_NO FROM parts WHERE PREF_MACH_SER_NO = '" + deviceName + "' and OPER_TYPE = '" + cat + "' ORDER BY PRIORITY ASC LIMIT 0,5";            
             ArrayList part_numbers = new ArrayList();            
             if (this.OpenConnection() == true)
             {                
@@ -143,9 +143,9 @@ namespace VimanaPoi
             }
             return oper_numbers;
         }
-        public ArrayList GetOperationNames(string deviceName,string partNme)
+        public ArrayList GetOperationNames(string deviceName,string partNme,string cat)
         {
-            string query = "SELECT DISTINCT PART_OPER_NO FROM parts WHERE PREF_MACH_SER_NO = '" + deviceName + "' and PART_NO = '" + partNme + "' ORDER BY PART_OPER_NO";
+            string query = "SELECT DISTINCT PART_OPER_NO FROM parts WHERE PREF_MACH_SER_NO = '" + deviceName + "' and PART_NO = '" + partNme + "' and OPER_TYPE = '" + cat + "' ORDER BY PART_OPER_NO";
             ArrayList oper_numbers = new ArrayList();
             if (this.OpenConnection() == true)
             {
@@ -161,10 +161,10 @@ namespace VimanaPoi
             return oper_numbers;
         }
 
-        public string GetTarget(string macname, string partname, string oprname)
+        public string GetTarget(string macname, string partname, string oprname, string cat)
         {
             string trgt = string.Empty;
-            string query = "SELECT QTY_ON_ORDER FROM parts WHERE PREF_MACH_SER_NO = '" + macname + "' and PART_NO = '" + partname + "' and PART_OPER_NO = '" + oprname + "' ORDER BY PART_OPER_NO";            
+            string query = "SELECT QTY_ON_ORDER FROM parts WHERE PREF_MACH_SER_NO = '" + macname + "' and PART_NO = '" + partname + "' and PART_OPER_NO = '" + oprname + "' and OPER_TYPE = '" + cat + "' ORDER BY PART_OPER_NO";            
             if (this.OpenConnection() == true)
             {                
                 MySqlCommand cmd = new MySqlCommand(query, connection);
