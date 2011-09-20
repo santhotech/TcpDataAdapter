@@ -78,6 +78,19 @@ namespace VimanaPoi
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pwdBtn_Click(object sender, EventArgs e)
+        {
+            if (pwdTxt.Text == "TFT001")
+            {
+                passPnl.Visible = false;
+                mainPnl.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Wrong Password!");
+            }
         }        
     }
 }

@@ -55,8 +55,16 @@
             this.dbuname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.mainPnl = new System.Windows.Forms.Panel();
+            this.passPnl = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pwdTxt = new System.Windows.Forms.TextBox();
+            this.pwdBtn = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.mainPnl.SuspendLayout();
+            this.passPnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // checkBox7
@@ -140,6 +148,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.machineNames);
@@ -154,7 +163,7 @@
             this.groupBox2.Controls.Add(this.checkBox1);
             this.groupBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox2.Location = new System.Drawing.Point(7, 12);
+            this.groupBox2.Location = new System.Drawing.Point(3, 0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(260, 274);
             this.groupBox2.TabIndex = 5;
@@ -164,17 +173,17 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 197);
+            this.label8.Location = new System.Drawing.Point(6, 186);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(100, 16);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Client Specific";
+            this.label8.Text = "Client Settings";
             // 
             // machineNames
             // 
             this.machineNames.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.machineNames.FormattingEnabled = true;
-            this.machineNames.Location = new System.Drawing.Point(107, 217);
+            this.machineNames.Location = new System.Drawing.Point(107, 202);
             this.machineNames.Name = "machineNames";
             this.machineNames.Size = new System.Drawing.Size(121, 24);
             this.machineNames.TabIndex = 1;
@@ -184,7 +193,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(6, 221);
+            this.label2.Location = new System.Drawing.Point(6, 202);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 15);
             this.label2.TabIndex = 0;
@@ -218,7 +227,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(87, 292);
+            this.button1.Location = new System.Drawing.Point(65, 280);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 23);
             this.button1.TabIndex = 6;
@@ -229,7 +238,7 @@
             // button2
             // 
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Location = new System.Drawing.Point(187, 329);
+            this.button2.Location = new System.Drawing.Point(172, 329);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(98, 23);
             this.button2.TabIndex = 7;
@@ -251,7 +260,7 @@
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox4.Location = new System.Drawing.Point(273, 12);
+            this.groupBox4.Location = new System.Drawing.Point(266, 0);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(168, 274);
             this.groupBox4.TabIndex = 8;
@@ -353,7 +362,7 @@
             // 
             this.button3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(282, 292);
+            this.button3.Location = new System.Drawing.Point(266, 280);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(117, 23);
             this.button3.TabIndex = 7;
@@ -361,16 +370,72 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // mainPnl
+            // 
+            this.mainPnl.Controls.Add(this.button3);
+            this.mainPnl.Controls.Add(this.button1);
+            this.mainPnl.Controls.Add(this.groupBox4);
+            this.mainPnl.Controls.Add(this.groupBox2);
+            this.mainPnl.Location = new System.Drawing.Point(7, 12);
+            this.mainPnl.Name = "mainPnl";
+            this.mainPnl.Size = new System.Drawing.Size(434, 311);
+            this.mainPnl.TabIndex = 9;
+            // 
+            // passPnl
+            // 
+            this.passPnl.Controls.Add(this.pwdBtn);
+            this.passPnl.Controls.Add(this.pwdTxt);
+            this.passPnl.Controls.Add(this.label9);
+            this.passPnl.Location = new System.Drawing.Point(7, 12);
+            this.passPnl.Name = "passPnl";
+            this.passPnl.Size = new System.Drawing.Size(434, 311);
+            this.passPnl.TabIndex = 10;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(136, 111);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(152, 16);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Please enter password";
+            // 
+            // pwdTxt
+            // 
+            this.pwdTxt.Location = new System.Drawing.Point(160, 132);
+            this.pwdTxt.Name = "pwdTxt";
+            this.pwdTxt.PasswordChar = '*';
+            this.pwdTxt.Size = new System.Drawing.Size(100, 20);
+            this.pwdTxt.TabIndex = 1;
+            // 
+            // pwdBtn
+            // 
+            this.pwdBtn.Location = new System.Drawing.Point(172, 160);
+            this.pwdBtn.Name = "pwdBtn";
+            this.pwdBtn.Size = new System.Drawing.Size(75, 23);
+            this.pwdBtn.TabIndex = 2;
+            this.pwdBtn.Text = "Enter";
+            this.pwdBtn.UseVisualStyleBackColor = true;
+            this.pwdBtn.Click += new System.EventHandler(this.pwdBtn_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 225);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(85, 16);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Tcp Settings";
+            // 
             // SettingsDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 364);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.mainPnl);
+            this.Controls.Add(this.passPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SettingsDialog";
             this.Text = "SettingsDialog";
@@ -378,6 +443,9 @@
             this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.mainPnl.ResumeLayout(false);
+            this.passPnl.ResumeLayout(false);
+            this.passPnl.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -411,5 +479,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel mainPnl;
+        private System.Windows.Forms.Panel passPnl;
+        private System.Windows.Forms.Button pwdBtn;
+        private System.Windows.Forms.TextBox pwdTxt;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
