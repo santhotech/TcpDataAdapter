@@ -51,7 +51,8 @@ namespace VimanaPoi
                 //blocks until a client has connected to the server
                 TcpClient client = this.tcpListener.AcceptTcpClient();                
                 clients.Add(client);
-                ClientCount++;                                
+                ClientCount++;
+                sndExistData(client);         
                 Thread a = new Thread(new ParameterizedThreadStart(CheckClientActive));
                 a.Start(client);
             }
@@ -86,6 +87,46 @@ namespace VimanaPoi
             {
                 Console.WriteLine(ex + "p2");
             }
+        }
+
+        private void sndExistData(object client)
+        {
+            try
+            {
+                TcpClient tcpClient = (TcpClient)client;
+                NetworkStream clientStream = tcpClient.GetStream();
+                ASCIIEncoding encoder = new ASCIIEncoding();
+                foreach (string tmpa in allCmds)
+                {
+                    try
+                    {
+                        byte[] buffer = encoder.GetBytes(tmpa);
+                        clientStream.Write(buffer, 0, buffer.Length);
+                        clientStream.Flush();
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e);
+                    }
+                }
+                //allCmds.Clear();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+        
+        string[] allCmds = new string[13];
+        
+        public void HoldBuffer(string str,int ind)
+        {
+            allCmds[ind] = str;
+        }
+
+        public void PalletBuffer(string str)
+        {
+
         }
 
         public void CheckClientActive(object ob)

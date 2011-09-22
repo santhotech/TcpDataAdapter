@@ -234,6 +234,7 @@ namespace VimanaPoi
                 greetLbl.Visible = true;
                 string cmd = getCurrTime() + "|EMP|" + curEmpIdTxt.Text + "\n";
                 if (isSetup.Checked) { cmd += getCurrTime() + "|EMP-TYPE|setup\n"; } else { cmd += getCurrTime() + "|EMP-TYPE|production\n"; }
+                tcp.HoldBuffer(cmd, 0);
                 tcp.sndData(cmd);                
                 MainfestionComboBoxes();
                 macNameLbl.Text = Properties.Settings.Default.machinename;
@@ -313,10 +314,12 @@ namespace VimanaPoi
             Button b = (Button)sender;
             string typ = b.Name.Substring(1, 4);
             string ind = string.Empty;
+
             if(b.Name.Length == 6)
             ind = b.Name.Substring(5, 1);      
             else if(b.Name.Length == 7)
             ind = b.Name.Substring(5, 2);   
+
             Control[] ctrl;
             string cmdToSend;
             string cmdToShow;
@@ -342,9 +345,10 @@ namespace VimanaPoi
             {
                 if (MessageBox.Show(String.Format(cmdToShow, com.GetShowData(ctrl)), "Confirm", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    tcp.sndData(String.Format(cmdToSend, com.GetData(ctrl)));
-                    if (typ == "strt") { if (isOnMultiPall) { palletCnt++; } com.ReadUnRead(_manifest[ind].strt, false,false); com.ReadUnRead(_manifest[ind].stop, true,true); disableAllMenu(); _manifest[ind].stopBtn.Enabled = true; }
-                    if (typ == "stop") { if (isOnMultiPall) { palletCnt--; } com.ReadUnRead(_manifest[ind].stop, false,true); com.ReadUnRead(_manifest[ind].strt, true,false); if (palletCnt == 0) { loadDefaults(); } _manifest[ind].strtBtn.Enabled = true; }
+                    string cmdSnd = String.Format(cmdToSend, com.GetData(ctrl));
+                    tcp.sndData(cmdSnd);
+                    if (typ == "strt") { if (isOnMultiPall) { palletCnt++; } tcp.HoldBuffer(cmdSnd, Int32.Parse(ind)); com.ReadUnRead(_manifest[ind].strt, false, false); com.ReadUnRead(_manifest[ind].stop, true, true); disableAllMenu(); _manifest[ind].stopBtn.Enabled = true; }
+                    if (typ == "stop") { if (isOnMultiPall) { palletCnt--; } tcp.HoldBuffer(string.Empty, Int32.Parse(ind)); com.ReadUnRead(_manifest[ind].stop, false, true); com.ReadUnRead(_manifest[ind].strt, true, false); if (palletCnt == 0) { loadDefaults(); } _manifest[ind].strtBtn.Enabled = true; }
                     b.Enabled = false;
                 }
             }
@@ -434,7 +438,8 @@ namespace VimanaPoi
                         string fullCmd = getCurrTime() + "|" + "program-config" + "|" + cmd + "\n";
                         switchBtn(1, td.t2btn);
                         disableAllMenu();
-                        tcp.sndData(fullCmd);                        
+                        tcp.sndData(fullCmd);
+                        tcp.HoldBuffer(fullCmd,2);
                     }
                 }
                 else
@@ -471,7 +476,8 @@ namespace VimanaPoi
                         {
                             string fullCmd = getCurrTime() + "|" + "part-count-multiple" + "|" + cmd + "\n";
                             switchBtn(2, td.t2btn);
-                            tcp.sndData(fullCmd);  
+                            tcp.sndData(fullCmd);
+                            tcp.HoldBuffer(string.Empty, 2);
                             HandleAfterSend(td.t2stp, td.t2snd, 2, td.t2btn);
                         }
                     }
